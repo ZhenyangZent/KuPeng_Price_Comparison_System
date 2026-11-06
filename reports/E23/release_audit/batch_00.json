@@ -1,0 +1,371 @@
+{
+  "batch": 0,
+  "batch_size": 20,
+  "historical_total": 140,
+  "items": [
+    {
+      "actual_sha256": "64ab7b6cf2fe09a45fc62504bb4721fad09e8e69fccff42ff30150dde43627bc",
+      "bytes": 373365,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "64ab7b6cf2fe09a45fc62504bb4721fad09e8e69fccff42ff30150dde43627bc",
+      "filename": "CDH_A01_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 54,
+      "nested_zip_count": 0,
+      "reasons": [
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 2,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "23d1ae01d901cbbb9748e57241557134a28849ef129b34f98ecea1a0f4eca25f",
+      "bytes": 558671,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "23d1ae01d901cbbb9748e57241557134a28849ef129b34f98ecea1a0f4eca25f",
+      "filename": "CDH_A02_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 64,
+      "nested_zip_count": 0,
+      "reasons": [
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED"
+      ],
+      "sensitive_member_count": 0,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "40bb17a7a0aa8015473c3231c2dd215f3b8149558212f07f3a7802319e514fe4",
+      "bytes": 282825,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "40bb17a7a0aa8015473c3231c2dd215f3b8149558212f07f3a7802319e514fe4",
+      "filename": "CDH_A02_R01_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 72,
+      "nested_zip_count": 0,
+      "reasons": [
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED"
+      ],
+      "sensitive_member_count": 0,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "05ccd9e301ba6db74129f4682fa3dd98e538813535c2555c883ba5faebda87a9",
+      "bytes": 1017981,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "05ccd9e301ba6db74129f4682fa3dd98e538813535c2555c883ba5faebda87a9",
+      "filename": "CDH_A03_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 124,
+      "nested_zip_count": 1,
+      "reasons": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 7,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "c40ef108465f79d2833060265785638d9cac9ee99f3900d3238eae01afb7ad8d",
+      "bytes": 13833209,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "c40ef108465f79d2833060265785638d9cac9ee99f3900d3238eae01afb7ad8d",
+      "filename": "CDH_A04_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 154,
+      "nested_zip_count": 4,
+      "reasons": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 18,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "66652edfd641869ac63ea44c0254e712441fceccd77ea3bb78f706120cb14d0e",
+      "bytes": 725541,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "66652edfd641869ac63ea44c0254e712441fceccd77ea3bb78f706120cb14d0e",
+      "filename": "CDH_A05_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 72,
+      "nested_zip_count": 0,
+      "reasons": [
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 3,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "d9fce75d876b86d5cbb28f77e8ff9354e9d38a5c9389abe10d2a2ddc46adefb5",
+      "bytes": 1175332,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "d9fce75d876b86d5cbb28f77e8ff9354e9d38a5c9389abe10d2a2ddc46adefb5",
+      "filename": "CDH_A06_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 85,
+      "nested_zip_count": 0,
+      "reasons": [
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 1,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "390499b3c99b2d3b551530be357f2810d6299db7c8cbd8ab182cf8ca2e19db90",
+      "bytes": 1152112,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "390499b3c99b2d3b551530be357f2810d6299db7c8cbd8ab182cf8ca2e19db90",
+      "filename": "CDH_A07_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 71,
+      "nested_zip_count": 0,
+      "reasons": [
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED"
+      ],
+      "sensitive_member_count": 0,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "5235d0842cc13b469dc52662d1eb3641134f542046c50cf030eb136a7b69e71d",
+      "bytes": 1089485,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "5235d0842cc13b469dc52662d1eb3641134f542046c50cf030eb136a7b69e71d",
+      "filename": "CDH_A08_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 81,
+      "nested_zip_count": 0,
+      "reasons": [
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED"
+      ],
+      "sensitive_member_count": 0,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "96d239e4a3bb5ca57624c0b8d6e06344ad68b6482b13d8ee9b72a8f1997ebbde",
+      "bytes": 2242273,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "96d239e4a3bb5ca57624c0b8d6e06344ad68b6482b13d8ee9b72a8f1997ebbde",
+      "filename": "CDH_A_R06_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 104,
+      "nested_zip_count": 0,
+      "reasons": [
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED"
+      ],
+      "sensitive_member_count": 0,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "eb4b449972f1bb6bccd9457e8ee88a2b3c69f2a2001b17fc5adfceb23c6a7e08",
+      "bytes": 3229586,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "eb4b449972f1bb6bccd9457e8ee88a2b3c69f2a2001b17fc5adfceb23c6a7e08",
+      "filename": "CDH_A_R07_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 186,
+      "nested_zip_count": 2,
+      "reasons": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 12,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "0cddd2f5998ee5b03fe036fd3c5c684e557766dfc06255baa6fb7ad48f41fccd",
+      "bytes": 3818331,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "0cddd2f5998ee5b03fe036fd3c5c684e557766dfc06255baa6fb7ad48f41fccd",
+      "filename": "CDH_A_R08_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 193,
+      "nested_zip_count": 2,
+      "reasons": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 12,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "40e54a65a7c2bfe808bcaa528e75058ab96c98c4f68d9cfa09259b7e5b97a0cd",
+      "bytes": 6238278,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "40e54a65a7c2bfe808bcaa528e75058ab96c98c4f68d9cfa09259b7e5b97a0cd",
+      "filename": "CDH_A_R09_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 193,
+      "nested_zip_count": 3,
+      "reasons": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 19,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "7a361572ee88c8fe7bd85ae7e8578a635939c9b939725e1c4c4e2da58d0c1fb9",
+      "bytes": 12732520,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "7a361572ee88c8fe7bd85ae7e8578a635939c9b939725e1c4c4e2da58d0c1fb9",
+      "filename": "CDH_A_R10_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 188,
+      "nested_zip_count": 5,
+      "reasons": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 15,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "e5d8d2a689294a1587fe1d6abfa62a6f0f294bd0cfae717e26abac61bfe747da",
+      "bytes": 15707614,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "e5d8d2a689294a1587fe1d6abfa62a6f0f294bd0cfae717e26abac61bfe747da",
+      "filename": "CDH_A_R11_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 164,
+      "nested_zip_count": 4,
+      "reasons": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 9,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "c4a5e36f868c77682d1a4b40ad00b78611afd3d164216f8ad89827415e732405",
+      "bytes": 19306652,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "c4a5e36f868c77682d1a4b40ad00b78611afd3d164216f8ad89827415e732405",
+      "filename": "CDH_A_R11_002_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 693,
+      "nested_zip_count": 5,
+      "reasons": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 9,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "d1b8814f0ae54f5fa5fae77c873620fe70da979fcbfe689a333096fab897b274",
+      "bytes": 22780766,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "d1b8814f0ae54f5fa5fae77c873620fe70da979fcbfe689a333096fab897b274",
+      "filename": "CDH_A_R11_003_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 692,
+      "nested_zip_count": 5,
+      "reasons": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 8,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "19dae9f84e53bbdabdc3389e49ababe82586581073258908fda314edb0f41160",
+      "bytes": 26217505,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "19dae9f84e53bbdabdc3389e49ababe82586581073258908fda314edb0f41160",
+      "filename": "CDH_A_R11_004_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 680,
+      "nested_zip_count": 4,
+      "reasons": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 11,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "48861846f750a95db75d8ef0e4f80613c2f13794b3cfb2e7ba2a957e79b91e4b",
+      "bytes": 151495,
+      "content_checked_count": 18,
+      "crc": "PASS",
+      "expected_sha256": "48861846f750a95db75d8ef0e4f80613c2f13794b3cfb2e7ba2a957e79b91e4b",
+      "filename": "CDH_A_R11_005_STATUS_ONLY.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "PASS",
+      "member_count": 18,
+      "nested_zip_count": 0,
+      "reasons": [],
+      "sensitive_member_count": 0,
+      "status": "ELIGIBLE_FOR_PUBLICATION_REVIEW"
+    },
+    {
+      "actual_sha256": "5cc44dedd910ff9b2055cfc2772ad0c3d6db627ffc818794f81fd3d9b5552d4b",
+      "bytes": 1713196,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "5cc44dedd910ff9b2055cfc2772ad0c3d6db627ffc818794f81fd3d9b5552d4b",
+      "filename": "CDH_A_R12_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 140,
+      "nested_zip_count": 2,
+      "reasons": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sensitive_member_count": 10,
+      "status": "BLOCKED_FOR_UPLOAD"
+    }
+  ],
+  "schema": "CDH-E23-RELEASE-AUDIT-1"
+}

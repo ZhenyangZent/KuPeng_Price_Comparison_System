@@ -1,4 +1,6 @@
-# Coupang Deal Hunter Windows 本機版：第一次使用
+# Coupang Deal Hunter Windows 本機版：第一次使用（歷史 A16 流程）
+
+> 這份說明保留歷史 A16 MVP 操作。最新中央限定驗收整合包是 A17；新接手者請先讀 `WINDOWS_TRIAL_FIRST_USE_A17.md`。GitHub `main` 是文件入口，不含完整 A16／A17 Runtime，不可僅憑 checkout 宣稱可直接啟動。
 
 這個版本在你的 Windows 電腦上啟動本機網站，支援搜尋合成示範商品、手動記錄價格、CSV／JSON 批次匯入，以及重新開啟網站後查詢私人歷史。它不會自動連線酷澎、不會自動開啟瀏覽器，也不會修改 Registry 或安裝系統服務。
 

@@ -1,0 +1,63 @@
+{
+  "batch_count": 7,
+  "batch_size": 20,
+  "blocked_count": 134,
+  "eligible": [
+    {
+      "bytes": 151495,
+      "crc": "PASS",
+      "filename": "CDH_A_R11_005_STATUS_ONLY.zip",
+      "manifest": "PASS",
+      "sha256": "48861846f750a95db75d8ef0e4f80613c2f13794b3cfb2e7ba2a957e79b91e4b"
+    },
+    {
+      "bytes": 32829,
+      "crc": "PASS",
+      "filename": "CDH_C_R07_001_REVIEW.zip",
+      "manifest": "PASS",
+      "sha256": "78a9a946cf7569fef77d8baf3a2c7dfe7bdfdc0c98e0ecf14606f2c720571123"
+    },
+    {
+      "bytes": 2526,
+      "crc": "PASS",
+      "filename": "CDH_E_R11_001_STATUS_ONLY.zip",
+      "manifest": "PASS",
+      "sha256": "a9d40ed60531e77e63b73a33a90311ff5703e0afa4f86638df01f9fcf73ea1b9"
+    },
+    {
+      "bytes": 2612,
+      "crc": "PASS",
+      "filename": "CDH_E_R11_002_STATUS_ONLY.zip",
+      "manifest": "PASS",
+      "sha256": "99ed147d555412796a30ced05b867ff81472df73c63b271e5c299bf55e68c423"
+    },
+    {
+      "bytes": 2660,
+      "crc": "PASS",
+      "filename": "CDH_E_R11_003_STATUS_ONLY.zip",
+      "manifest": "PASS",
+      "sha256": "b4d69993a5da86e4cd39d7511d5cfd7aacc61bbd90765118f675fdb5e7389abd"
+    },
+    {
+      "bytes": 9654,
+      "crc": "PASS",
+      "filename": "CDH_G10_H10_LOOPBACK_DIAGNOSTIC_STATUS_ONLY.zip",
+      "manifest": "PASS",
+      "sha256": "9efa1ba175e6579a210af092c3e35c7b44c1e60cb69d400fd0b4b3c2bfd91b14"
+    }
+  ],
+  "eligible_for_publication_review_count": 6,
+  "historical_release_count": 140,
+  "reason_counts": {
+    "EMAIL_PATTERN": 6,
+    "LARGE_MEMBER_REVIEW_REQUIRED": 12,
+    "NESTED_ZIP": 53,
+    "NON_TEXT_MEMBER_REVIEW_REQUIRED": 51,
+    "PERSONAL_PATH_PATTERN": 7,
+    "PHONE_PATTERN": 2,
+    "SENSITIVE_MEMBER_PATH": 88,
+    "THIRD_PARTY_SOURCE_REVIEW_REQUIRED": 1
+  },
+  "schema": "CDH-E23-RELEASE-AUDIT-SUMMARY-1",
+  "sha_mismatch_count": 0
+}
