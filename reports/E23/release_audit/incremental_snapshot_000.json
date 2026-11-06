@@ -1,0 +1,31 @@
+{
+  "baseline_count": 140,
+  "rows": [
+    {
+      "filename": "CDH_E_R13_001_REVIEW.zip",
+      "ledger_identity_gate": "PASS",
+      "ledger_sha256": "2c685f53304a60ed7a62cd961cf000059ea1417e1b43b278fd808645b0499470",
+      "sha256": "2c685f53304a60ed7a62cd961cf000059ea1417e1b43b278fd808645b0499470"
+    },
+    {
+      "filename": "CDH_E_R13_002_REVIEW.zip",
+      "ledger_identity_gate": "PASS",
+      "ledger_sha256": "f1d9b8a8d2b46c528908454161d65ef6361aef3575b28079329dc03ee12b0c39",
+      "sha256": "f1d9b8a8d2b46c528908454161d65ef6361aef3575b28079329dc03ee12b0c39"
+    },
+    {
+      "filename": "CDH_E_R13_003_REVIEW.zip",
+      "ledger_identity_gate": "BLOCKED",
+      "ledger_sha256": "NOT_REGISTERED",
+      "sha256": "392a6dface7057b3ebe6203fba78c9f8d5a7b53c09a7693327d293721296134f"
+    },
+    {
+      "filename": "CDH_H_R13_002_REVIEW.zip",
+      "ledger_identity_gate": "BLOCKED",
+      "ledger_sha256": "NOT_REGISTERED",
+      "sha256": "2ba4ef61975e9350cb10cc6aa5551d16b2615a92c8886ea86b8207e1750f6682"
+    }
+  ],
+  "schema": "CDH-E23-INCREMENTAL-SNAPSHOT-1",
+  "snapshot": 0
+}

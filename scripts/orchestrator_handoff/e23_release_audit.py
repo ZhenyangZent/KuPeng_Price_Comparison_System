@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""E23 public-release gate, read-only and resumable by stable 20-file batches.
+"""E23 public-release gate, read-only and resumable by immutable snapshots.
 
 Only text-only ZIPs without nested archives or private-looking member paths are
 opened for content/CRC checks. Blocked members are never extracted or read.
@@ -36,6 +36,7 @@ MAX_TEXT_MEMBER = 2_000_000
 MAX_UNCOMPRESSED = 50_000_000
 MAX_ASSET = 2_000_000_000
 BATCH_SIZE = 20
+BASELINE = OUT / "BASELINE_140.json"
 
 
 def sha256_file(path: Path) -> str:
@@ -146,29 +147,116 @@ def audit(row: dict) -> dict:
     return result
 
 
+def _write_once(path: Path, payload: dict) -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    with path.open("x", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, sort_keys=True, indent=2)
+        f.write("\n")
+        f.flush()
+        os.fsync(f.fileno())
+
+
+def freeze_baseline() -> dict:
+    """Bind existing seven checkpoints without rewriting any of them."""
+    if BASELINE.exists():
+        return json.loads(BASELINE.read_text(encoding="utf-8"))
+    rows = []
+    for index in range(7):
+        checkpoint = OUT / f"batch_{index:02d}.json"
+        batch = json.loads(checkpoint.read_text(encoding="utf-8"))
+        if batch["batch"] != index or len(batch["items"]) != BATCH_SIZE:
+            raise RuntimeError(f"baseline checkpoint mismatch: {checkpoint.name}")
+        rows.extend({"filename": x["filename"], "sha256": x["expected_sha256"]}
+                    for x in batch["items"])
+    if len(rows) != 140 or len({x["filename"].casefold() for x in rows}) != 140:
+        raise RuntimeError("baseline must contain 140 distinct files")
+    payload = {"schema": "CDH-E23-BASELINE-SNAPSHOT-1", "rows": rows,
+               "source_checkpoints": [f"batch_{i:02d}.json" for i in range(7)]}
+    _write_once(BASELINE, payload)
+    return payload
+
+
+def capture_new() -> dict:
+    """Append one snapshot of releases unseen in prior snapshots; never revise history."""
+    baseline = json.loads(BASELINE.read_text(encoding="utf-8"))
+    prior = sorted(OUT.glob("incremental_snapshot_???.json"))
+    seen = {r["filename"].casefold() for r in baseline["rows"]}
+    for file in prior:
+        snapshot = json.loads(file.read_text(encoding="utf-8"))
+        seen.update(r["filename"].casefold() for r in snapshot["rows"])
+    with (ROOT / "docs/HANDOFF/RELEASE_LEDGER.csv").open(encoding="utf-8", newline="") as f:
+        ledger = {r["filename"].casefold(): r for r in csv.DictReader(f)}
+    rows = []
+    for path in sorted((ROOT / "review/releases").glob("*.zip"), key=lambda p: p.name.casefold()):
+        if path.name.casefold() in seen:
+            continue
+        if path.is_symlink():
+            raise RuntimeError(f"new release symlink denied: {path.name}")
+        actual = sha256_file(path)
+        recorded = ledger.get(path.name.casefold())
+        rows.append({"filename": path.name, "sha256": actual,
+                     "ledger_sha256": recorded["sha256"] if recorded else "NOT_REGISTERED",
+                     "ledger_identity_gate": "PASS" if recorded and recorded["sha256"] == actual else "BLOCKED"})
+    if not rows:
+        return {"status": "NO_NEW_RELEASES", "rows": []}
+    next_index = len(prior)
+    target = OUT / f"incremental_snapshot_{next_index:03d}.json"
+    payload = {"schema": "CDH-E23-INCREMENTAL-SNAPSHOT-1", "snapshot": next_index,
+               "baseline_count": len(baseline["rows"]), "rows": rows}
+    _write_once(target, payload)
+    return payload
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--batch", type=int, required=True)
+    action = parser.add_mutually_exclusive_group(required=True)
+    action.add_argument("--batch", type=int)
+    action.add_argument("--freeze-baseline", action="store_true")
+    action.add_argument("--capture-new", action="store_true")
+    action.add_argument("--incremental-batch", type=int)
+    parser.add_argument("--snapshot", type=int)
     args = parser.parse_args(argv)
     if ROOT.name != "酷澎比價系統": raise RuntimeError("wrong project root")
-    rows = list(csv.DictReader((ROOT / "docs/HANDOFF/RELEASE_LEDGER.csv").open(encoding="utf-8", newline="")))
-    rows = sorted((r for r in rows if not r["filename"].startswith("CDH_E_R13_00")), key=lambda r: r["filename"].casefold())
-    if len(rows) != 140: raise RuntimeError(f"expected 140 historical releases; found {len(rows)}")
-    selected = rows[args.batch * BATCH_SIZE:(args.batch + 1) * BATCH_SIZE]
+    if args.freeze_baseline:
+        payload = freeze_baseline()
+        print(f"BASELINE_COUNT={len(payload['rows'])}")
+        return 0
+    if args.capture_new:
+        payload = capture_new()
+        print(f"SNAPSHOT={payload.get('snapshot', 'NONE')} NEW_COUNT={len(payload['rows'])}")
+        return 0
+    if args.incremental_batch is not None:
+        if args.snapshot is None or args.snapshot < 0:
+            parser.error("--incremental-batch requires nonnegative --snapshot")
+        snapshot = json.loads((OUT / f"incremental_snapshot_{args.snapshot:03d}.json").read_text(encoding="utf-8"))
+        rows = snapshot["rows"]
+        index = args.incremental_batch
+        target = OUT / f"incremental_{args.snapshot:03d}_batch_{index:02d}.json"
+    else:
+        if args.snapshot is not None:
+            parser.error("--snapshot only applies to --incremental-batch")
+        rows = json.loads(BASELINE.read_text(encoding="utf-8"))["rows"]
+        index = args.batch
+        target = OUT / f"batch_{index:02d}.json"
+    if index < 0:
+        parser.error("batch must be nonnegative")
+    selected = rows[index * BATCH_SIZE:(index + 1) * BATCH_SIZE]
     if not selected: raise RuntimeError("batch outside range")
-    OUT.mkdir(parents=True, exist_ok=True)
-    target = OUT / f"batch_{args.batch:02d}.json"
     if target.exists():
         print(f"CHECKPOINT_EXISTS={target}")
         return 0
     audited = [audit(row) for row in selected]
-    payload = {"schema": "CDH-E23-RELEASE-AUDIT-1", "batch": args.batch,
+    for item, row in zip(audited, selected):
+        if row.get("ledger_identity_gate") == "BLOCKED":
+            item["reasons"] = sorted(set(item["reasons"]) | {"UNREGISTERED_OR_MISMATCHED_LEDGER_IDENTITY"})
+            item["status"] = "BLOCKED_FOR_UPLOAD"
+    payload = {"schema": "CDH-E23-RELEASE-AUDIT-1", "batch": index,
                "batch_size": BATCH_SIZE, "historical_total": len(rows), "items": audited}
-    with target.open("x", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, sort_keys=True, indent=2)
-        f.write("\n"); f.flush(); os.fsync(f.fileno())
+    if args.incremental_batch is not None:
+        payload["snapshot"] = args.snapshot
+    _write_once(target, payload)
     eligible = sum(x["status"] == "ELIGIBLE_FOR_PUBLICATION_REVIEW" for x in audited)
-    print(f"BATCH={args.batch} ITEMS={len(audited)} ELIGIBLE={eligible} BLOCKED={len(audited)-eligible}")
+    print(f"BATCH={index} ITEMS={len(audited)} ELIGIBLE={eligible} BLOCKED={len(audited)-eligible}")
     return 0
 
 

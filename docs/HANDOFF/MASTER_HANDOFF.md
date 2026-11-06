@@ -626,3 +626,10 @@ E06 authority：`CDH-E06-RECEIPT-ACK-ARCHIVE-AND-HANDOFF-001`／`AUTHORIZED_SYNT
 - E23 依 `RELEASE_LEDGER.csv` 鎖定 140 份歷史 release，按檔名排序分 7 批唯讀審查，140/140 SHA 符合；6 份純文字、無巢狀／敏感成員且 CRC／Manifest 通過，134 份因巢狀 ZIP、私人／非文字成員或內容／來源疑慮維持 `BLOCKED_FOR_UPLOAD`。逐批結果在 `reports/E23/release_audit/batch_00.json` 至 `batch_06.json`。
 - 六份中央已收件的安全原件已按原檔名及位元組公開為 GitHub **歷史封存 prerelease**：`https://github.com/ZhenyangZent/KuPeng_Price_Comparison_System/releases/tag/archive-safe-history-20261107`。GitHub 遠端資產 digest／大小 6/6 與本機完全吻合；實際 URL 已寫入 `RELEASE_LEDGER.csv`。此封存不是產品發布或商業功能授權。
 - GitHub `main`、A17 說明及舊版 A16 MVP 文件需保持一致：`main` 是安全文件入口，未包含完整 A17 Runtime；Draft PR #1 尚未完成來源位元組對帳，維持未合併。詳細 GitHub 遠端去識別讀回及發布限制見 `reports/E23/release_audit/`。
+
+## 52. H13 REV2／E23 REV3 中央裁決與增量安全審查（2026-11-07 Asia/Taipei）
+
+- 中央精確 RECEIVED ACK：H13 REV2 `CDH_H_R13_002_REVIEW.zip` SHA `2ba4ef61975e9350cb10cc6aa5551d16b2615a92c8886ea86b8207e1750f6682`；E23 REV3 `CDH_E_R13_003_REVIEW.zip` SHA `392a6dface7057b3ebe6203fba78c9f8d5a7b53c09a7693327d293721296134f`。經 release／queue 完整 SHA、CRC、Manifest 核對，兩份 queue 副本精確歸檔至 `review/90_UPLOADED_ARCHIVE/20261107_H13_REV2_E23_REV3_ACK/`；原件不變。
+- H13 最新中央裁決為 `PASS_SCOPED_COMPOSITE_EVIDENCE`，以 REV1 舊 FAIL 與 REV2 定點補驗組成，不宣稱單次完整 E2E PASS。H13 REV1 原始 FAIL、瀏覽器退出碼與 REV2 補驗前失敗均保留。E23 REV3 裁決為 `PARTIAL_PASS_SCOPED`，不是完整 GitHub 封存或產品發布授權。
+- 原 140 份審查結果凍結於 `reports/E23/release_audit/BASELINE_140.json` 與 `batch_00.json`–`batch_06.json`；新增交件另存 `incremental_snapshot_000.json` 與 `incremental_000_batch_00.json`，舊 checkpoint 不覆寫。134 份待審原件已完成 metadata-only 風險分組；原件尚無新增公開核准。
+- 公開 GitHub 歷史 prerelease 目前仍只有六份已驗證資產。候選 PR #1 維持 Draft、未合併；`main` 文件入口不是完整 A17 Runtime。新增公開資產須通過實際內容、權限、Manifest、CRC 與遠端 digest gate。

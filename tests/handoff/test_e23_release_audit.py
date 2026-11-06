@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import importlib.util
+import csv
 import json
 from pathlib import Path
 import sys
@@ -71,6 +72,43 @@ class E23ReleaseAuditTests(unittest.TestCase):
         self.assertEqual(result["status"], "ELIGIBLE_FOR_PUBLICATION_REVIEW")
         self.assertEqual(result["crc"], "PASS")
         self.assertEqual(result["manifest"], "PASS")
+
+    def test_freeze_baseline_keeps_seven_old_checkpoints(self) -> None:
+        out = self.root / "reports/E23/release_audit"
+        out.mkdir(parents=True)
+        prior = []
+        for batch in range(7):
+            rows = [{"filename": f"historical_{batch}_{i}.zip", "expected_sha256": "a" * 64}
+                    for i in range(20)]
+            target = out / f"batch_{batch:02d}.json"
+            target.write_text(json.dumps({"batch": batch, "items": rows}), encoding="utf-8")
+            prior.append(hashlib.sha256(target.read_bytes()).hexdigest())
+        with mock.patch.object(audit_module, "OUT", out), mock.patch.object(audit_module, "BASELINE", out / "BASELINE_140.json"):
+            frozen = audit_module.freeze_baseline()
+            self.assertEqual(len(frozen["rows"]), 140)
+            self.assertEqual(audit_module.freeze_baseline(), frozen)
+        self.assertEqual(prior, [hashlib.sha256((out / f"batch_{i:02d}.json").read_bytes()).hexdigest()
+                                 for i in range(7)])
+
+    def test_incremental_snapshot_does_not_rewrite_old_snapshot(self) -> None:
+        out = self.root / "reports/E23/release_audit"
+        out.mkdir(parents=True)
+        baseline = out / "BASELINE_140.json"
+        baseline.write_text(json.dumps({"rows": [{"filename": "old.zip", "sha256": "a" * 64}]}), encoding="utf-8")
+        ledger_dir = self.root / "docs/HANDOFF"
+        ledger_dir.mkdir(parents=True)
+        with (ledger_dir / "RELEASE_LEDGER.csv").open("w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=["filename", "sha256"])
+            w.writeheader()
+            w.writerow({"filename": "new.zip", "sha256": "0" * 64})
+        self.make_zip("new.zip", {"notes.txt": b"synthetic"})
+        with mock.patch.object(audit_module, "ROOT", self.root), mock.patch.object(audit_module, "OUT", out), mock.patch.object(audit_module, "BASELINE", baseline):
+            first = audit_module.capture_new()
+            original = (out / "incremental_snapshot_000.json").read_bytes()
+            self.assertEqual(len(first["rows"]), 1)
+            self.assertEqual(first["rows"][0]["ledger_identity_gate"], "BLOCKED")
+            self.assertEqual(audit_module.capture_new()["status"], "NO_NEW_RELEASES")
+            self.assertEqual((out / "incremental_snapshot_000.json").read_bytes(), original)
 
 
 if __name__ == "__main__":
