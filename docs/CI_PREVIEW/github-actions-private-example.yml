@@ -1,0 +1,38 @@
+# PREVIEW ONLY. This file is intentionally outside .github/workflows.
+name: cdh-private-offline-preview
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  standard-library-checks:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      # Approval must pin actions to reviewed full commit SHAs before activation.
+      - name: Checkout placeholder
+        run: Write-Output "Replace with an approved, commit-pinned checkout action"
+      - name: Run dependency-free G02 checks
+        shell: pwsh
+        run: >-
+          python -m tools.ci_offline.check_project
+          --suite g02_self
+          --scan-source tools/ci_offline
+          --scan-source tests/ci_offline
+          --output-dir reports/G02/ci
+
+  frontend-preprovisioned-only:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - name: Explain dependency contract
+        run: Write-Output "Do not npm install. Restore only a separately approved lock-bound dependency artifact."
+      - name: Run or fail closed
+        shell: pwsh
+        run: >-
+          python -m tools.ci_offline.check_project
+          --suite frontend_vitest
+          --output-dir reports/G02/ci-frontend

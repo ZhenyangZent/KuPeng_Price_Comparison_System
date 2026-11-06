@@ -1,0 +1,12 @@
+# INACTIVE — new authority is required before activation.
+name: CDH G04 Linux immutable preflight
+on: workflow_dispatch
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pre-provisioned immutable preflight without install or upload
+        env: {CDH_OFFLINE: "1", NO_PROXY: "*", HTTP_PROXY: "", HTTPS_PROXY: ""}
+        run: python -m tools.ci_web_g04 --root . --run-id linux --profile canonical-fixed --frontend-zip review/releases/CDH_A08_001_REVIEW.zip --frontend-sha "$A08_SHA" --backend-zip review/releases/CDH_B09_001_REVIEW.zip --backend-sha "$B09_SHA" --headless

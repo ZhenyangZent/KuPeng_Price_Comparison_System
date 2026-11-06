@@ -1,0 +1,13 @@
+import { describe,expect,it } from "vitest";
+import { ContractError,parseAffiliateV2,parseDetailV2,parseSearchV2 } from "../src/runtimeSchema";
+const coverage={basis:"COMPLETED_CALENDAR_DAYS",timezone:"Asia/Taipei",m7:{sample_days:1,status:"LOW"},m30:{sample_days:1,status:"LOW"},m90:{sample_days:1,status:"LOW"}};
+const product={id:"p1",title:"Same name",variant_signature:"variant:SKU-A|min_qty:1",last_observed_price_twd:0,last_observed_at:"2026-11-04T00:00:00Z",observed_days:1,sample_days_m7:1,sample_days_m30:1,sample_days_m90:1,coverage,shipping_status:"UNKNOWN",price_basis:"GENERAL_OBSERVED",source_price_basis:"DISPLAYED_SINGLE_ITEM",identity_state:"EXACT",quality_flags:["SHIPPING_UNKNOWN"],thumbnail:null};
+const env={schema_version:"CDH-WEB-CONTRACT-V2",contract_compatibility:["CDH-WEB-CONTRACT-V1"],data_source_status:"USER_RECORDED_ONLY",data_classification:"USER_RECORDED"};
+const aff={state:"UNCONFIGURED",click_url:null,verified_product_match:false,bound_product_id:null};
+const offer={offer_id:"o1",seller_id:"s1",sku_id:"SKU-A",product_id:"p1",minimum_purchase_quantity:1,item_condition:"UNKNOWN",item_condition_source:"NOT_RECORDED",price_basis:"GENERAL_OBSERVED",source_price_basis:"DISPLAYED_SINGLE_ITEM",identity_state:"EXACT"};
+describe("A07 frozen V2 adapter",()=>{
+ it("accepts B06 V2 without converting zero or unknown shipping",()=>{const r=parseSearchV2({...env,items:[product],page:1,limit:20,total:1});expect(r.items[0].last_observed_price_twd).toBe(0);expect(r.items[0].shipping_status).toBe("UNKNOWN");});
+ it("rejects wrong schema, classification mismatch and malformed coverage",()=>{expect(()=>parseSearchV2({...env,schema_version:"CDH-WEB-CONTRACT-V1",items:[],page:1,limit:20,total:0})).toThrowError(ContractError);expect(()=>parseSearchV2({...env,data_classification:"SYNTHETIC_DEMO_ONLY",items:[],page:1,limit:20,total:0})).toThrow(/\u4e0d\u4e00\u81f4/);expect(()=>parseSearchV2({...env,items:[{...product,coverage:{}}],page:1,limit:20,total:1})).toThrow();});
+ it("validates nested affiliate and exact identity",()=>{expect(parseAffiliateV2({...env,product_id:"p1",affiliate:aff},"p1").state).toBe("UNCONFIGURED");expect(()=>parseAffiliateV2({...env,product_id:"wrong",affiliate:aff},"p1")).toThrow(/\u4e0d\u4e00\u81f4/);});
+ it("rejects manufactured period minimum",()=>{const base={...env,product,offers:[offer],history:[{observed_at:"2026-11-04T00:00:00Z",price_twd:0,source_type:"USER_ENTERED",source_id:"x"}],observation_period_min_twd:0,observation_period_label:"\u89c0\u6e2c\u671f\u9593\u6700\u4f4e\u50f9",affiliate:aff};expect(parseDetailV2(base,"p1").observation_period_min_twd).toBe(0);expect(()=>parseDetailV2({...base,observation_period_min_twd:1},"p1")).toThrow(/\u4f4e\u9ede/);});
+});

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cdh_coupon_price_v4_detail.schema.json",
+  "title": "CDH-COUPON-PRICE-V4 Detail envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "data_classification", "product", "history", "history_quality", "data_version"],
+  "properties": {
+    "schema_version": {"const": "CDH-COUPON-PRICE-V4"},
+    "data_classification": {"const": "SYNTHETIC_FIXTURE"},
+    "product": {"$ref": "cdh_coupon_price_v4.schema.json"},
+    "history": {"type": "object", "additionalProperties": false, "required": ["before_coupon", "confirmed_after_coupon"], "properties": {"before_coupon": {"type": "array", "maxItems": 500, "items": {"$ref": "#/$defs/beforeItem"}}, "confirmed_after_coupon": {"type": "array", "maxItems": 500, "items": {"$ref": "#/$defs/afterItem"}}}},
+    "history_quality": {"type": "object", "additionalProperties": false, "required": ["before_coupon", "confirmed_after_coupon"], "properties": {"before_coupon": {"$ref": "#/$defs/quality"}, "confirmed_after_coupon": {"$ref": "#/$defs/quality"}}},
+    "data_version": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "beforeItem": {"type": "object", "additionalProperties": false, "required": ["observed_at", "price_twd", "source_id", "comparison_source", "series_key"], "properties": {"observed_at": {"type": "string", "pattern": "Z$"}, "price_twd": {"type": "integer", "minimum": 0}, "source_id": {"type": "string"}, "comparison_source": {"type": "string"}, "series_key": {"type": "string"}}},
+    "afterItem": {"type": "object", "additionalProperties": false, "required": ["observed_at", "price_twd", "coupon_id", "eligibility_profile", "source_id", "scope_evidence", "series_key"], "properties": {"observed_at": {"type": "string", "pattern": "Z$"}, "price_twd": {"type": "integer", "minimum": 0}, "coupon_id": {"type": "string"}, "eligibility_profile": {"type": "string"}, "source_id": {"type": "string"}, "scope_evidence": {"type": "string"}, "series_key": {"type": "string"}}},
+    "quality": {"type": "object", "additionalProperties": false, "required": ["raw_sample_count", "daily_representatives", "truncated"], "properties": {"raw_sample_count": {"type": "integer", "minimum": 0, "maximum": 500}, "daily_representatives": {"type": "array", "items": {"$ref": "#/$defs/daily"}}, "truncated": {"type": "boolean"}}},
+    "daily": {"type": "object", "additionalProperties": false, "required": ["taipei_date", "representative_price_twd", "sample_count"], "properties": {"taipei_date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}, "representative_price_twd": {"type": "integer", "minimum": 0}, "sample_count": {"type": "integer", "minimum": 1}}}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cdh_coupon_price_v4_search.schema.json",
+  "title": "CDH-COUPON-PRICE-V4 Search envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "data_classification", "items", "page", "limit", "total", "data_version"],
+  "properties": {
+    "schema_version": {"const": "CDH-COUPON-PRICE-V4"},
+    "data_classification": {"const": "SYNTHETIC_FIXTURE"},
+    "items": {"type": "array", "items": {"$ref": "cdh_coupon_price_v4.schema.json"}, "maxItems": 100},
+    "page": {"type": "integer", "minimum": 1},
+    "limit": {"type": "integer", "minimum": 1, "maximum": 100},
+    "total": {"type": "integer", "minimum": 0},
+    "data_version": {"type": "string", "minLength": 1}
+  }
+}

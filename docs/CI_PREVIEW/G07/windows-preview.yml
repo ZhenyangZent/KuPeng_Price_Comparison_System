@@ -1,0 +1,23 @@
+name: cdh-g07-b11-exact-windows-preview
+on:
+  workflow_dispatch:
+    inputs:
+      a10_sha256: { required: false, type: string }
+      a10_lock_sha256: { required: false, type: string }
+jobs:
+  exact-b11-readiness:
+    runs-on: windows-latest
+    permissions: { contents: read }
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify exact B11 and F06; hard-gate A10 browser
+        shell: pwsh
+        run: >-
+          python -m tools.ci_web_g07 --root . --run-id preview-windows
+          --b11-zip review/releases/CDH_B_R07_001_REVIEW.zip
+          --b11-sha 6c51730debbd1388685b479ef9b945a5f7616b2a435af8bda2d86dbca6f4fd8a
+          --f06-zip review/releases/CDH_F_R07_001_REVIEW.zip
+          --f06-sha c2db9aa981cbc935b52944516d5b4259829ffa5af892ac3dc7d28fc6b022ac89
+          --a10-candidate review/releases/CDH_A_R07_001_REVIEW.zip
+          --receipt-ack input/orchestrator_bundles/UNIFIED_CONTINUOUS_20261105_R08/extracted/RECEIPT_ACK.json
+          --a10-sha "${{ inputs.a10_sha256 }}" --a10-lock-sha "${{ inputs.a10_lock_sha256 }}"

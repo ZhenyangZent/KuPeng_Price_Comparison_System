@@ -1,0 +1,22 @@
+{
+  "schema_version": "CDH-CAPABILITY-EVIDENCE-INTAKE-1",
+  "provider_id": "coupang_tw_partners",
+  "market": "KR",
+  "capability_id": "api_link_generation",
+  "requested_target_state": "DOCUMENTARY_VERIFIED",
+  "evidence_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "source": {
+    "authority_class": "COUPANG_KR_OFFICIAL",
+    "provider_class": "PARTNERS",
+    "url": "https://partners.coupangcdn.com/partners-guide/synthetic.pdf",
+    "document_title": "Synthetic Korean guide",
+    "document_version": "synthetic-v1",
+    "effective_date": "2026-01-01",
+    "expires_at": null
+  },
+  "claim": {"evidence_kind": "KR_PARTNERS_DOCUMENT", "supports_exactly": ["api_link_generation"]},
+  "rights_scope": {"market": "KR", "capability_id": "api_link_generation", "allowed_actions": []},
+  "user_authorization": {"status": "NOT_REQUIRED", "supports_exactly": []},
+  "revocation": {"status": "ACTIVE", "checked_at": "2026-11-05T00:00:00+08:00"},
+  "central_review": {"status": "PENDING"}
+}

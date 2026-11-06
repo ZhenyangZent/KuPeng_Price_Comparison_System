@@ -1,0 +1,75 @@
+{
+  "fake_now": "2026-11-01T12:00:00+08:00",
+  "cases": [
+    {
+      "id": "wow-free-zero",
+      "sku": "sku-zero",
+      "quantity": 1,
+      "subtotal_minor": 0,
+      "shipping_minor": 0,
+      "tax_minor": 0,
+      "expected_reason": "S0"
+    },
+    {
+      "id": "five-normal-no-alert",
+      "sku": "sku-five",
+      "quantity": 1,
+      "subtotal_minor": 500,
+      "shipping_minor": 0,
+      "tax_minor": 0,
+      "baseline_item_minor": 500,
+      "expected_reason": "NO_FREE_SHIPPING_POLICY_MATCH"
+    },
+    {
+      "id": "zero-plus-sixty-shipping",
+      "sku": "sku-ship60",
+      "quantity": 1,
+      "subtotal_minor": 0,
+      "shipping_minor": 6000,
+      "tax_minor": 0,
+      "expected_reason": "PAID_SHIPPING_REQUIRES_BASELINE"
+    },
+    {
+      "id": "fifty-plus-sixty-o2",
+      "sku": "sku-o2",
+      "quantity": 1,
+      "subtotal_minor": 5000,
+      "shipping_minor": 6000,
+      "tax_minor": 0,
+      "baseline_item_minor": 100000,
+      "expected_reason": "O2"
+    },
+    {
+      "id": "one-dollar-minimum-100",
+      "sku": "sku-bulk",
+      "quantity": 100,
+      "minimum_quantity": 100,
+      "subtotal_minor": 10000,
+      "shipping_minor": 0,
+      "tax_minor": 0,
+      "expected_reason": "NO_FREE_SHIPPING_POLICY_MATCH"
+    },
+    {
+      "id": "target-800-only-20pct",
+      "sku": "sku-target",
+      "quantity": 1,
+      "subtotal_minor": 80000,
+      "shipping_minor": 0,
+      "tax_minor": 0,
+      "baseline_item_minor": 100000,
+      "target_total_minor": 80000,
+      "expected_reason": "TARGET_REACHED"
+    },
+    {
+      "id": "queued-price-revoked",
+      "sku": "sku-revoke",
+      "quantity": 1,
+      "subtotal_minor": 500,
+      "shipping_minor": 0,
+      "tax_minor": 0,
+      "expected_reason": "S1",
+      "supersede_before_delivery": true
+    }
+  ]
+}
+

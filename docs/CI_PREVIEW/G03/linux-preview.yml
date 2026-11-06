@@ -1,0 +1,14 @@
+# INACTIVE REVIEW PREVIEW — do not place in .github/workflows without new authority.
+name: CDH G03 offline Linux preview
+on: workflow_dispatch
+jobs:
+  offline-web-ci:
+    runs-on: ubuntu-latest
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify pre-provisioned inputs and run without install
+        env: {CDH_OFFLINE: "1", NO_PROXY: "*", HTTP_PROXY: "", HTTPS_PROXY: ""}
+        run: python -m tools.ci_web_g03 --root . --run-id linux-preview
+      # Evidence remains in reports/G03/runs/linux-preview on the private runner.
+      # No cloud artifact upload is authorized by G03.

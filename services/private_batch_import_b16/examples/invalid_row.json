@@ -1,0 +1,17 @@
+{
+  "schema_version": "CDH-B16-BATCH-FILE-1",
+  "observations": [
+    {
+      "schema_version": "CDH-B15-MANUAL-OBSERVATION-1",
+      "submission_id": "SUB-B16-INVALID-0001",
+      "title": "Synthetic invalid product",
+      "identity": {"platform": "COUPANG_TW", "product_id": "PROD-B16-INVALID", "sku_id": "SKU-B16", "seller_id": "SELLER-B16", "condition": "NEW", "package_signature": "EACH-1", "currency": "TWD"},
+      "observed_at": "2026-11-03T12:00:00+08:00",
+      "quantity": 1,
+      "before_coupon_price_twd": 100,
+      "user_reported_coupon": {"status": "USER_REPORTED", "price_twd": 200, "eligibility": "USER_ASSERTED_ELIGIBLE", "evidence_level": "NONE", "evidence_note": null, "valid_from": null, "valid_until": null},
+      "shipping": {"status": "UNKNOWN", "shipping_fee_twd": null, "mandatory_fee_twd": null},
+      "source": {"source_class": "USER_ENTERED", "visibility": "PRIVATE_LOCAL", "note": "Synthetic invalid example"}
+    }
+  ]
+}

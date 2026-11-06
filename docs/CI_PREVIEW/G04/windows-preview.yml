@@ -1,0 +1,13 @@
+# INACTIVE — new authority is required before activation.
+name: CDH G04 Windows immutable preflight
+on: workflow_dispatch
+jobs:
+  preflight:
+    runs-on: windows-latest
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pre-provisioned immutable preflight without install or upload
+        shell: pwsh
+        env: {CDH_OFFLINE: "1", NO_PROXY: "*", HTTP_PROXY: "", HTTPS_PROXY: ""}
+        run: python -m tools.ci_web_g04 --root . --run-id windows --profile canonical-fixed --frontend-zip review/releases/CDH_A08_001_REVIEW.zip --frontend-sha $env:A08_SHA --backend-zip review/releases/CDH_B09_001_REVIEW.zip --backend-sha $env:B09_SHA --headless

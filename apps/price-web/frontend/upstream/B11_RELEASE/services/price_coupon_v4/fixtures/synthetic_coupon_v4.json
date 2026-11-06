@@ -1,0 +1,38 @@
+{
+  "schema_version": "CDH-COUPON-PRICE-V4",
+  "classification": "CONTRACT_FIXTURE_TEST_ONLY",
+  "product": {
+    "series_key": "series-1",
+    "title": "Synthetic coupon item",
+    "series_identity": {
+      "platform": "COUPANG_TW",
+      "product_id": "SYN-P-1",
+      "sku_id": "SYN-SKU-1",
+      "seller_id": "SYN-SELLER-1",
+      "condition": "NEW",
+      "package_signature": "1x100ml"
+    },
+    "base_price_twd": 99,
+    "confirmed_coupon_price_twd": 49,
+    "possible_coupon_price_twd": null,
+    "display_price_twd": 49,
+    "display_basis": "CONFIRMED_COUPON",
+    "shipping_status": "UNKNOWN",
+    "required_total_twd": null,
+    "coupon": {
+      "coupon_id": "SYN-COUPON-1",
+      "status": "CONFIRMED_APPLICABLE",
+      "discount_twd": 50,
+      "discount_scope": "UNIT",
+      "already_included_in_base": false,
+      "eligibility_profile": "SYN-ELIGIBLE-PROFILE",
+      "valid_from": "2026-11-01T00:00:00Z",
+      "valid_until": "2026-11-30T23:59:59Z",
+      "scope_evidence": "SYN-TEST-EVIDENCE"
+    }
+  },
+  "history": {
+    "before_coupon": [],
+    "confirmed_after_coupon": []
+  }
+}

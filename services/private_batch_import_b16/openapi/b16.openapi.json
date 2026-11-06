@@ -1,0 +1,46 @@
+{
+  "openapi": "3.0.3",
+  "info": {"title": "CDH B16 Private Batch Import", "version": "CDH-B16-PRIVATE-BATCH-API-1"},
+  "servers": [{"url": "http://127.0.0.1:8785"}],
+  "paths": {
+    "/api/private-observations/v1/batch-preview": {
+      "post": {
+        "summary": "Parse and validate a local CSV or JSON file without database writes",
+        "parameters": [{"in": "header", "name": "X-CDH-CSRF-Token", "required": true, "schema": {"type": "string"}}],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/PreviewRequest"}}}},
+        "responses": {"200": {"description": "Confirmable no-write preview"}, "400": {"description": "Structural or policy rejection"}, "422": {"description": "Row validation rejection; not confirmable"}}
+      }
+    },
+    "/api/private-observations/v1/batch-confirm": {
+      "post": {
+        "summary": "Explicitly confirm one atomic private-local batch commit",
+        "parameters": [{"in": "header", "name": "X-CDH-CSRF-Token", "required": true, "schema": {"type": "string"}}],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/ConfirmRequest"}}}},
+        "responses": {"201": {"description": "New observations committed"}, "200": {"description": "Idempotent replay from a new preview"}, "400": {"description": "Policy or invalid/expired token rejection"}, "409": {"description": "Submission conflict, token already in flight, or failed token requiring a new preview"}}
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PreviewRequest": {
+        "type": "object", "additionalProperties": false,
+        "required": ["schema_version", "filename", "media_type", "content_base64"],
+        "properties": {
+          "schema_version": {"type": "string", "enum": ["CDH-B16-BATCH-PREVIEW-REQUEST-1"]},
+          "filename": {"type": "string", "maxLength": 128},
+          "media_type": {"type": "string", "enum": ["text/csv", "application/json"]},
+          "content_base64": {"type": "string", "format": "byte"}
+        }
+      },
+      "ConfirmRequest": {
+        "type": "object", "additionalProperties": false,
+        "required": ["schema_version", "preview_id", "confirm_token", "explicit_confirm"],
+        "properties": {
+          "schema_version": {"type": "string", "enum": ["CDH-B16-BATCH-CONFIRM-REQUEST-1"]},
+          "preview_id": {"type": "string"}, "confirm_token": {"type": "string"},
+          "explicit_confirm": {"type": "boolean", "enum": [true]}
+        }
+      }
+    }
+  }
+}

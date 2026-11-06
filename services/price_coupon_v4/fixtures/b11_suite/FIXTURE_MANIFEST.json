@@ -1,0 +1,46 @@
+{
+  "classification": "CONTRACT_FIXTURE_TEST_ONLY",
+  "schema_version": "CDH-B11-FIXTURE-SUITE-1",
+  "snapshots": [
+    {
+      "authority": "coupon.authority.json",
+      "authority_sha256": "b31afc25a3d52cfb27ad6f1431adf606d8d81ace039aa1988ee4c4140c8a33ea",
+      "database": "coupon.sqlite3",
+      "database_sha256": "7b3bf392466dbcc07bfcd3c56f7b7bc7466585531d390422d77d331ee9af406c",
+      "directory": "active",
+      "observation_count": 9,
+      "permission": "ACTIVE_SYNTHETIC_FIXTURE",
+      "series_count": 9
+    },
+    {
+      "authority": "coupon.authority.json",
+      "authority_sha256": "20d84fc1fb6208a7036cf50c83486492e5f4585da6c5ba137cde7232ebf024f2",
+      "database": "coupon.sqlite3",
+      "database_sha256": "21e53a564c2952a35fa898062532b9d096b86fb28874a06ae0f9d1868eceb087",
+      "directory": "expired-source",
+      "observation_count": 1,
+      "permission": "ACTIVE_SYNTHETIC_FIXTURE",
+      "series_count": 1
+    },
+    {
+      "authority": "coupon.authority.json",
+      "authority_sha256": "3598fa744cadfb23de25934758d9634b2b766e107aee7013fe4838f91c25a41d",
+      "database": "coupon.sqlite3",
+      "database_sha256": "25b5a638321e48931bc17051076d6d7345fd802c9074731ec9a449c3aca747dc",
+      "directory": "revoked-source",
+      "observation_count": 1,
+      "permission": "REVOKED",
+      "series_count": 1
+    },
+    {
+      "authority": "coupon.authority.json",
+      "authority_sha256": "a3b63f02ed268cbdf9e52b2ac824e3e38126d54165bed65043a7a7dd95de3352",
+      "database": "coupon.sqlite3",
+      "database_sha256": "012be69db8702b4c14d976ba38dc6fa0f0866fcc8f15a03be3407f85abe6b924",
+      "directory": "empty-history",
+      "observation_count": 0,
+      "permission": "ACTIVE_SYNTHETIC_FIXTURE",
+      "series_count": 1
+    }
+  ]
+}

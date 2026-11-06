@@ -1,0 +1,20 @@
+name: cdh-g06-preview-linux
+on:
+  workflow_dispatch:
+    inputs:
+      frontend_zip: { required: true, type: string }
+      frontend_sha: { required: true, type: string }
+      backend_zip: { required: true, type: string }
+      backend_sha: { required: true, type: string }
+jobs:
+  exact-release-check:
+    runs-on: ubuntu-latest
+    permissions: { contents: read }
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run offline exact-release verifier
+        run: >-
+          python -m tools.ci_web_g06 --root . --run-id preview-linux
+          --frontend-zip "${{ inputs.frontend_zip }}" --frontend-sha "${{ inputs.frontend_sha }}"
+          --backend-zip "${{ inputs.backend_zip }}" --backend-sha "${{ inputs.backend_sha }}"
+          --profile a10-b11-exact

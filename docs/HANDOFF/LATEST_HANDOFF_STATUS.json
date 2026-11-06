@@ -1,0 +1,85 @@
+{
+  "affiliate_capability": "UNVERIFIED",
+  "archive_batch_count": 9,
+  "assignments_input_shape": "NESTED_WORKLINES",
+  "functional_pass_inferred_from_ack": false,
+  "generated_at_utc": "2026-11-05T12:43:03.861719+00:00",
+  "queue": {
+    "files": [
+      {
+        "artifact_type": "release",
+        "crc": "PASS",
+        "entries": 54,
+        "env_example_gate": "PASS",
+        "manifest": "REVIEW_MANIFEST.json",
+        "manifest_candidate_count": 1,
+        "manifest_gate": "PASS",
+        "manifest_records": 53,
+        "name": "CDH_E_R10_001_REVIEW.zip",
+        "nested_zip_count": 0,
+        "nested_zip_gate": "PASS",
+        "path_safety": "PASS",
+        "sensitive_content_gate": "PASS",
+        "sensitive_path_count": 0,
+        "sha256": "ef4489d55b69d7fc24d5965040c3e88f263847e8d2a9c64ca8a4a4055ddec70e",
+        "size_bytes": 3126884,
+        "uncompressed_bytes": 35233633
+      }
+    ],
+    "pending_count": 1,
+    "schema": "CDH-FLAT-UPLOAD-QUEUE-1"
+  },
+  "receipt_record_count": 69,
+  "roles": {
+    "A": {
+      "expected_review": null,
+      "observed_sha256": null,
+      "state": "AUTHORIZED_NEW_VALIDATION_REQUIRED",
+      "task_id": "CDH-A12-LOCAL-PRICE-DAILY-DOM-AND-SAFE-IMPORT-PREVIEW-001"
+    },
+    "B": {
+      "expected_review": null,
+      "observed_sha256": null,
+      "state": "AUTHORIZED_REWORK_P1",
+      "task_id": "CDH-B14-STRICT-JSON-INGRESS-AND-DRYRUN-001"
+    },
+    "C": {
+      "expected_review": null,
+      "observed_sha256": null,
+      "state": "AUTHORIZED_SOURCE_BLOCKED",
+      "task_id": "CDH-C11-PROVENANCE-B13-B14-PREVIEW-CONSUMPTION-001"
+    },
+    "D": {
+      "expected_review": null,
+      "observed_sha256": null,
+      "state": "AUTHORIZED_NEW_UPSTREAM_REQUIRED",
+      "task_id": "CDH-D11-B14-P1-AND-A11-INTEGRATION-SECURITY-001"
+    },
+    "E": {
+      "expected_review": "CDH_E_R10_001_REVIEW.zip",
+      "observed_sha256": "ef4489d55b69d7fc24d5965040c3e88f263847e8d2a9c64ca8a4a4055ddec70e",
+      "state": "PENDING_UPLOAD",
+      "task_id": "CDH-E11-R09-EIGHT-EXACT-ACK-AND-LIVE-QUEUE-001"
+    },
+    "F": {
+      "expected_review": null,
+      "observed_sha256": null,
+      "state": "AUTHORIZED_CTA_DISABLED",
+      "task_id": "CDH-F09-EXACT-PRICE-IDENTITY-INERT-CTA-ADAPTER-001"
+    },
+    "G": {
+      "expected_review": null,
+      "observed_sha256": null,
+      "state": "AUTHORIZED_NEW_UPSTREAM_REQUIRED",
+      "task_id": "CDH-G09-A11-DOM-AND-B14-SAFE-IMPORT-CI-001"
+    },
+    "H": {
+      "expected_review": null,
+      "observed_sha256": null,
+      "state": "AUTHORIZED_NEW_VALIDATION_REQUIRED",
+      "task_id": "CDH-H08-A11-B11-DAILY-DOM-AND-LAUNCHER-JOURNEY-001"
+    }
+  },
+  "schema": "CDH-LATEST-HANDOFF-STATUS-1",
+  "source_status": "SOURCE_BLOCKED"
+}

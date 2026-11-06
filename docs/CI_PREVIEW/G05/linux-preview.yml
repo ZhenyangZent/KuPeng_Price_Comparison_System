@@ -1,0 +1,12 @@
+# INACTIVE — activation requires separate authority.
+name: CDH G05 V4 offline Linux preflight
+on: workflow_dispatch
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run without install, upload or deployment
+        env: {CDH_OFFLINE: "1", NO_PROXY: "*", HTTP_PROXY: "", HTTPS_PROXY: ""}
+        run: python -m tools.ci_web_g05 --root . --run-id linux-r06
