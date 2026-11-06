@@ -1,0 +1,604 @@
+{
+  "canonical_records_sha256": "d75e4274ffc02c6ca710c2a24a897c174b975ab5c185b4628f9bde486e4dcb31",
+  "generated_at_utc": "2026-11-05T12:43:03.690610+00:00",
+  "record_count": 119,
+  "records": [
+    {
+      "bytes": 9484,
+      "path": "docs/HANDOFF/CROSSLINE_STATUS_INDEX.md",
+      "sha256": "06aff38aa7dc26ab2317d7e78d45f5733f18f46ebff56c1c2c77bea1d0d3c6e1"
+    },
+    {
+      "bytes": 5597,
+      "path": "docs/HANDOFF/EXTERNAL_PATH_LEDGER.csv",
+      "sha256": "d8f22517f6ee56bd8475eafac95b906ca76f16290e2e480ca17dcac8ec79efa7"
+    },
+    {
+      "bytes": 44264,
+      "path": "docs/HANDOFF/MASTER_HANDOFF.md",
+      "sha256": "8f4c5c3049369e362e73494b4acdcfd2ce56f4368693edc18b0342d1a5511874"
+    },
+    {
+      "bytes": 7063,
+      "path": "docs/HANDOFF/NEXT_ACTIONS.md",
+      "sha256": "6fd34fd5cbec9ccc9fdd2d919f59908fd87d6e67c66345fa17fecf6e1944edf1"
+    },
+    {
+      "bytes": 12567195,
+      "path": "docs/HANDOFF/PROJECT_FILE_INDEX.csv",
+      "sha256": "a74803a5c5530d5e650c792029d0d35825014e8c2a44cd77aefc16cf1be6986e"
+    },
+    {
+      "bytes": 4189,
+      "path": "docs/HANDOFF/R05_RECEIPT_STATUS_LEDGER.json",
+      "sha256": "e8e95ea6ab04d5f801d0fc0263396848a8c8aa15c8130bbc5895b6a324ee712f"
+    },
+    {
+      "bytes": 1692,
+      "path": "docs/HANDOFF/R06_RECEIPT_STATUS_LEDGER.json",
+      "sha256": "a327b2cb27fdc69e435c5f8e0136733808f4401c32c546fb7be082865315d6b1"
+    },
+    {
+      "bytes": 1523,
+      "path": "docs/HANDOFF/R07_RECEIPT_STATUS_LEDGER.json",
+      "sha256": "80bfb746c322c4d8e31c8d44754e10fc03f27eecaa1772aff7c462f9b7630672"
+    },
+    {
+      "bytes": 2130,
+      "path": "docs/HANDOFF/R08_RECEIPT_STATUS_LEDGER.json",
+      "sha256": "ccde16ea5f5cf7445e8efe1d49a7b4ac265344f2d4982b48932ed0db4a812e5b"
+    },
+    {
+      "bytes": 2106,
+      "path": "docs/HANDOFF/R09_RECEIPT_STATUS_LEDGER.json",
+      "sha256": "776f2224448de4c949b002bb7e89ba96bc1afa5b13ed8be2cfa56ab857ea2272"
+    },
+    {
+      "bytes": 53206,
+      "path": "docs/HANDOFF/RECEIPT_LEDGER.jsonl",
+      "sha256": "ae6c3f5638febc4963bd3662fa2b2bb521a96f1846dcd30e46a6dcbdcaf5fe0c"
+    },
+    {
+      "bytes": 17160,
+      "path": "docs/HANDOFF/TASK_STATUS_INDEX.json",
+      "sha256": "589917c876772e236385e3f6ec9d0c7313c5758f185a323936b205ed183a47b2"
+    },
+    {
+      "bytes": 6326,
+      "path": "docs/HANDOFF/UPLOAD_QUEUE_PROTOCOL.md",
+      "sha256": "2ada547c175d21a75e49ec481cc77c735e3a2f0218b9d2aa19158dda73ed312e"
+    },
+    {
+      "bytes": 3548,
+      "path": "docs/HANDOFF/WINDOWS_USAGE.md",
+      "sha256": "b67413f1d62abfdc49b75842c705cf5a47c80df238e2b00ffe9a25b1aa6b1cc0"
+    },
+    {
+      "bytes": 1794,
+      "path": "docs/HANDOFF/WORKLINE_STATUS.md",
+      "sha256": "5309a289077a2a64750a6a2150b4670588d143cb8a281556fd6288611561811f"
+    },
+    {
+      "bytes": 896,
+      "path": "review/90_UPLOADED_ARCHIVE/20261104_ACK/ARCHIVE_RECEIPT.json",
+      "sha256": "2216df5b56df9e4fab50850c2d0b1cda8effe08bdeaba2f684590c25fffa310d"
+    },
+    {
+      "bytes": 6865,
+      "path": "review/90_UPLOADED_ARCHIVE/20261105_R05_ACK/ARCHIVE_RECEIPT.json",
+      "sha256": "19bb5973064e3b697f0efb4ca66354d010b035ff6fc54479ae4fa70050da7762"
+    },
+    {
+      "bytes": 8150,
+      "path": "review/90_UPLOADED_ARCHIVE/20261105_R05_HANDOFF_ACK_20261105/ARCHIVE_RECEIPT.json",
+      "sha256": "c4e79434129aca2972239cbd98e3453986de9e655281a4ac72a9183af87f2e8b"
+    },
+    {
+      "bytes": 7333,
+      "path": "review/90_UPLOADED_ARCHIVE/20261105_R06_HANDOFF_ACK_20261105/ARCHIVE_RECEIPT.json",
+      "sha256": "6a6dc43ad18774e305406e3beca341797c33198e7142b3069a0d1428209cf810"
+    },
+    {
+      "bytes": 6321,
+      "path": "review/90_UPLOADED_ARCHIVE/20261105_R07_7_WORKLINES_ACK/ARCHIVE_RECEIPT.json",
+      "sha256": "0e1e6c9605d6fad11c170dacba5f40d259712f0c923e6ca7bb1891a493fce57d"
+    },
+    {
+      "bytes": 7916,
+      "path": "review/90_UPLOADED_ARCHIVE/20261105_R08_NINE_ACK/ARCHIVE_RECEIPT.json",
+      "sha256": "1f7fd0fc1a6440af2920a91f0b83a3e6707d61bc0b559c413c2db421ad2305c1"
+    },
+    {
+      "bytes": 7090,
+      "path": "review/90_UPLOADED_ARCHIVE/20261105_R09_EIGHT_ACK/ARCHIVE_RECEIPT.json",
+      "sha256": "aa9f2593fcbec1420c94d11b0a77a3745c4dbd6c70e8ef861967e38b1b49ea89"
+    },
+    {
+      "bytes": 5288,
+      "path": "review/90_UPLOADED_ARCHIVE/20261105_ROUND02_ACK/ARCHIVE_RECEIPT.json",
+      "sha256": "1a908408cbd6036fbf55e050d692b5c7c053348a2a359705134f0e4f5260f07c"
+    },
+    {
+      "bytes": 11271,
+      "path": "review/90_UPLOADED_ARCHIVE/20261105_ROUND04_ACK/ARCHIVE_RECEIPT.json",
+      "sha256": "64393f47da3cd2fa832943d12bd6a5a0ae468f7636f34d4e22547c0aaca9565f"
+    },
+    {
+      "bytes": 373365,
+      "path": "review/releases/CDH_A01_001_REVIEW.zip",
+      "sha256": "64ab7b6cf2fe09a45fc62504bb4721fad09e8e69fccff42ff30150dde43627bc"
+    },
+    {
+      "bytes": 558671,
+      "path": "review/releases/CDH_A02_001_REVIEW.zip",
+      "sha256": "23d1ae01d901cbbb9748e57241557134a28849ef129b34f98ecea1a0f4eca25f"
+    },
+    {
+      "bytes": 282825,
+      "path": "review/releases/CDH_A02_R01_REVIEW.zip",
+      "sha256": "40bb17a7a0aa8015473c3231c2dd215f3b8149558212f07f3a7802319e514fe4"
+    },
+    {
+      "bytes": 1017981,
+      "path": "review/releases/CDH_A03_001_REVIEW.zip",
+      "sha256": "05ccd9e301ba6db74129f4682fa3dd98e538813535c2555c883ba5faebda87a9"
+    },
+    {
+      "bytes": 13833209,
+      "path": "review/releases/CDH_A04_001_REVIEW.zip",
+      "sha256": "c40ef108465f79d2833060265785638d9cac9ee99f3900d3238eae01afb7ad8d"
+    },
+    {
+      "bytes": 725541,
+      "path": "review/releases/CDH_A05_001_REVIEW.zip",
+      "sha256": "66652edfd641869ac63ea44c0254e712441fceccd77ea3bb78f706120cb14d0e"
+    },
+    {
+      "bytes": 1175332,
+      "path": "review/releases/CDH_A06_001_REVIEW.zip",
+      "sha256": "d9fce75d876b86d5cbb28f77e8ff9354e9d38a5c9389abe10d2a2ddc46adefb5"
+    },
+    {
+      "bytes": 1152112,
+      "path": "review/releases/CDH_A07_001_REVIEW.zip",
+      "sha256": "390499b3c99b2d3b551530be357f2810d6299db7c8cbd8ab182cf8ca2e19db90"
+    },
+    {
+      "bytes": 1089485,
+      "path": "review/releases/CDH_A08_001_REVIEW.zip",
+      "sha256": "5235d0842cc13b469dc52662d1eb3641134f542046c50cf030eb136a7b69e71d"
+    },
+    {
+      "bytes": 2242273,
+      "path": "review/releases/CDH_A_R06_001_REVIEW.zip",
+      "sha256": "96d239e4a3bb5ca57624c0b8d6e06344ad68b6482b13d8ee9b72a8f1997ebbde"
+    },
+    {
+      "bytes": 3229586,
+      "path": "review/releases/CDH_A_R07_001_REVIEW.zip",
+      "sha256": "eb4b449972f1bb6bccd9457e8ee88a2b3c69f2a2001b17fc5adfceb23c6a7e08"
+    },
+    {
+      "bytes": 3818331,
+      "path": "review/releases/CDH_A_R08_001_REVIEW.zip",
+      "sha256": "0cddd2f5998ee5b03fe036fd3c5c684e557766dfc06255baa6fb7ad48f41fccd"
+    },
+    {
+      "bytes": 6238278,
+      "path": "review/releases/CDH_A_R09_001_REVIEW.zip",
+      "sha256": "40e54a65a7c2bfe808bcaa528e75058ab96c98c4f68d9cfa09259b7e5b97a0cd"
+    },
+    {
+      "bytes": 193516,
+      "path": "review/releases/CDH_B01_001_REVIEW.zip",
+      "sha256": "90a6319dde50ed8539138ac23d594191faa09a1901ba1d74180c6432a810b2a8"
+    },
+    {
+      "bytes": 949098,
+      "path": "review/releases/CDH_B01_PHASE_B_001_REVIEW.zip",
+      "sha256": "0718a2ce6603b56e25006f6a35a5a308ba98938092de7d4b44c0b17ccfdc03b6"
+    },
+    {
+      "bytes": 276744,
+      "path": "review/releases/CDH_B01_R01_REVIEW.zip",
+      "sha256": "d3f774bdd64e3558a3b9b82f513b98257979a84c4ed487823ebff6b6308f6dcd"
+    },
+    {
+      "bytes": 322541,
+      "path": "review/releases/CDH_B01_R02_REVIEW.zip",
+      "sha256": "a51c62f56954d328cc3015fff7109559f69a9c2f0e5aac20e58d6fec6c06059f"
+    },
+    {
+      "bytes": 387822,
+      "path": "review/releases/CDH_B05_001_REVIEW.zip",
+      "sha256": "31ab7903f56dfc4fc339d6b04aea74eebb1fea257a4e69554202cafc4c8c953e"
+    },
+    {
+      "bytes": 375447,
+      "path": "review/releases/CDH_B06_001_REVIEW.zip",
+      "sha256": "d99284c7e6d422b16255b51d29aacb5034a1d43b254c4aca6fa389cef6caf3ae"
+    },
+    {
+      "bytes": 432270,
+      "path": "review/releases/CDH_B07_001_REVIEW.zip",
+      "sha256": "f0a597f225233cd635e53c8646ce58ab20422250a8cb357650434eb59d342ee4"
+    },
+    {
+      "bytes": 931186,
+      "path": "review/releases/CDH_B08_001_REVIEW.zip",
+      "sha256": "a6d5ffb65860fcb33504baefd3c5288c1c75aac0494af248bb3e4c5624cd69bd"
+    },
+    {
+      "bytes": 52857,
+      "path": "review/releases/CDH_B09_001_REVIEW.zip",
+      "sha256": "10f7ae283108b460ce533b52b75ba1698218632b38d5b58fbda8e643b9234bab"
+    },
+    {
+      "bytes": 53583,
+      "path": "review/releases/CDH_B09_002_REVIEW.zip",
+      "sha256": "35539f8d3434540c660ff51613e636c443ffc06b237806bc53f32db1e78e62e3"
+    },
+    {
+      "bytes": 74039,
+      "path": "review/releases/CDH_B_R06_001_REVIEW.zip",
+      "sha256": "dfef51befb8785e069e4be5514b4eec106952deb5f52ee4cd98974c50273e549"
+    },
+    {
+      "bytes": 111891,
+      "path": "review/releases/CDH_B_R07_001_REVIEW.zip",
+      "sha256": "6c51730debbd1388685b479ef9b945a5f7616b2a435af8bda2d86dbca6f4fd8a"
+    },
+    {
+      "bytes": 210988,
+      "path": "review/releases/CDH_B_R08_001_REVIEW.zip",
+      "sha256": "8e04bcec4e7dd82778858043064dd9676597edade17c496ab16a9042e68bc364"
+    },
+    {
+      "bytes": 429164,
+      "path": "review/releases/CDH_B_R09_001_REVIEW.zip",
+      "sha256": "aa0c1b5e938ac87d7c9a81206e7a2df1e14ea656e3dcba74f59501a76f6a4638"
+    },
+    {
+      "bytes": 63899,
+      "path": "review/releases/CDH_C01_001_REVIEW.zip",
+      "sha256": "d40cc857c0a7ccb082ddfcdfa9f2dac1d6856f9b06e66bf7a24a0869e555f0fb"
+    },
+    {
+      "bytes": 127878,
+      "path": "review/releases/CDH_C01_R01_REVIEW.zip",
+      "sha256": "7a0ae6465ab825c1f237c92e2bc382f108965e00cac607c367a749906761b31e"
+    },
+    {
+      "bytes": 146900,
+      "path": "review/releases/CDH_C01_R02_REVIEW.zip",
+      "sha256": "32286d7a5b17732567eeb541a4bc8bbbe93af5be5f8293297ff773046eb8a3fe"
+    },
+    {
+      "bytes": 183287,
+      "path": "review/releases/CDH_C01_R03_REVIEW.zip",
+      "sha256": "04c2959022b16cf456791173068a627e9b30ee84298b3d2d0cc5731448e2167d"
+    },
+    {
+      "bytes": 199080,
+      "path": "review/releases/CDH_C01_R04_REVIEW.zip",
+      "sha256": "cce874a926acf06986e456bdac7e1a93e90611b696ab7917c7bb5cd56e8cdf00"
+    },
+    {
+      "bytes": 61022,
+      "path": "review/releases/CDH_C02_001_REVIEW.zip",
+      "sha256": "8aed0aea0f962db9a140cea2c87c7127f9645d1821ee7ef4545fec2a670ab8da"
+    },
+    {
+      "bytes": 53554,
+      "path": "review/releases/CDH_C03_001_REVIEW.zip",
+      "sha256": "c500af034827fddf376419e1792b5d46d29112eea745cb9bf5a57030d5c7fd76"
+    },
+    {
+      "bytes": 40117,
+      "path": "review/releases/CDH_C04_001_REVIEW.zip",
+      "sha256": "370ed70e20942693b185a540744cc5c1924502d147f7f576552703747d022ef1"
+    },
+    {
+      "bytes": 67385,
+      "path": "review/releases/CDH_C05_001_REVIEW.zip",
+      "sha256": "fa0a43b9b58477ac8853b1dfe0d790d6a9cfd24fbcb972fd175de07c42ac6d50"
+    },
+    {
+      "bytes": 46400,
+      "path": "review/releases/CDH_C06_001_REVIEW.zip",
+      "sha256": "48c79370e21bcf9a09cab3d6374f9488820b7ff80d40288bd7dd49da6969b783"
+    },
+    {
+      "bytes": 48239,
+      "path": "review/releases/CDH_C_R06_001_REVIEW.zip",
+      "sha256": "8627eabb7b0284a4a1fed43d2cec6c6aca7ab51116573c84ece5e5b8c53f9540"
+    },
+    {
+      "bytes": 32829,
+      "path": "review/releases/CDH_C_R07_001_REVIEW.zip",
+      "sha256": "78a9a946cf7569fef77d8baf3a2c7dfe7bdfdc0c98e0ecf14606f2c720571123"
+    },
+    {
+      "bytes": 33173,
+      "path": "review/releases/CDH_C_R08_001_REVIEW.zip",
+      "sha256": "a8367fed73efce99e93941a6475f386def7dfa25de27b0e2889d4fe00b1ed0d7"
+    },
+    {
+      "bytes": 48286,
+      "path": "review/releases/CDH_C_R09_001_REVIEW.zip",
+      "sha256": "28c77026e93720a01719a6c3bfc3b4250de2194ba15f288776d8a54f9eb18865"
+    },
+    {
+      "bytes": 1558071,
+      "path": "review/releases/CDH_D01_001_REVIEW.zip",
+      "sha256": "738ae737e85e0534c25548d93ec4665c9ceafd0544cbbca68cc2cfbe842bb767"
+    },
+    {
+      "bytes": 3692367,
+      "path": "review/releases/CDH_D02_001_REVIEW.zip",
+      "sha256": "1931bc7da435f55154190925e046bf684427347f06d987fa4594d769ce765886"
+    },
+    {
+      "bytes": 51892,
+      "path": "review/releases/CDH_D02_WEB_001_REVIEW.zip",
+      "sha256": "fe9fb15143b472ac58c48104d059aea8f9184bee22e83104044be422d48fe100"
+    },
+    {
+      "bytes": 4533730,
+      "path": "review/releases/CDH_D03_001_REVIEW.zip",
+      "sha256": "60828a08addd81d880449dd17b88df2dcc8e5dc31f360348ec94feca7393ae22"
+    },
+    {
+      "bytes": 1175254,
+      "path": "review/releases/CDH_D03_WEB_001_REVIEW.zip",
+      "sha256": "b9dc8e436df5a1f222c2111fb94f2b92d6d23bbff8f08492f2b16b4d76ac771b"
+    },
+    {
+      "bytes": 747344,
+      "path": "review/releases/CDH_D04_001_REVIEW.zip",
+      "sha256": "0bd8d8a449257dfdb056e324033280f84c2c06479f8475553b6854cd31aaa2f3"
+    },
+    {
+      "bytes": 514308,
+      "path": "review/releases/CDH_D04_WEB_001_REVIEW.zip",
+      "sha256": "c6271dafd0521bd84badcffa3819122d1ed81af8bc45a392d3f696dcc7f88acd"
+    },
+    {
+      "bytes": 2116856,
+      "path": "review/releases/CDH_D05_WEB_001_REVIEW.zip",
+      "sha256": "3d01788ce3e28d82e7398bf1e2f57bb77ab24ceecb815cdaa40890be486cff7a"
+    },
+    {
+      "bytes": 3283211,
+      "path": "review/releases/CDH_D06_001_REVIEW.zip",
+      "sha256": "ec6df2d9ed81e712d307932e0cde8f1867ef045ac4e5ca3608c6db69ed1a57ad"
+    },
+    {
+      "bytes": 1219765,
+      "path": "review/releases/CDH_D_R06_001_REVIEW.zip",
+      "sha256": "d8c1f3e3c5ca1ff2517d0e63b5c11c9f361c6824be324c749aaef6511c22bdc8"
+    },
+    {
+      "bytes": 2484142,
+      "path": "review/releases/CDH_D_R07_001_REVIEW.zip",
+      "sha256": "d87db68a632609abe35046bbf327d7631c0ff492a317c7b0eadc65cef2d22181"
+    },
+    {
+      "bytes": 2844959,
+      "path": "review/releases/CDH_D_R08_001_REVIEW.zip",
+      "sha256": "fa12f642907d77c2e598e6fd6fe251032221ffbf61f056449b449d2dd855b999"
+    },
+    {
+      "bytes": 5033618,
+      "path": "review/releases/CDH_D_R09_001_REVIEW.zip",
+      "sha256": "450eed4716dba938a06237025f20624d16c59373b09d553de4c1e06ac2549293"
+    },
+    {
+      "bytes": 23919,
+      "path": "review/releases/CDH_E01_001_REVIEW.zip",
+      "sha256": "24687f2871f6528dc0565029ff81a16ecac9d85a66fa342fc503885b23378881"
+    },
+    {
+      "bytes": 227501,
+      "path": "review/releases/CDH_E02_001_REVIEW.zip",
+      "sha256": "19735c499c6645509a1834560f154c51dbc103143955380d4508a25a64c6ce7b"
+    },
+    {
+      "bytes": 700025,
+      "path": "review/releases/CDH_E03_001_REVIEW.zip",
+      "sha256": "2f1d6516afc3821b1bda3d42d0f449b1bdf36191491a99f5d32628db841f21c1"
+    },
+    {
+      "bytes": 791919,
+      "path": "review/releases/CDH_E05_001_REVIEW.zip",
+      "sha256": "52b3e8bfa61606cd66c9e078cbc7ebdcc174f5132d43eda92aef10668b96b61b"
+    },
+    {
+      "bytes": 1556384,
+      "path": "review/releases/CDH_E06_001_REVIEW.zip",
+      "sha256": "0855e6c12e18b9aac2066c91adc9ac03f852de718a50b6c75d030ce2d0807900"
+    },
+    {
+      "bytes": 1636111,
+      "path": "review/releases/CDH_E_R06_001_REVIEW.zip",
+      "sha256": "95d8ab78a07b1d0657c215618cb611330866190c5f8890d6312980eae51ab401"
+    },
+    {
+      "bytes": 1642366,
+      "path": "review/releases/CDH_E_R06_002_REVIEW.zip",
+      "sha256": "95fad0469775c15ae9494f2bdc183c86a035636eef2c35cfbc64ac3775409ecd"
+    },
+    {
+      "bytes": 2495770,
+      "path": "review/releases/CDH_E_R07_001_REVIEW.zip",
+      "sha256": "677f657c00d301f30cc88cd0dec83f4a23efc8090ac7970a659944f7eed95205"
+    },
+    {
+      "bytes": 2497684,
+      "path": "review/releases/CDH_E_R07_002_REVIEW.zip",
+      "sha256": "2bdd849d249782af2f16cd487e258d787e6f29576f5021cf0054062bcc94903e"
+    },
+    {
+      "bytes": 1795019,
+      "path": "review/releases/CDH_E_R08_001_REVIEW.zip",
+      "sha256": "da3c1c15a08604901eee5405c99df97c6abb99c456a16eab8fe29b93c3647e6c"
+    },
+    {
+      "bytes": 1982223,
+      "path": "review/releases/CDH_E_R09_001_REVIEW.zip",
+      "sha256": "d0401e584393ab1f064c988f03186788d5e03c4eb0f3f53cffb19b326c39904b"
+    },
+    {
+      "bytes": 3126884,
+      "path": "review/releases/CDH_E_R10_001_REVIEW.zip",
+      "sha256": "ef4489d55b69d7fc24d5965040c3e88f263847e8d2a9c64ca8a4a4055ddec70e"
+    },
+    {
+      "bytes": 42511,
+      "path": "review/releases/CDH_F01_001_REVIEW.zip",
+      "sha256": "cb524e6bc9def5308c04bcfecb07c4be074eb0c852d71fd53a5fb877b95f9154"
+    },
+    {
+      "bytes": 46965,
+      "path": "review/releases/CDH_F02_001_REVIEW.zip",
+      "sha256": "89b4c21f9f28516052f0298b71d71c6d6f82f48daea5d91db81bcbb5815afd73"
+    },
+    {
+      "bytes": 40040,
+      "path": "review/releases/CDH_F03_001_REVIEW.zip",
+      "sha256": "8a4f77e79844864d280dcffd05f6a752e4e78090763a3d5e01f13e447e6507c5"
+    },
+    {
+      "bytes": 53686,
+      "path": "review/releases/CDH_F04_001_REVIEW.zip",
+      "sha256": "7ab8faaff936d38d246e2e838ed11e239665be60c5a015e0e76f477ec418067d"
+    },
+    {
+      "bytes": 60344,
+      "path": "review/releases/CDH_F_R06_001_REVIEW.zip",
+      "sha256": "8a90dd7c8d6212ec1d54a9e2c6004cdf25d5f7cc92636011b52e1ead6ed94dfc"
+    },
+    {
+      "bytes": 278699,
+      "path": "review/releases/CDH_F_R07_001_REVIEW.zip",
+      "sha256": "c2db9aa981cbc935b52944516d5b4259829ffa5af892ac3dc7d28fc6b022ac89"
+    },
+    {
+      "bytes": 840535,
+      "path": "review/releases/CDH_F_R08_001_REVIEW.zip",
+      "sha256": "705b8cf34a5315e661de443f27346efa3b97670e81f334f59cb6ab9cd2fff2ee"
+    },
+    {
+      "bytes": 1962426,
+      "path": "review/releases/CDH_F_R09_001_REVIEW.zip",
+      "sha256": "75600bf4a2d8397abea93164af75e1ff99a4bab99f0082feaad859f1486ea688"
+    },
+    {
+      "bytes": 17369,
+      "path": "review/releases/CDH_G01_001_REVIEW.zip",
+      "sha256": "ea2a3ef3f524191f82708eb800993a37fe4fab09b7922ebea3c6b4b3754856a3"
+    },
+    {
+      "bytes": 56773,
+      "path": "review/releases/CDH_G02_001_REVIEW.zip",
+      "sha256": "f47a6923dc4f974d55bdc2715f801bffe85a8e6992c434a59222d0aa50cd8076"
+    },
+    {
+      "bytes": 1010287,
+      "path": "review/releases/CDH_G03_001_REVIEW.zip",
+      "sha256": "56f7c7edf5b5acd1027d6774d367ffefafa7273fb8ac801a6d3b69c84e389f6a"
+    },
+    {
+      "bytes": 1014651,
+      "path": "review/releases/CDH_G04_001_REVIEW.zip",
+      "sha256": "6d46d38792296eca683e5d3c2efa327993777413f5a1abb03b361185f730bf38"
+    },
+    {
+      "bytes": 154587,
+      "path": "review/releases/CDH_G0_001_REVIEW.zip",
+      "sha256": "a9cf3b854ab238648794745986b74f8e34598d7feb1eae288ea937b0a1c7c93f"
+    },
+    {
+      "bytes": 1010244,
+      "path": "review/releases/CDH_G_R06_001_REVIEW.zip",
+      "sha256": "08051f7f394c34694460c2474c141a21bcfed45c4ecc070f7339f38d3e55c261"
+    },
+    {
+      "bytes": 40840,
+      "path": "review/releases/CDH_G_R07_001_REVIEW.zip",
+      "sha256": "e35883c4cbddaeb5b7dce4c7fff39e6a26788a1235dfe92cd6c7b79afac73b60"
+    },
+    {
+      "bytes": 36396,
+      "path": "review/releases/CDH_G_R08_001_REVIEW.zip",
+      "sha256": "9edd847686b7566889a94ffcc3837bfdcee2294f219aa60d5dde728209e78a4c"
+    },
+    {
+      "bytes": 4251899,
+      "path": "review/releases/CDH_G_R09_001_REVIEW.zip",
+      "sha256": "488ede603f2daae285d33ab99eeb9add4120b48a8e808d2290fd3fecac7d4d62"
+    },
+    {
+      "bytes": 165471,
+      "path": "review/releases/CDH_H01_001_REVIEW.zip",
+      "sha256": "01cf300af6adc66df9aa4b863592ef5f4d46f477745a764b0c340a44fa1c2214"
+    },
+    {
+      "bytes": 1969598,
+      "path": "review/releases/CDH_H02_001_REVIEW.zip",
+      "sha256": "3d362e157c13901dc89705488b00bc31f4385c479b5c8f77b6a08ad83cc1cd08"
+    },
+    {
+      "bytes": 2107062,
+      "path": "review/releases/CDH_H03_001_REVIEW.zip",
+      "sha256": "7e68d18e8854573bea842bfdbdf3514fadbec56c92f485d61e7f6e982a3c80ab"
+    },
+    {
+      "bytes": 1830679,
+      "path": "review/releases/CDH_H_R06_001_REVIEW.zip",
+      "sha256": "dcbca9d11df62ee0379b891eef5da9e9c3de1222f1cbbc606a3f02f8274804ef"
+    },
+    {
+      "bytes": 459280,
+      "path": "review/releases/CDH_H_R07_001_REVIEW.zip",
+      "sha256": "f4fcb0f73f9a59362f15f93025cb8ab489664a061916291d3c8d3077b79d4b9d"
+    },
+    {
+      "bytes": 1649773,
+      "path": "review/releases/CDH_H_R08_001_REVIEW.zip",
+      "sha256": "64f0d85017e8d2843215f20458899881ddb7bad2c24559fb1ba8c6b705ed2417"
+    },
+    {
+      "bytes": 2541798,
+      "path": "review/releases/CDH_H_R09_001_REVIEW.zip",
+      "sha256": "d0c11a6344800b1cca1794c6cc4e83579a8aab8f2eaf7a2a2bfcb89d06f62e97"
+    },
+    {
+      "bytes": 385458,
+      "path": "review/releases/CDH_I01_001_REVIEW.zip",
+      "sha256": "cbeec7d484ee4ef03995d5f5d18dd98dc0644d9296b1414635ef18d4319baef6"
+    },
+    {
+      "bytes": 478516,
+      "path": "review/releases/CDH_I01_R01_REVIEW.zip",
+      "sha256": "a6503774bd79a6a46c288a31f3b935564d78983c61f15d36ff69274dfe916608"
+    },
+    {
+      "bytes": 4114158,
+      "path": "review/releases/CDH_I02_001_REVIEW.zip",
+      "sha256": "e6985f4da23d3a3cfcdbd4fe97d6ff658ddf47ede7ec7b8fbb9f984e11c9d5f2"
+    },
+    {
+      "bytes": 167720,
+      "path": "review/releases/CDH_N01_001_REVIEW.zip",
+      "sha256": "1954d9ba67771a6f4b0d70c0518c15d1953907dc269c961038a5ae44d66c40cc"
+    },
+    {
+      "bytes": 72150,
+      "path": "review/releases/CDH_S01_001_REVIEW.zip",
+      "sha256": "8b675ee51672b6d5616b6afe31ebd37324a73a1c29c144dc3613e01868c746e6"
+    }
+  ],
+  "root_env_content_read": false,
+  "schema": "CDH-PROTECTED-HASH-INVENTORY-1"
+}

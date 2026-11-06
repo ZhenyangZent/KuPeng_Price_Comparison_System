@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cdh_b12_c09_request_bundle.schema.json",
+  "title": "B12 transport binding for exact C09 requests",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "input_sha256", "c09_release_sha256", "evaluation_time", "bindings"],
+  "properties": {
+    "schema_version": {"const": "CDH-B12-C09-REQUEST-BUNDLE-1"},
+    "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "c09_release_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "evaluation_time": {"type": "string", "pattern": "Z$"},
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["record_id", "record_sha256", "request"],
+        "properties": {
+          "record_id": {"type": "string", "minLength": 1},
+          "record_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "request": {"type": "object"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "CDH-CAPABILITY-EVIDENCE-INTAKE-1",
+  "provider_id": "coupang_tw_partners",
+  "market": "TW",
+  "capability_id": "disclosure_for_tw",
+  "requested_target_state": "DOCUMENTARY_VERIFIED",
+  "evidence_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+  "source": {
+    "authority_class": "COUPANG_TW_OFFICIAL",
+    "provider_class": "PARTNERS",
+    "url": "https://partners.tw.coupang.com/synthetic-expired-guide",
+    "document_title": "Synthetic expired disclosure guide",
+    "document_version": "synthetic-v1",
+    "effective_date": "2025-01-01",
+    "expires_at": "2026-01-01"
+  },
+  "claim": {"evidence_kind": "OFFICIAL_TECHNICAL_DOCUMENT", "supports_exactly": ["disclosure_for_tw"]},
+  "rights_scope": {"market": "TW", "capability_id": "disclosure_for_tw", "allowed_actions": ["display_disclosure"]},
+  "user_authorization": {"status": "NOT_REQUIRED", "supports_exactly": []},
+  "revocation": {"status": "ACTIVE", "checked_at": "2026-11-05T00:00:00+08:00"},
+  "central_review": {"status": "PENDING"}
+}

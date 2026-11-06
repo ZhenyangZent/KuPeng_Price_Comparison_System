@@ -1,0 +1,17 @@
+{
+  "schema": "CDH-R09-RECEIPT-STATUS-LEDGER-1",
+  "task_id": "CDH-E11-R09-EIGHT-EXACT-ACK-AND-LIVE-QUEUE-001",
+  "archive_id": "20261105_R09_EIGHT_ACK",
+  "record_count": 8,
+  "functional_pass_inferred_from_receipt": false,
+  "records": [
+    {"workline":"A","filename":"CDH_A_R09_001_REVIEW.zip","sha256":"40e54a65a7c2bfe808bcaa528e75058ab96c98c4f68d9cfa09259b7e5b97a0cd","receipt_status":"RECEIVED_ACK_ARCHIVED","functional_status":"PASS_SCOPED_DAILY_DOM_NEW_GATE_REQUIRED"},
+    {"workline":"B","filename":"CDH_B_R09_001_REVIEW.zip","sha256":"aa0c1b5e938ac87d7c9a81206e7a2df1e14ea656e3dcba74f59501a76f6a4638","receipt_status":"RECEIVED_ACK_ARCHIVED","functional_status":"REWORK_P1_DUPLICATE_JSON_KEY"},
+    {"workline":"C","filename":"CDH_C_R09_001_REVIEW.zip","sha256":"28c77026e93720a01719a6c3bfc3b4250de2194ba15f288776d8a54f9eb18865","receipt_status":"RECEIVED_ACK_ARCHIVED","functional_status":"PASS_SCOPED_SOURCE_BLOCKED"},
+    {"workline":"D","filename":"CDH_D_R09_001_REVIEW.zip","sha256":"450eed4716dba938a06237025f20624d16c59373b09d553de4c1e06ac2549293","receipt_status":"RECEIVED_ACK_ARCHIVED","functional_status":"PASS_SCOPED_REPORT"},
+    {"workline":"E","filename":"CDH_E_R09_001_REVIEW.zip","sha256":"d0401e584393ab1f064c988f03186788d5e03c4eb0f3f53cffb19b326c39904b","receipt_status":"RECEIVED_ACK_ARCHIVED","functional_status":"PASS_SCOPED"},
+    {"workline":"F","filename":"CDH_F_R09_001_REVIEW.zip","sha256":"75600bf4a2d8397abea93164af75e1ff99a4bab99f0082feaad859f1486ea688","receipt_status":"RECEIVED_ACK_ARCHIVED","functional_status":"PASS_SCOPED_CTA_DISABLED"},
+    {"workline":"G","filename":"CDH_G_R09_001_REVIEW.zip","sha256":"488ede603f2daae285d33ab99eeb9add4120b48a8e808d2290fd3fecac7d4d62","receipt_status":"RECEIVED_ACK_ARCHIVED","functional_status":"PASS_SCOPED_WIRE_NOT_DAILY_DOM"},
+    {"workline":"H","filename":"CDH_H_R09_001_REVIEW.zip","sha256":"d0c11a6344800b1cca1794c6cc4e83579a8aab8f2eaf7a2a2bfcb89d06f62e97","receipt_status":"RECEIVED_ACK_ARCHIVED","evidence_status":"EVIDENCE_PASS","functional_status":"PRODUCT_INTEGRATION_FAIL_DAILY_HISTORY_NOT_RENDERED"}
+  ]
+}

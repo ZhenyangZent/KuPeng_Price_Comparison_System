@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "id": "displayed-zero-with-unknown-shipping",
+      "subtotal_minor": 0,
+      "unknown_field": "shipping",
+      "unknown_state": "UNKNOWN",
+      "risk": "Missing shipping must not be coerced to zero."
+    },
+    {
+      "id": "displayed-zero-free-shipping-unknown-tax",
+      "subtotal_minor": 0,
+      "unknown_field": "tax",
+      "unknown_state": "UNKNOWN",
+      "risk": "Free shipping does not imply unknown cross-border tax is zero."
+    },
+    {
+      "id": "oversized-coupon-without-cap-proof",
+      "subtotal_minor": 1000,
+      "unknown_field": "coupon_cap",
+      "unknown_state": "UNKNOWN",
+      "risk": "A discount above subtotal cannot use max(0, subtotal-discount) without an explicit cap rule."
+    }
+  ]
+}

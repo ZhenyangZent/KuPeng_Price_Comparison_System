@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/cdh/CDH-AFFILIATE-PROVIDER-CONTRACT-V1.schema.json",
+  "title": "CDH Affiliate Provider Contract V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "provider_id",
+    "market",
+    "as_of",
+    "provider_state",
+    "source_discovery_status",
+    "capabilities",
+    "conversion",
+    "request",
+    "response",
+    "gates",
+    "transaction_boundaries",
+    "evidence",
+    "prohibitions"
+  ],
+  "properties": {
+    "schema_version": {"const": "CDH-AFFILIATE-PROVIDER-CONTRACT-V1"},
+    "provider_id": {"const": "coupang_tw_partners"},
+    "market": {"const": "TW"},
+    "as_of": {"type": "string", "format": "date"},
+    "provider_state": {
+      "enum": ["UNCONFIGURED", "PENDING_OFFICIAL_DOCS", "VERIFIED", "FAILED", "DISABLED", "UNAUTHORIZED", "RATE_LIMITED", "REVOKED", "EXPIRED"]
+    },
+    "source_discovery_status": {"const": "SOURCE_BLOCKED"},
+    "capabilities": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"enum": ["VERIFIED", "UNKNOWN"]}
+    },
+    "conversion": {
+      "type": "object",
+      "required": ["enabled", "endpoint", "input_host_allowlist", "output_host_allowlist", "authentication_contract", "rate_limit", "cache_ttl_seconds"]
+    },
+    "request": {"type": "object"},
+    "response": {"type": "object"},
+    "gates": {"type": "object"},
+    "transaction_boundaries": {"type": "object"},
+    "evidence": {"type": "array"},
+    "prohibitions": {"type": "array", "items": {"type": "string"}}
+  }
+}

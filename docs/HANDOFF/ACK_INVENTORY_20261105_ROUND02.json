@@ -1,0 +1,15 @@
+{
+  "schema": "CDH-CENTRAL-ACK-INVENTORY-1",
+  "archive_id": "20261105_ROUND02_ACK",
+  "source_bundle_sha256": "90d44d7c9efabd1cd09c5a05759638231be9f9318249b02274a39383c2f6e1bc",
+  "records": [
+    {"canonical":"CDH_A05_001_REVIEW.zip","central_aliases":["CDH_A05_001_REVIEW(1).zip"],"sha256":"66652edfd641869ac63ea44c0254e712441fceccd77ea3bb78f706120cb14d0e"},
+    {"canonical":"CDH_B05_001_REVIEW.zip","central_aliases":["CDH_B05_001_REVIEW.zip"],"sha256":"31ab7903f56dfc4fc339d6b04aea74eebb1fea257a4e69554202cafc4c8c953e"},
+    {"canonical":"CDH_C02_001_REVIEW.zip","central_aliases":["CDH_C02_001_REVIEW.zip"],"sha256":"8aed0aea0f962db9a140cea2c87c7127f9645d1821ee7ef4545fec2a670ab8da"},
+    {"canonical":"CDH_D02_WEB_001_REVIEW.zip","central_aliases":["CDH_D02_WEB_001_REVIEW.zip"],"sha256":"fe9fb15143b472ac58c48104d059aea8f9184bee22e83104044be422d48fe100"},
+    {"canonical":"CDH_D04_001_REVIEW.zip","central_aliases":["CDH_D04_001_REVIEW.zip"],"sha256":"0bd8d8a449257dfdb056e324033280f84c2c06479f8475553b6854cd31aaa2f3"},
+    {"canonical":"CDH_E02_001_REVIEW.zip","central_aliases":["CDH_E02_001_REVIEW(1).zip","CDH_E02_001_REVIEW(2).zip"],"sha256":"19735c499c6645509a1834560f154c51dbc103143955380d4508a25a64c6ce7b"}
+  ],
+  "archive_action_count": 6,
+  "immutable_release_mutation_count": 0
+}

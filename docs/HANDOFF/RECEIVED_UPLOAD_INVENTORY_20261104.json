@@ -1,0 +1,7 @@
+[
+  {"filename":"CDH_A04_001_REVIEW.zip","size":13833209,"sha256":"c40ef108465f79d2833060265785638d9cac9ee99f3900d3238eae01afb7ad8d","entries":154,"manifest_count":153,"crc":"PASS","queue_copy_present_at_e02_start":false,"e02_archive_action":false},
+  {"filename":"CDH_D03_001_REVIEW(1).zip","canonical_release_name":"CDH_D03_001_REVIEW.zip","size":4533730,"sha256":"60828a08addd81d880449dd17b88df2dcc8e5dc31f360348ec94feca7393ae22","entries":110,"manifest_count":108,"crc":"PASS","queue_copy_present_at_e02_start":false,"e02_archive_action":false},
+  {"filename":"CDH_N01_001_REVIEW.zip","size":167720,"sha256":"1954d9ba67771a6f4b0d70c0518c15d1953907dc269c961038a5ae44d66c40cc","entries":64,"manifest_count":62,"crc":"PASS","queue_copy_present_at_e02_start":false,"e02_archive_action":false},
+  {"filename":"CDH_S01_001_REVIEW.zip","size":72150,"sha256":"8b675ee51672b6d5616b6afe31ebd37324a73a1c29c144dc3613e01868c746e6","entries":47,"manifest_count":44,"crc":"PASS","queue_copy_present_at_e02_start":false,"e02_archive_action":false},
+  {"filename":"CDH_BATCH_20261104_E01_001_REVIEW.zip","size":24652,"sha256":"c484fb330f518d9df42509dbc229d361b40c57beafd78585293b3ab3f637aafd","entries":2,"nested_e01_manifest_count":13,"crc":"PASS","queue_copy_present_at_e02_start":true,"e02_archive_action":true,"archived_to":"review/90_UPLOADED_ARCHIVE/20261104_ACK/CDH_BATCH_20261104_E01_001_REVIEW.zip"}
+]

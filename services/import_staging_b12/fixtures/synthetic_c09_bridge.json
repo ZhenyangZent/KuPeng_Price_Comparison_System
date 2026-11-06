@@ -1,0 +1,15 @@
+[
+  {
+    "schema_version": "CDH-B12-IMPORT-RECORD-1",
+    "record_id": "REC:C09:001",
+    "series_key": "synthetic-c09-product-001",
+    "title": "C09 Synthetic Bridge Product",
+    "identity": {"platform": "COUPANG_TW", "product_id": "PRODUCT:C09:001", "sku_id": "SKU:C09:001", "seller_id": "SELLER:C09:001", "condition": "NEW", "package_signature": "PACKAGE:C09:1X"},
+    "observed_at": "2026-11-05T05:05:00Z",
+    "source": {"source_candidate_id": "synthetic:c09:source-001", "evidence_id": "EVIDENCE:C09:001", "evidence_scope": "USER_PROVIDED_FILE_IMPORT", "data_classification": "SYNTHETIC_FIXTURE"},
+    "base_price_twd": 99,
+    "coupon": {"coupon_id": "COUPON:C09:001", "status": "CONFIRMED_APPLICABLE", "discount_twd": 50, "discount_scope": "UNIT", "already_included_in_base": false, "eligibility_profile": "SYNTHETIC_ALL_USERS", "valid_from": "2026-11-05T00:00:00Z", "valid_until": "2026-11-06T00:00:00Z", "target_product_id": "PRODUCT:C09:001", "target_sku_id": "SKU:C09:001", "target_seller_id": "SELLER:C09:001", "pre_coupon_comparison_price_twd": null, "pre_coupon_comparison_evidence_id": null},
+    "minimum_purchase_quantity": 1,
+    "shipping": {"status": "UNKNOWN", "shipping_fee_twd": null, "mandatory_fee_twd": null}
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "schema_version": "CDH-B12-C09-REQUEST-BUNDLE-1",
+  "input_sha256": "29f3762044712266293026d68c45e54ba88453cff3e4cec63e8c0b238a858c07",
+  "c09_release_sha256": "a8367fed73efce99e93941a6475f386def7dfa25de27b0e2889d4fe00b1ed0d7",
+  "evaluation_time": "2026-11-05T06:00:00Z",
+  "bindings": [
+    {
+      "record_id": "REC:C09:001",
+      "record_sha256": "78e93017ee2726622eabcfe4fe60c63edf16ad907e975b8f67cd62f39c9903d3",
+      "request": {
+        "schema_version": "CDH-B12-C09-GATE-REQUEST-1",
+        "request_id": "REQ:C09:001",
+        "staged_record": {
+          "schema_version": "CDH-B12-STAGING-RECORD-PROPOSAL-1",
+          "record_id": "REC:C09:001",
+          "identity": {"platform": "COUPANG_TW", "product_id": "PRODUCT:C09:001", "sku_id": "SKU:C09:001", "seller_id": "SELLER:C09:001", "condition": "NEW", "package_identity": "PACKAGE:C09:1X", "quantity": 1},
+          "observation_time_utc": "2026-11-05T05:05:00Z",
+          "coupon": {"coupon_id": "COUPON:C09:001", "status": "CONFIRMED_APPLICABLE_SYNTHETIC", "valid_from": "2026-11-05T00:00:00Z", "valid_until": "2026-11-06T00:00:00Z", "eligibility_profile": "SYNTHETIC_ALL_USERS", "eligible_product_id": "PRODUCT:C09:001", "eligible_sku_id": "SKU:C09:001", "eligible_seller_id": "SELLER:C09:001", "evidence_id": "EVIDENCE:C09:001", "proof_locator": "fixture://c09/source-001", "evidence_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+          "link_url": null
+        },
+        "provenance": {
+          "source": {"source_id": "synthetic:c09:source-001", "source_class": "SYNTHETIC_PREFLIGHT", "declared_source_class": "SYNTHETIC_PREFLIGHT", "capture_time_utc": "2026-11-05T05:00:00Z", "evidence_id": "EVIDENCE:C09:001", "proof_locator": "fixture://c09/source-001", "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+          "rights": {
+            "collection": {"decision": "ALLOW", "scope": "SYNTHETIC_GENERATION_ONLY", "evidence_id": "EVIDENCE:C09:001", "expires_at": "2026-11-06T00:00:00Z", "proof_locator": "fixture://c09/source-001", "proof_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+            "retention": {"decision": "ALLOW", "scope": "EPHEMERAL_STAGING_ONLY", "evidence_id": "EVIDENCE:C09:001", "expires_at": "2026-11-06T00:00:00Z", "proof_locator": "fixture://c09/source-001", "proof_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+            "display": {"decision": "ALLOW", "scope": "LOCAL_PREVIEW_ONLY", "evidence_id": "EVIDENCE:C09:001", "expires_at": "2026-11-06T00:00:00Z", "proof_locator": "fixture://c09/source-001", "proof_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+            "link_disclosure": {"decision": "DENY", "scope": "NO_LINK", "evidence_id": "EVIDENCE:C09:001", "expires_at": null, "proof_locator": "fixture://c09/source-001", "proof_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+          },
+          "revocation": {"revoked": false, "revoked_at": null, "reason": null}
+        },
+        "intent": {"operation": "SYNTHETIC_PREVIEW", "collect": true, "retain": true, "display": true, "disclose_link": false}
+      }
+    }
+  ]
+}

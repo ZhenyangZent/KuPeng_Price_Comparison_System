@@ -1,0 +1,15 @@
+{
+  "entries": [
+    {
+      "file_sha256": "b66d340109b39ca30eafd024845a8a2882ef7240fa609136368ec5f1fc0767da",
+      "filename": "submission_11111111-1111-4111-8111-111111111111.json",
+      "reason_code": null,
+      "status": "IMPORTED"
+    }
+  ],
+  "exchange_version": "CDH-EXCHANGE-1",
+  "generated_at_utc": "2026-11-02T15:00:00Z",
+  "receipt_version": "CDH-D01-RECEIPT-1",
+  "snapshot_sha256": "90b2a7e942b2d3fe392a243f3fa69dfa1210a11217450b78fba52ebe5e3e2610",
+  "source_status": "SOURCE_BLOCKED"
+}

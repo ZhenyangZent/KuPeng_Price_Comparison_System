@@ -1,0 +1,22 @@
+{
+  "schema_version": "CDH-CAPABILITY-EVIDENCE-INTAKE-1",
+  "provider_id": "coupang_tw_partners",
+  "market": "TW",
+  "capability_id": "manual_link_generation",
+  "requested_target_state": "DOCUMENTARY_VERIFIED",
+  "evidence_sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+  "source": {
+    "authority_class": "COUPANG_TW_OFFICIAL",
+    "provider_class": "PARTNERS",
+    "url": "https://www.tw.coupang.com/synthetic-product",
+    "document_title": "Synthetic ordinary product page",
+    "document_version": "synthetic-v1",
+    "effective_date": "2026-01-01",
+    "expires_at": null
+  },
+  "claim": {"evidence_kind": "NORMAL_PRODUCT_URL", "supports_exactly": ["manual_link_generation"]},
+  "rights_scope": {"market": "TW", "capability_id": "manual_link_generation", "allowed_actions": []},
+  "user_authorization": {"status": "NOT_REQUIRED", "supports_exactly": []},
+  "revocation": {"status": "ACTIVE", "checked_at": "2026-11-05T00:00:00+08:00"},
+  "central_review": {"status": "PENDING"}
+}

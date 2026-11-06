@@ -1,0 +1,29 @@
+{
+  "schema_version": "CDH-B16-BATCH-FILE-1",
+  "observations": [
+    {
+      "schema_version": "CDH-B15-MANUAL-OBSERVATION-1",
+      "submission_id": "SUB-B16-EXAMPLE-0001",
+      "title": "Synthetic batch example product",
+      "identity": {"platform": "COUPANG_TW", "product_id": "PROD-B16-EXAMPLE", "sku_id": "SKU-B16-RED", "seller_id": "SELLER-B16", "condition": "NEW", "package_signature": "EACH-1", "currency": "TWD"},
+      "observed_at": "2026-11-03T12:00:00+08:00",
+      "quantity": 1,
+      "before_coupon_price_twd": 1000,
+      "user_reported_coupon": {"status": "USER_REPORTED", "price_twd": 900, "eligibility": "USER_ASSERTED_ELIGIBLE", "evidence_level": "USER_DESCRIPTION", "evidence_note": "Synthetic user description", "valid_from": "2026-11-01T00:00:00+08:00", "valid_until": "2026-11-05T23:59:59+08:00"},
+      "shipping": {"status": "UNKNOWN", "shipping_fee_twd": null, "mandatory_fee_twd": null},
+      "source": {"source_class": "USER_ENTERED", "visibility": "PRIVATE_LOCAL", "note": "Synthetic local example"}
+    },
+    {
+      "schema_version": "CDH-B15-MANUAL-OBSERVATION-1",
+      "submission_id": "SUB-B16-EXAMPLE-0002",
+      "title": "Synthetic batch example product",
+      "identity": {"platform": "COUPANG_TW", "product_id": "PROD-B16-EXAMPLE", "sku_id": "SKU-B16-RED", "seller_id": "SELLER-B16", "condition": "NEW", "package_signature": "EACH-1", "currency": "TWD"},
+      "observed_at": "2026-11-04T12:00:00+08:00",
+      "quantity": 1,
+      "before_coupon_price_twd": 950,
+      "user_reported_coupon": {"status": "NONE", "price_twd": null, "eligibility": "UNKNOWN", "evidence_level": "NONE", "evidence_note": null, "valid_from": null, "valid_until": null},
+      "shipping": {"status": "UNKNOWN", "shipping_fee_twd": null, "mandatory_fee_twd": null},
+      "source": {"source_class": "USER_ENTERED", "visibility": "PRIVATE_LOCAL", "note": "Synthetic local example"}
+    }
+  ]
+}

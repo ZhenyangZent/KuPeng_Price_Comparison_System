@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cdh:coupon-price-v4",
+  "title": "CDH-COUPON-PRICE-V4 product",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["series_key", "title", "series_identity", "data_classification", "source_id", "observed_at", "base_price_twd", "before_coupon_price_twd", "coupon", "confirmed_coupon_price_twd", "possible_coupon_price_twd", "display_price_twd", "display_basis", "minimum_purchase_quantity", "minimum_item_spend_twd", "shipping_status", "required_total_twd", "source_permission", "quality_flags"],
+  "properties": {
+    "series_key": {"type": "string"},
+    "title": {"type": "string"},
+    "series_identity": {"type": "object"},
+    "data_classification": {"const": "SYNTHETIC_FIXTURE"},
+    "source_id": {"type": ["string", "null"]},
+    "observed_at": {"type": ["string", "null"]},
+    "base_price_twd": {"type": ["integer", "null"], "minimum": 0},
+    "before_coupon_price_twd": {"type": ["integer", "null"], "minimum": 0},
+    "coupon": {"type": "object"},
+    "confirmed_coupon_price_twd": {"type": ["integer", "null"], "minimum": 0},
+    "possible_coupon_price_twd": {"type": ["integer", "null"], "minimum": 0},
+    "display_price_twd": {"type": ["integer", "null"], "minimum": 0},
+    "display_basis": {"enum": ["CONFIRMED_COUPON", "BASE_PRICE", "PRICE_UNAVAILABLE"]},
+    "minimum_purchase_quantity": {"type": "integer", "minimum": 1},
+    "minimum_item_spend_twd": {"type": ["integer", "null"], "minimum": 0},
+    "shipping_status": {"type": "string"},
+    "required_total_twd": {"type": ["integer", "null"], "minimum": 0},
+    "source_permission": {"type": "object"},
+    "quality_flags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  }
+}

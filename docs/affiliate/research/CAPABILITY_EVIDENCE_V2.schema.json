@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cdh:affiliate-capability-evidence:v2",
+  "title": "CDH Affiliate Capability Evidence V2",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "provider_id",
+    "market",
+    "source_discovery_status",
+    "provider_state",
+    "allowed_state_transitions",
+    "absorbing_closed_states",
+    "capabilities",
+    "evidence",
+    "runtime",
+    "inquiry",
+    "transaction_boundaries",
+    "prohibitions"
+  ],
+  "properties": {
+    "schema_version": {"const": "CDH-AFFILIATE-CAPABILITY-EVIDENCE-V2"},
+    "provider_id": {"const": "coupang_tw_partners"},
+    "market": {"const": "TW"},
+    "source_discovery_status": {"const": "SOURCE_BLOCKED"},
+    "provider_state": {"const": "SOURCE_AUTHORIZATION_REQUIRED"},
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["state", "runtime_enabled", "evidence_ids"],
+        "properties": {
+          "state": {
+            "enum": ["UNKNOWN", "CANDIDATE", "DOCUMENTARY_VERIFIED", "ACCOUNT_AUTHORIZED", "RUNTIME_VERIFIED", "REJECTED", "REVOKED", "EXPIRED"]
+          },
+          "runtime_enabled": {"type": "boolean"},
+          "evidence_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "evidence": {"type": "array"},
+    "runtime": {"type": "object"},
+    "inquiry": {"type": "object"},
+    "transaction_boundaries": {"type": "object"},
+    "prohibitions": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  },
+  "additionalProperties": true
+}

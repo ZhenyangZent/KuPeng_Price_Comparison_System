@@ -1,0 +1,12 @@
+{
+  "openapi": "3.1.0",
+  "info": {"title": "CDH B15 Private Observation API", "version": "1.0.0"},
+  "servers": [{"url": "http://127.0.0.1:8785"}],
+  "paths": {
+    "/api/private-observations/v1/session": {"get": {"responses": {"200": {"description": "Local session and CSRF token"}}}},
+    "/api/private-observations/v1/preview": {"post": {"responses": {"200": {"description": "Memory-only normalized preview"}, "400": {"description": "Fail-closed validation"}}}},
+    "/api/private-observations/v1/confirm": {"post": {"responses": {"201": {"description": "Saved private local observation"}, "409": {"description": "Submission ID content conflict"}}}},
+    "/api/private-observations/v1/products": {"get": {"responses": {"200": {"description": "Private local search envelope"}}}},
+    "/api/private-observations/v1/products/{series_key}": {"get": {"parameters": [{"name": "series_key", "in": "path", "required": true, "schema": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}], "responses": {"200": {"description": "Raw and daily private histories"}, "404": {"description": "Not found"}}}}
+  }
+}

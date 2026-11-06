@@ -1,0 +1,22 @@
+{
+  "schema": "CDH-R05-RECEIPT-STATUS-LEDGER-1",
+  "authority_schema": "CDH-R05-RECEIPTS-ACK-1",
+  "archive_group": "20261105_R05_HANDOFF_ACK_20261105",
+  "status": "RECEIVED_INTEGRITY_PASS_NOT_DEPLOYMENT_AUTHORITY",
+  "record_count": 9,
+  "canonical_b09": "CDH_B09_002_REVIEW.zip",
+  "superseded_b09": "CDH_B09_001_REVIEW.zip",
+  "records": [
+    {"filename":"CDH_A08_001_REVIEW.zip","sha256":"5235d0842cc13b469dc52662d1eb3641134f542046c50cf030eb136a7b69e71d","bytes":1089485,"handoff_status":"RECEIVED_INTEGRITY_PASS","functional_scope":"REVIEWED_SCOPED_CANDIDATE","archive_status":"ARCHIVED","archive_path":"review/90_UPLOADED_ARCHIVE/20261105_R05_HANDOFF_ACK_20261105/CDH_A08_001_REVIEW.zip","archived_at_utc":"2026-11-05T05:09:04.827248+00:00"},
+    {"filename":"CDH_B09_001_REVIEW.zip","sha256":"10f7ae283108b460ce533b52b75ba1698218632b38d5b58fbda8e643b9234bab","bytes":52857,"handoff_status":"RECEIVED_SUPERSEDED","functional_scope":"B09_001_SUPERSEDED_HISTORICAL_ONLY","canonical_candidate":false,"historical_release_preserved":true,"archive_status":"ARCHIVED","archive_path":"review/90_UPLOADED_ARCHIVE/20261105_R05_HANDOFF_ACK_20261105/CDH_B09_001_REVIEW.zip","archived_at_utc":"2026-11-05T05:09:04.855170+00:00"},
+    {"filename":"CDH_B09_002_REVIEW.zip","sha256":"35539f8d3434540c660ff51613e636c443ffc06b237806bc53f32db1e78e62e3","bytes":53583,"handoff_status":"RECEIVED_CANONICAL_CANDIDATE","functional_scope":"REVIEWED_SCOPED_CANDIDATE","canonical_candidate":true,"archive_status":"ARCHIVED","archive_path":"review/90_UPLOADED_ARCHIVE/20261105_R05_HANDOFF_ACK_20261105/CDH_B09_002_REVIEW.zip","archived_at_utc":"2026-11-05T05:09:04.895022+00:00"},
+    {"filename":"CDH_C06_001_REVIEW.zip","sha256":"48c79370e21bcf9a09cab3d6374f9488820b7ff80d40288bd7dd49da6969b783","bytes":46400,"handoff_status":"RECEIVED_INTEGRITY_PASS","functional_scope":"REVIEWED_SCOPED_CANDIDATE","archive_status":"ARCHIVED","archive_path":"review/90_UPLOADED_ARCHIVE/20261105_R05_HANDOFF_ACK_20261105/CDH_C06_001_REVIEW.zip","archived_at_utc":"2026-11-05T05:09:04.937293+00:00"},
+    {"filename":"CDH_D06_001_REVIEW.zip","sha256":"ec6df2d9ed81e712d307932e0cde8f1867ef045ac4e5ca3608c6db69ed1a57ad","bytes":3283211,"handoff_status":"RECEIVED_INTEGRITY_PASS","functional_scope":"REVIEWED_SCOPED_CANDIDATE","archive_status":"ARCHIVED","archive_path":"review/90_UPLOADED_ARCHIVE/20261105_R05_HANDOFF_ACK_20261105/CDH_D06_001_REVIEW.zip","archived_at_utc":"2026-11-05T05:09:05.002216+00:00"},
+    {"filename":"CDH_E06_001_REVIEW.zip","sha256":"0855e6c12e18b9aac2066c91adc9ac03f852de718a50b6c75d030ce2d0807900","bytes":1556384,"handoff_status":"RECEIVED_INTEGRITY_PASS","functional_scope":"REVIEWED_SCOPED_CANDIDATE","archive_status":"ARCHIVED","archive_path":"review/90_UPLOADED_ARCHIVE/20261105_R05_HANDOFF_ACK_20261105/CDH_E06_001_REVIEW.zip","archived_at_utc":"2026-11-05T05:09:05.121412+00:00"},
+    {"filename":"CDH_F04_001_REVIEW.zip","sha256":"7ab8faaff936d38d246e2e838ed11e239665be60c5a015e0e76f477ec418067d","bytes":53686,"handoff_status":"RECEIVED_INTEGRITY_PASS","functional_scope":"REVIEWED_SCOPED_CANDIDATE","archive_status":"ARCHIVED","archive_path":"review/90_UPLOADED_ARCHIVE/20261105_R05_HANDOFF_ACK_20261105/CDH_F04_001_REVIEW.zip","archived_at_utc":"2026-11-05T05:09:05.167934+00:00"},
+    {"filename":"CDH_G04_001_REVIEW.zip","sha256":"6d46d38792296eca683e5d3c2efa327993777413f5a1abb03b361185f730bf38","bytes":1014651,"handoff_status":"RECEIVED_INTEGRITY_PASS","functional_scope":"REVIEWED_SCOPED_CANDIDATE","archive_status":"ARCHIVED","archive_path":"review/90_UPLOADED_ARCHIVE/20261105_R05_HANDOFF_ACK_20261105/CDH_G04_001_REVIEW.zip","archived_at_utc":"2026-11-05T05:09:05.222096+00:00"},
+    {"filename":"CDH_H03_001_REVIEW.zip","sha256":"7e68d18e8854573bea842bfdbdf3514fadbec56c92f485d61e7f6e982a3c80ab","bytes":2107062,"handoff_status":"RECEIVED_INTEGRITY_PASS","functional_scope":"REVIEWED_SCOPED_CANDIDATE","archive_status":"ARCHIVED","archive_path":"review/90_UPLOADED_ARCHIVE/20261105_R05_HANDOFF_ACK_20261105/CDH_H03_001_REVIEW.zip","archived_at_utc":"2026-11-05T05:09:05.292481+00:00"}
+  ],
+  "functional_pass_inferred_from_receipt": false,
+  "deployment_authorized": false
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@cdh/a13-private-manual-observation-ui",
+  "private": true,
+  "version": "0.11.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node scripts/run-tests.mjs",
+    "test:role": "node scripts/run-role-tests.mjs",
+    "test:coverage": "node scripts/run-tests.mjs --coverage.enabled=false",
+    "e2e:headless": "node scripts/headless-e2e.mjs",
+    "e2e:a11": "node ../local-preview-a11/scripts/browser-e2e-a11.mjs",
+    "e2e:a12": "node ../local-preview-a11/scripts/browser-e2e-a11.mjs --a12",
+    "e2e:a13": "node ../local-preview-a11/scripts/browser-e2e-a13.mjs",
+    "e2e:a14": "node ../local-preview-a11/scripts/browser-e2e-a14.mjs",
+    "e2e:a15": "node ../local-preview-a11/scripts/browser-e2e-a15.mjs",
+    "e2e:a16": "node ../local-preview-a11/scripts/browser-e2e-a16.mjs",
+    "test:a09-role": "node scripts/run-a09-role-tests.mjs",
+    "test:a10-role": "node scripts/run-a10-role-tests.mjs",
+    "validate:a08": "node scripts/final-validate.mjs",
+    "validate:a09": "node scripts/final-validate-a09.mjs",
+    "validate:a10": "node scripts/final-validate-a10.mjs"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "jsdom": "^27.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.0.0",
+    "vitest": "^4.0.0"
+  }
+}

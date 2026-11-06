@@ -1,0 +1,18 @@
+{
+  "schema": "CDH-SEMANTIC-RECEIPT-LEDGER-1",
+  "round": "R07",
+  "archive_id": "20261105_R07_7_WORKLINES_ACK",
+  "ack_level": "RECEIVED_ONLY",
+  "functional_pass_inferred_from_receipt": false,
+  "record_count": 7,
+  "records": [
+    {"workline":"B","task":"B11","filename":"CDH_B_R07_001_REVIEW.zip","sha256":"6c51730debbd1388685b479ef9b945a5f7616b2a435af8bda2d86dbca6f4fd8a","handoff_status":"RECEIVED"},
+    {"workline":"C","task":"C08","filename":"CDH_C_R07_001_REVIEW.zip","sha256":"78a9a946cf7569fef77d8baf3a2c7dfe7bdfdc0c98e0ecf14606f2c720571123","handoff_status":"RECEIVED"},
+    {"workline":"D","task":"D08","filename":"CDH_D_R07_001_REVIEW.zip","sha256":"d87db68a632609abe35046bbf327d7631c0ff492a317c7b0eadc65cef2d22181","handoff_status":"RECEIVED_REWORK_REQUIRED"},
+    {"workline":"E","task":"E08_REV2","filename":"CDH_E_R07_002_REVIEW.zip","sha256":"2bdd849d249782af2f16cd487e258d787e6f29576f5021cf0054062bcc94903e","handoff_status":"RECEIVED"},
+    {"workline":"F","task":"F06","filename":"CDH_F_R07_001_REVIEW.zip","sha256":"c2db9aa981cbc935b52944516d5b4259829ffa5af892ac3dc7d28fc6b022ac89","handoff_status":"RECEIVED"},
+    {"workline":"G","task":"G06","filename":"CDH_G_R07_001_REVIEW.zip","sha256":"e35883c4cbddaeb5b7dce4c7fff39e6a26788a1235dfe92cd6c7b79afac73b60","handoff_status":"RECEIVED"},
+    {"workline":"H","task":"H05","filename":"CDH_H_R07_001_REVIEW.zip","sha256":"f4fcb0f73f9a59362f15f93025cb8ab489664a061916291d3c8d3077b79d4b9d","handoff_status":"RECEIVED"}
+  ],
+  "not_received": ["A10"]
+}

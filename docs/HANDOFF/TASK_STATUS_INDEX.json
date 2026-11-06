@@ -1,0 +1,140 @@
+{
+  "schema": "CDH-CROSSLINE-TASK-STATUS-1",
+  "updated_local_date": "2026-11-05",
+  "source_bundle_sha256": "90d44d7c9efabd1cd09c5a05759638231be9f9318249b02274a39383c2f6e1bc",
+  "round04_archive_id": "20261105_ROUND04_ACK",
+  "roles": {
+    "A": {"task_id":"CDH-WEB-A06-FRONTEND-API-INTEGRATION-001","status":"RECEIVED_ACK_NOT_FUNCTIONAL_PASS","filename":"CDH_A06_001_REVIEW.zip","sha256":"d9fce75d876b86d5cbb28f77e8ff9354e9d38a5c9389abe10d2a2ddc46adefb5"},
+    "B": {"task_id":"CDH-WEB-B06-PRICE-QUERY-CONTRACT-001","status":"ALL_LISTED_ARTIFACTS_RECEIVED_ACK_NOT_FUNCTIONAL_PASS","received_ack_artifacts":[{"filename":"CDH_B07_001_REVIEW.zip","sha256":"f0a597f225233cd635e53c8646ce58ab20422250a8cb357650434eb59d342ee4"},{"filename":"CDH_B06_001_REVIEW.zip","sha256":"d99284c7e6d422b16255b51d29aacb5034a1d43b254c4aca6fa389cef6caf3ae"}]},
+    "C": {"task_id":"CDH-C03-TW-PARTNERS-EVIDENCE-001","status":"ALL_LISTED_ARTIFACTS_RECEIVED_ACK_NOT_FUNCTIONAL_PASS","received_ack_artifacts":[{"filename":"CDH_C04_001_REVIEW.zip","sha256":"370ed70e20942693b185a540744cc5c1924502d147f7f576552703747d022ef1"},{"filename":"CDH_C03_001_REVIEW.zip","sha256":"c500af034827fddf376419e1792b5d46d29112eea745cb9bf5a57030d5c7fd76"}]},
+    "D": {"task_id":"CDH-D03-WEB-CONTRACT-SECURITY-001","status":"ALL_LISTED_ARTIFACTS_RECEIVED_ACK_NOT_FUNCTIONAL_PASS","received_ack_artifacts":[{"filename":"CDH_D04_WEB_001_REVIEW.zip","sha256":"c6271dafd0521bd84badcffa3819122d1ed81af8bc45a392d3f696dcc7f88acd"},{"filename":"CDH_D03_WEB_001_REVIEW.zip","sha256":"b9dc8e436df5a1f222c2111fb94f2b92d6d23bbff8f08492f2b16b4d76ac771b"}]},
+    "E": {"task_id":"CDH-E03-HANDOFF-ACK-AND-CROSSLINE-INDEX-001","status":"RECEIVED_ACK_NOT_FUNCTIONAL_PASS","filename":"CDH_E03_001_REVIEW.zip","sha256":"2f1d6516afc3821b1bda3d42d0f449b1bdf36191491a99f5d32628db841f21c1"},
+    "F": {"task_id":"CDH-F01-AFFILIATE-PROVIDER-SHELL-001","status":"ALL_LISTED_ARTIFACTS_RECEIVED_ACK_NOT_FUNCTIONAL_PASS","received_ack_artifacts":[{"filename":"CDH_F02_001_REVIEW.zip","sha256":"89b4c21f9f28516052f0298b71d71c6d6f82f48daea5d91db81bcbb5815afd73"},{"filename":"CDH_F01_001_REVIEW.zip","sha256":"cb524e6bc9def5308c04bcfecb07c4be074eb0c852d71fd53a5fb877b95f9154"}]},
+    "G": {"task_id":"CDH-G01-C-DRIVE-PROJECT-FILE-AUDIT-001","status":"ALL_LISTED_ARTIFACTS_RECEIVED_ACK_NOT_FUNCTIONAL_PASS","received_ack_artifacts":[{"filename":"CDH_G02_001_REVIEW.zip","sha256":"f47a6923dc4f974d55bdc2715f801bffe85a8e6992c434a59222d0aa50cd8076"},{"filename":"CDH_G01_001_REVIEW.zip","sha256":"ea2a3ef3f524191f82708eb800993a37fe4fab09b7922ebea3c6b4b3754856a3"}]},
+    "H": {"task_id":"UNKNOWN","status":"RECEIVED_ACK_NOT_FUNCTIONAL_PASS","filename":"CDH_H01_001_REVIEW.zip","sha256":"01cf300af6adc66df9aa4b863592ef5f4d46f477745a764b0c340a44fa1c2214"}
+  },
+  "continuous_r04": {
+    "source_bundle_sha256": "ce7d509b246e7c70a957a395bcfb4c15a7c16717675f3b37868ebd6e9c68e9dc",
+    "authority": "ISOLATED_PROJECT_OFFLINE_MILESTONE_ONLY",
+    "roles": {
+      "A": {"task_id":"CDH-A07-WEB-USABILITY-AND-STATES-001","expected_review":"CDH_A07_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_FUNCTIONAL_PASS","sha256":"390499b3c99b2d3b551530be357f2810d6299db7c8cbd8ab182cf8ca2e19db90"},
+      "B": {"task_id":"CDH-B08-PRICE-QUALITY-API-ADAPTER-001","expected_review":"CDH_B08_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_FUNCTIONAL_PASS","sha256":"a6d5ffb65860fcb33504baefd3c5288c1c75aac0494af248bb3e4c5624cd69bd"},
+      "C": {"task_id":"CDH-C05-TW-PARTNERS-DOCS-READINESS-001","expected_review":"CDH_C05_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_FUNCTIONAL_PASS","sha256":"fa0a43b9b58477ac8853b1dfe0d790d6a9cfd24fbcb972fd175de07c42ac6d50"},
+      "D": {"task_id":"CDH-D05-WEB-INTEGRATION-SECURITY-001","expected_review":"CDH_D05_WEB_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_FUNCTIONAL_PASS","sha256":"3d01788ce3e28d82e7398bf1e2f57bb77ab24ceecb815cdaa40890be486cff7a"},
+      "E": {"task_id":"CDH-E05-HANDOFF-AND-QUEUE-CONTINUITY-001","expected_review":"CDH_E05_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_FUNCTIONAL_PASS","sha256":"52b3e8bfa61606cd66c9e078cbc7ebdcc174f5132d43eda92aef10668b96b61b"},
+      "F": {"task_id":"CDH-F03-AFFILIATE-GATEWAY-001","expected_review":"CDH_F03_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_FUNCTIONAL_PASS","sha256":"8a4f77e79844864d280dcffd05f6a752e4e78090763a3d5e01f13e447e6507c5"},
+      "G": {"task_id":"CDH-G03-REPRODUCIBLE-WEB-CI-001","expected_review":"CDH_G03_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_FUNCTIONAL_PASS","sha256":"56f7c7edf5b5acd1027d6774d367ffefafa7273fb8ac801a6d3b69c84e389f6a"},
+      "H": {"task_id":"CDH-H02-A06-B06-WEB-E2E-001","expected_review":"CDH_H02_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_FUNCTIONAL_PASS","sha256":"3d362e157c13901dc89705488b00bc31f4385c479b5c8f77b6a08ad83cc1cd08"}
+    }
+  },
+  "continuous_r05": {
+    "source_bundle_sha256": "d0993915ff725541ca0c5053f32eddca82888082fcd1b9650f35d80c738237cd",
+    "authority": "AUTHORIZED_SYNTHETIC_OFFLINE_ONLY",
+    "archive_id": "20261105_R05_HANDOFF_ACK_20261105",
+    "roles": {
+      "A": {"task_id":"CDH-A08-UNAVAILABLE-AND-HISTORY-SEMANTICS-001","expected_review":"CDH_A08_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_DEPLOYMENT_AUTHORITY","sha256":"5235d0842cc13b469dc52662d1eb3641134f542046c50cf030eb136a7b69e71d"},
+      "B": {"task_id":"CDH-B09-V2-HISTORY-SEMANTICS-AND-READMODEL-001","status":"RECEIVED_WITH_SUPERSESSION","canonical_candidate":{"filename":"CDH_B09_002_REVIEW.zip","sha256":"35539f8d3434540c660ff51613e636c443ffc06b237806bc53f32db1e78e62e3"},"superseded_historical":{"filename":"CDH_B09_001_REVIEW.zip","sha256":"10f7ae283108b460ce533b52b75ba1698218632b38d5b58fbda8e643b9234bab"}},
+      "C": {"task_id":"CDH-C06-TW-PARTNERS-ONBOARDING-EVIDENCE-001","expected_review":"CDH_C06_001_REVIEW.zip","status":"RECEIVED_ACK_SOURCE_BLOCKED","sha256":"48c79370e21bcf9a09cab3d6374f9488820b7ff80d40288bd7dd49da6969b783"},
+      "D": {"task_id":"CDH-D06-WEB-INTEGRATION-SECURITY-GATES-001","expected_review":"CDH_D06_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_DEPLOYMENT_AUTHORITY","sha256":"ec6df2d9ed81e712d307932e0cde8f1867ef045ac4e5ca3608c6db69ed1a57ad"},
+      "E": {"task_id":"CDH-E06-RECEIPT-ACK-ARCHIVE-AND-HANDOFF-001","expected_review":"CDH_E06_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_DEPLOYMENT_AUTHORITY","sha256":"0855e6c12e18b9aac2066c91adc9ac03f852de718a50b6c75d030ce2d0807900"},
+      "F": {"task_id":"CDH-F04-AFFILIATE-TRUST-ENVELOPE-001","expected_review":"CDH_F04_001_REVIEW.zip","status":"RECEIVED_ACK_SOURCE_BLOCKED","sha256":"7ab8faaff936d38d246e2e838ed11e239665be60c5a015e0e76f477ec418067d"},
+      "G": {"task_id":"CDH-G04-CURRENT-RELEASES-CI-PREFLIGHT-001","expected_review":"CDH_G04_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_DEPLOYMENT_AUTHORITY","sha256":"6d46d38792296eca683e5d3c2efa327993777413f5a1abb03b361185f730bf38"},
+      "H": {"task_id":"CDH-H03-A07-B08-INTEGRATION-JOURNEY-001","expected_review":"CDH_H03_001_REVIEW.zip","status":"RECEIVED_ACK_NOT_DEPLOYMENT_AUTHORITY","sha256":"7e68d18e8854573bea842bfdbdf3514fadbec56c92f485d61e7f6e982a3c80ab"}
+    }
+  },
+  "continuous_r06": {
+    "source_bundle_sha256": "99707ec6058e5b9386be20a4993e94b604974b859d197fca91218202a40dfa46",
+    "authority": "AUTHORIZED_OFFLINE_ONLY",
+    "coupon_contract": "CDH-COUPON-HISTORY-CONTRACT-V1",
+    "roles": {
+      "A": {"task_id":"CDH-A09-COUPON-FIRST-UI-001","expected_review":"CDH_A_R06_001_REVIEW.zip","status":"AUTHORIZED_NOT_OBSERVED"},
+      "B": {"task_id":"CDH-B10-COUPON-PRICE-READMODEL-001","expected_review":"CDH_B_R06_001_REVIEW.zip","status":"AUTHORIZED_NOT_OBSERVED"},
+      "C": {"task_id":"CDH-C07-POLICY-COUPON-EVIDENCE-001","expected_review":"CDH_C_R06_001_REVIEW.zip","status":"AUTHORIZED_NOT_OBSERVED"},
+      "D": {"task_id":"CDH-D07-COUPON-AND-HEADER-SECURITY-001","expected_review":"CDH_D_R06_001_REVIEW.zip","status":"AUTHORIZED_NOT_OBSERVED"},
+      "E": {"task_id":"CDH-E07-ACK-AND-CONTINUITY-001","expected_review":"CDH_E_R06_002_REVIEW.zip","status":"REVISION_2_READY_FOR_REVIEW","superseded_local_failed_build":{"filename":"CDH_E_R06_001_REVIEW.zip","sha256":"95d8ab78a07b1d0657c215618cb611330866190c5f8890d6312980eae51ab401"}},
+      "F": {"task_id":"CDH-F05-COUPON-BOUND-AFFILIATE-GATE-001","expected_review":"CDH_F_R06_001_REVIEW.zip","status":"AUTHORIZED_NOT_OBSERVED"},
+      "G": {"task_id":"CDH-G05-V4-CI-PREFLIGHT-001","expected_review":"CDH_G_R06_001_REVIEW.zip","status":"AUTHORIZED_NOT_OBSERVED"},
+      "H": {"task_id":"CDH-H04-V4-SITE-JOURNEY-001","expected_review":"CDH_H_R06_001_REVIEW.zip","status":"AUTHORIZED_NOT_OBSERVED"}
+    }
+  },
+  "continuous_r07": {
+    "source_bundle_sha256": "76b1332c3e2cd82a05e5f26e6d3e0c01cdf65e828f82d5b586902bdfacda2827",
+    "authority": "SYNTHETIC_OFFLINE_LOCAL_ONLY",
+    "archive_id": "20261105_R06_HANDOFF_ACK_20261105",
+    "roles": {
+      "A": {"task_id":"CDH-A10-B10-ACTUAL-API-UI-INTEGRATION-001","expected_review":"CDH_A_R07_001_REVIEW.zip","status":"LOCAL_RELEASE_OBSERVED_NOT_CENTRALLY_RECEIVED","sha256":"eb4b449972f1bb6bccd9457e8ee88a2b3c69f2a2001b17fc5adfceb23c6a7e08"},
+      "B": {"task_id":"CDH-B11-V4-WIRE-READONLY-SYNTHETIC-SERVER-001","expected_review":"CDH_B_R07_001_REVIEW.zip","status":"RECEIVED_SCOPED_ARCHIVED","sha256":"6c51730debbd1388685b479ef9b945a5f7616b2a435af8bda2d86dbca6f4fd8a"},
+      "C": {"task_id":"CDH-C08-COUPON-PROVENANCE-TO-B10-MAPPING-001","expected_review":"CDH_C_R07_001_REVIEW.zip","status":"RECEIVED_SOURCE_BLOCKED_ARCHIVED","sha256":"78a9a946cf7569fef77d8baf3a2c7dfe7bdfdc0c98e0ecf14606f2c720571123"},
+      "D": {"task_id":"CDH-D08-EXACT-A09-B10-SECURITY-REVIEW-001","expected_review":"CDH_D_R07_001_REVIEW.zip","status":"RECEIVED_REWORK_REQUIRED_ARCHIVED","sha256":"d87db68a632609abe35046bbf327d7631c0ff492a317c7b0eadc65cef2d22181"},
+      "E": {"task_id":"CDH-E08-R06-ACK-ARCHIVE-AND-INDEX-001","expected_review":"CDH_E_R07_002_REVIEW.zip","status":"RECEIVED_SCOPED_ARCHIVED","sha256":"2bdd849d249782af2f16cd487e258d787e6f29576f5021cf0054062bcc94903e","rejected_local_build":{"filename":"CDH_E_R07_001_REVIEW.zip","sha256":"677f657c00d301f30cc88cd0dec83f4a23efc8090ac7970a659944f7eed95205"}},
+      "F": {"task_id":"CDH-F06-B10-COUPON-GATE-WIRE-ADAPTER-001","expected_review":"CDH_F_R07_001_REVIEW.zip","status":"RECEIVED_SCOPED_ARCHIVED","sha256":"c2db9aa981cbc935b52944516d5b4259829ffa5af892ac3dc7d28fc6b022ac89"},
+      "G": {"task_id":"CDH-G06-EXACT-RELEASE-V4-E2E-CI-001","expected_review":"CDH_G_R07_001_REVIEW.zip","status":"RECEIVED_SCOPED_ARCHIVED","sha256":"e35883c4cbddaeb5b7dce4c7fff39e6a26788a1235dfe92cd6c7b79afac73b60"},
+      "H": {"task_id":"CDH-H05-REAL-A10-B11-BROWSER-JOURNEY-001","expected_review":"CDH_H_R07_001_REVIEW.zip","status":"RECEIVED_SCOPED_ARCHIVED","sha256":"f4fcb0f73f9a59362f15f93025cb8ab489664a061916291d3c8d3077b79d4b9d"}
+    }
+  },
+  "continuous_r08": {
+    "source_bundle_sha256": "61d75b334fd7073202691bab887186261c85d1fa42af05e79f16d1a46f24b144",
+    "authority": "SYNTHETIC_OFFLINE_DEPENDENCY_AWARE",
+    "archive_id": "20261105_R07_7_WORKLINES_ACK",
+    "roles": {
+      "A": {"task_id":"CDH-A10-CONTINUE-R07","status":"TWO_VERSIONS_RECEIVED_ARCHIVED","artifacts":[{"filename":"CDH_A_R07_001_REVIEW.zip","sha256":"eb4b449972f1bb6bccd9457e8ee88a2b3c69f2a2001b17fc5adfceb23c6a7e08","browser_scope":"H06_R07_ONLY"},{"filename":"CDH_A_R08_001_REVIEW.zip","sha256":"0cddd2f5998ee5b03fe036fd3c5c684e557766dfc06255baa6fb7ad48f41fccd","browser_scope":"NEW_VALIDATION_REQUIRED"}]},
+      "B": {"task_id":"CDH-B12-OFFLINE-USER-FILE-IMPORT-STAGING-001","expected_review":"CDH_B_R08_001_REVIEW.zip","status":"RECEIVED_SCOPED_ARCHIVED","sha256":"8e04bcec4e7dd82778858043064dd9676597edade17c496ab16a9042e68bc364"},
+      "C": {"task_id":"CDH-C09-IMPORT-PROVENANCE-GATE-001","expected_review":"CDH_C_R08_001_REVIEW.zip","status":"RECEIVED_SOURCE_BLOCKED_ARCHIVED","sha256":"a8367fed73efce99e93941a6475f386def7dfa25de27b0e2889d4fe00b1ed0d7"},
+      "D": {"task_id":"CDH-D09-PORTABLE-ZIP-VERIFIER-AND-B11-SECURITY-001","expected_review":"CDH_D_R08_001_REVIEW.zip","status":"RECEIVED_SCOPED_ARCHIVED","sha256":"fa12f642907d77c2e598e6fd6fe251032221ffbf61f056449b449d2dd855b999"},
+      "E": {"task_id":"CDH-E09-R07-ACK-HANDOFF-001","expected_review":"CDH_E_R08_001_REVIEW.zip","status":"RECEIVED_SCOPED_ARCHIVED","sha256":"da3c1c15a08604901eee5405c99df97c6abb99c456a16eab8fe29b93c3647e6c"},
+      "F": {"task_id":"CDH-F07-B11-EXACT-GATE-BINDING-001","expected_review":"CDH_F_R08_001_REVIEW.zip","status":"RECEIVED_CTA_DISABLED_ARCHIVED","sha256":"705b8cf34a5315e661de443f27346efa3b97670e81f334f59cb6ab9cd2fff2ee"},
+      "G": {"task_id":"CDH-G07-B11-EXACT-CI-READINESS-001","expected_review":"CDH_G_R08_001_REVIEW.zip","status":"RECEIVED_SCOPED_ARCHIVED","sha256":"9edd847686b7566889a94ffcc3837bfdcee2294f219aa60d5dde728209e78a4c"},
+      "H": {"task_id":"CDH-H06-A10-B11-ACTUAL-BROWSER-001","expected_review":"CDH_H_R08_001_REVIEW.zip","status":"RECEIVED_R07_A10_EVIDENCE_ONLY_ARCHIVED","sha256":"64f0d85017e8d2843215f20458899881ddb7bad2c24559fb1ba8c6b705ed2417"}
+    }
+  },
+  "continuous_r09": {
+    "source_bundle_sha256": "be0ee2febae110a16bac12dd6c00e26c74e8006f4eb944b5fdad0d6d0a76a71b",
+    "authority": "SCOPED_OFFLINE_LOCAL_ONLY",
+    "archive_id": "20261105_R08_NINE_ACK",
+    "roles": {
+      "A": {"task_id":"CDH-A11-WINDOWS-LOCAL-WEB-PREVIEW-001","expected_review":"CDH_A_R09_001_REVIEW.zip","status":"RECEIVED_ACK_ARCHIVED_PASS_SCOPED_NEW_DOM_GATE_REQUIRED","sha256":"40e54a65a7c2bfe808bcaa528e75058ab96c98c4f68d9cfa09259b7e5b97a0cd"},
+      "B": {"task_id":"CDH-B13-DRYRUN-PREVIEW-API-001","expected_review":"CDH_B_R09_001_REVIEW.zip","status":"RECEIVED_ACK_ARCHIVED_REWORK_P1_DUPLICATE_JSON_KEY","sha256":"aa0c1b5e938ac87d7c9a81206e7a2df1e14ea656e3dcba74f59501a76f6a4638"},
+      "C": {"task_id":"CDH-C10-MANUAL-INTAKE-PROVENANCE-CRITERIA-001","expected_review":"CDH_C_R09_001_REVIEW.zip","status":"RECEIVED_ACK_ARCHIVED_SOURCE_BLOCKED","sha256":"28c77026e93720a01719a6c3bfc3b4250de2194ba15f288776d8a54f9eb18865"},
+      "D": {"task_id":"CDH-D10-INTEGRATED-REVIEW-SECURITY-001","expected_review":"CDH_D_R09_001_REVIEW.zip","status":"RECEIVED_ACK_ARCHIVED_PASS_SCOPED_REPORT","sha256":"450eed4716dba938a06237025f20624d16c59373b09d553de4c1e06ac2549293"},
+      "E": {"task_id":"CDH-E10-R08-NINE-ACK-HANDOFF-001","expected_review":"CDH_E_R09_001_REVIEW.zip","status":"RECEIVED_ACK_ARCHIVED_PASS_SCOPED","sha256":"d0401e584393ab1f064c988f03186788d5e03c4eb0f3f53cffb19b326c39904b"},
+      "F": {"task_id":"CDH-F08-CTA-VERIFICATION-FAILCLOSED-001","expected_review":"CDH_F_R09_001_REVIEW.zip","status":"RECEIVED_ACK_ARCHIVED_PASS_SCOPED_CTA_DISABLED","sha256":"75600bf4a2d8397abea93164af75e1ff99a4bab99f0082feaad859f1486ea688"},
+      "G": {"task_id":"CDH-G08-A10R08-B11-WINDOWS-EXACT-CI-001","expected_review":"CDH_G_R09_001_REVIEW.zip","status":"RECEIVED_ACK_ARCHIVED_PASS_SCOPED_WIRE_NOT_DAILY_DOM","sha256":"488ede603f2daae285d33ab99eeb9add4120b48a8e808d2290fd3fecac7d4d62"},
+      "H": {"task_id":"CDH-H07-A10R08-B11-FULL_BROWSER-001","expected_review":"CDH_H_R09_001_REVIEW.zip","status":"RECEIVED_ACK_ARCHIVED_EVIDENCE_PASS_PRODUCT_INTEGRATION_FAIL","sha256":"d0c11a6344800b1cca1794c6cc4e83579a8aab8f2eaf7a2a2bfcb89d06f62e97"}
+    }
+  },
+  "continuous_r10": {
+    "source_bundle_sha256": "0474031243db86ffc7c7b05e7569f701f5705cf84a25b98453b987f1c99b7abc",
+    "authority": "SCOPED_OFFLINE_LOCAL_ONLY",
+    "archive_id": "20261105_R09_EIGHT_ACK",
+    "roles": {
+      "A": {"task_id":"CDH-A12-LOCAL-PRICE-DAILY-DOM-AND-SAFE-IMPORT-PREVIEW-001","status":"AUTHORIZED_NEW_VALIDATION_REQUIRED"},
+      "B": {"task_id":"CDH-B14-STRICT-JSON-INGRESS-AND-DRYRUN-001","status":"AUTHORIZED_REWORK_P1"},
+      "C": {"task_id":"CDH-C11-PROVENANCE-B13-B14-PREVIEW-CONSUMPTION-001","status":"AUTHORIZED_SOURCE_BLOCKED_NEW_UPSTREAM_REQUIRED"},
+      "D": {"task_id":"CDH-D11-B14-P1-AND-A11-INTEGRATION-SECURITY-001","status":"AUTHORIZED_NEW_UPSTREAM_REQUIRED"},
+      "E": {"task_id":"CDH-E11-R09-EIGHT-EXACT-ACK-AND-LIVE-QUEUE-001","expected_review":"CDH_E_R10_001_REVIEW.zip","status":"PENDING_UPLOAD","sha256":"ef4489d55b69d7fc24d5965040c3e88f263847e8d2a9c64ca8a4a4055ddec70e"},
+      "F": {"task_id":"CDH-F09-EXACT-PRICE-IDENTITY-INERT-CTA-ADAPTER-001","status":"AUTHORIZED_CTA_DISABLED"},
+      "G": {"task_id":"CDH-G09-A11-DOM-AND-B14-SAFE-IMPORT-CI-001","status":"AUTHORIZED_NEW_UPSTREAM_REQUIRED"},
+      "H": {"task_id":"CDH-H08-A11-B11-DAILY-DOM-AND-LAUNCHER-JOURNEY-001","status":"AUTHORIZED_NEW_VALIDATION_REQUIRED"}
+    }
+  },
+  "round04_initial_received_ack_count": 8,
+  "round04_supplement_received_ack_count": 5,
+  "round04_received_ack_count": 13,
+  "round04_archive_success_count": 13,
+  "r05_received_ack_count": 9,
+  "r05_archive_success_count": 9,
+  "r06_received_ack_count": 8,
+  "r06_archive_success_count": 8,
+  "r07_received_ack_count": 7,
+  "r07_archive_success_count": 7,
+  "r08_received_ack_count": 9,
+  "r08_archive_success_count": 9,
+  "r09_received_ack_count": 8,
+  "r09_archive_success_count": 8,
+  "pending_queue_count": 1,
+  "source_status": "SOURCE_BLOCKED",
+  "affiliate_capability": "UNVERIFIED",
+  "public_deployment_authorized": false,
+  "transaction_automation_authorized": false
+}
+

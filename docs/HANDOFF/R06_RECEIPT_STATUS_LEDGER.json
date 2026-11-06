@@ -1,0 +1,18 @@
+{
+  "schema": "CDH-SEMANTIC-RECEIPT-LEDGER-1",
+  "round": "R06",
+  "archive_id": "20261105_R06_HANDOFF_ACK_20261105",
+  "ack_level": "RECEIVED_AND_INTEGRITY_PASS_ONLY",
+  "functional_pass_inferred_from_receipt": false,
+  "record_count": 8,
+  "records": [
+    {"workline":"A","filename":"CDH_A_R06_001_REVIEW.zip","sha256":"96d239e4a3bb5ca57624c0b8d6e06344ad68b6482b13d8ee9b72a8f1997ebbde","handoff_status":"RECEIVED_INTEGRITY_PASS"},
+    {"workline":"B","filename":"CDH_B_R06_001_REVIEW.zip","sha256":"dfef51befb8785e069e4be5514b4eec106952deb5f52ee4cd98974c50273e549","handoff_status":"RECEIVED_INTEGRITY_PASS"},
+    {"workline":"C","filename":"CDH_C_R06_001_REVIEW.zip","sha256":"8627eabb7b0284a4a1fed43d2cec6c6aca7ab51116573c84ece5e5b8c53f9540","handoff_status":"RECEIVED_INTEGRITY_PASS"},
+    {"workline":"D","filename":"CDH_D_R06_001_REVIEW.zip","sha256":"d8c1f3e3c5ca1ff2517d0e63b5c11c9f361c6824be324c749aaef6511c22bdc8","handoff_status":"RECEIVED_INTEGRITY_PASS"},
+    {"workline":"E","filename":"CDH_E_R06_002_REVIEW.zip","sha256":"95fad0469775c15ae9494f2bdc183c86a035636eef2c35cfbc64ac3775409ecd","handoff_status":"RECEIVED_INTEGRITY_PASS"},
+    {"workline":"F","filename":"CDH_F_R06_001_REVIEW.zip","sha256":"8a90dd7c8d6212ec1d54a9e2c6004cdf25d5f7cc92636011b52e1ead6ed94dfc","handoff_status":"RECEIVED_INTEGRITY_PASS"},
+    {"workline":"G","filename":"CDH_G_R06_001_REVIEW.zip","sha256":"08051f7f394c34694460c2474c141a21bcfed45c4ecc070f7339f38d3e55c261","handoff_status":"RECEIVED_INTEGRITY_PASS"},
+    {"workline":"H","filename":"CDH_H_R06_001_REVIEW.zip","sha256":"dcbca9d11df62ee0379b891eef5da9e9c3de1222f1cbbc606a3f02f8274804ef","handoff_status":"RECEIVED_INTEGRITY_PASS"}
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "schema_version": "CDH-B12-IMPORT-RECORD-1",
+    "record_id": "synthetic-confirmed-late",
+    "series_key": "synthetic-product-1",
+    "title": "Synthetic Product",
+    "identity": {"platform": "COUPANG_TW", "product_id": "P1", "sku_id": "S1", "seller_id": "SELLER1", "condition": "NEW", "package_signature": "1EA"},
+    "observed_at": "2026-11-04T02:00:00Z",
+    "source": {"source_candidate_id": "synthetic-user-file", "evidence_id": "EV-LATE", "evidence_scope": "USER_PROVIDED_FILE_IMPORT", "data_classification": "SYNTHETIC_FIXTURE"},
+    "base_price_twd": 99,
+    "coupon": {"coupon_id": "C50", "status": "CONFIRMED_APPLICABLE", "discount_twd": 50, "discount_scope": "UNIT", "already_included_in_base": false, "eligibility_profile": "SYNTHETIC_ALL", "valid_from": "2026-11-01T00:00:00Z", "valid_until": "2026-11-05T00:00:00Z", "target_product_id": "P1", "target_sku_id": "S1", "target_seller_id": "SELLER1", "pre_coupon_comparison_price_twd": null, "pre_coupon_comparison_evidence_id": null},
+    "minimum_purchase_quantity": 1,
+    "shipping": {"status": "UNKNOWN", "shipping_fee_twd": null, "mandatory_fee_twd": null}
+  },
+  {
+    "schema_version": "CDH-B12-IMPORT-RECORD-1",
+    "record_id": "synthetic-base-early",
+    "series_key": "synthetic-product-1",
+    "title": "Synthetic Product",
+    "identity": {"platform": "COUPANG_TW", "product_id": "P1", "sku_id": "S1", "seller_id": "SELLER1", "condition": "NEW", "package_signature": "1EA"},
+    "observed_at": "2026-11-03T02:00:00Z",
+    "source": {"source_candidate_id": "synthetic-user-file", "evidence_id": "EV-EARLY", "evidence_scope": "USER_PROVIDED_FILE_IMPORT", "data_classification": "SYNTHETIC_FIXTURE"},
+    "base_price_twd": 129,
+    "coupon": {"coupon_id": null, "status": "NONE", "discount_twd": null, "discount_scope": "NONE", "already_included_in_base": false, "eligibility_profile": null, "valid_from": null, "valid_until": null, "target_product_id": null, "target_sku_id": null, "target_seller_id": null, "pre_coupon_comparison_price_twd": null, "pre_coupon_comparison_evidence_id": null},
+    "minimum_purchase_quantity": 1,
+    "shipping": {"status": "KNOWN", "shipping_fee_twd": 0, "mandatory_fee_twd": 0}
+  }
+]

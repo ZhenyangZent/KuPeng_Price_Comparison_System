@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cdh_coupon_price_v4.schema.json",
+  "title": "CDH-COUPON-PRICE-V4 product",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["series_key", "title", "series_identity", "data_classification", "source_id", "observed_at", "base_price_twd", "before_coupon_price_twd", "coupon", "confirmed_coupon_price_twd", "possible_coupon_price_twd", "display_price_twd", "display_basis", "minimum_purchase_quantity", "minimum_item_spend_twd", "shipping_status", "required_total_twd", "source_permission", "quality_flags"],
+  "properties": {
+    "series_key": {"type": "string", "minLength": 1, "maxLength": 256},
+    "title": {"type": "string", "minLength": 1, "maxLength": 500},
+    "series_identity": {"$ref": "#/$defs/identity"},
+    "data_classification": {"const": "SYNTHETIC_FIXTURE"},
+    "source_id": {"type": ["string", "null"]},
+    "observed_at": {"type": ["string", "null"], "pattern": "Z$"},
+    "base_price_twd": {"type": ["integer", "null"], "minimum": 0},
+    "before_coupon_price_twd": {"type": ["integer", "null"], "minimum": 0},
+    "coupon": {"$ref": "#/$defs/coupon"},
+    "confirmed_coupon_price_twd": {"type": ["integer", "null"], "minimum": 0},
+    "possible_coupon_price_twd": {"type": ["integer", "null"], "minimum": 0},
+    "display_price_twd": {"type": ["integer", "null"], "minimum": 0},
+    "display_basis": {"enum": ["CONFIRMED_COUPON", "BASE_PRICE", "PRICE_UNAVAILABLE"]},
+    "minimum_purchase_quantity": {"type": "integer", "minimum": 1},
+    "minimum_item_spend_twd": {"type": ["integer", "null"], "minimum": 0},
+    "shipping_status": {"enum": ["KNOWN", "UNKNOWN"]},
+    "required_total_twd": {"type": ["integer", "null"], "minimum": 0},
+    "source_permission": {"$ref": "#/$defs/sourcePermission"},
+    "quality_flags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  },
+  "$defs": {
+    "identity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["platform", "product_id", "sku_id", "seller_id", "condition", "package_signature"],
+      "properties": {"platform": {"enum": ["COUPANG_TW", null]}, "product_id": {"type": ["string", "null"]}, "sku_id": {"type": ["string", "null"]}, "seller_id": {"type": ["string", "null"]}, "condition": {"type": ["string", "null"]}, "package_signature": {"type": ["string", "null"]}}
+    },
+    "coupon": {
+      "type": "object", "additionalProperties": false,
+      "required": ["coupon_id", "status", "discount_twd", "discount_scope", "already_included_in_base", "eligibility_profile", "valid_from", "valid_until", "scope_evidence", "pre_coupon_comparison_source", "evaluation_reasons"],
+      "properties": {"coupon_id": {"type": ["string", "null"]}, "status": {"enum": ["CONFIRMED_APPLICABLE", "CLAIM_REQUIRED", "UNVERIFIED", "INELIGIBLE", "EXPIRED", "UNKNOWN", "NONE"]}, "discount_twd": {"type": ["integer", "null"], "minimum": 0}, "discount_scope": {"enum": ["UNIT", "ORDER_TOTAL", "NONE", "UNKNOWN"]}, "already_included_in_base": {"type": "boolean"}, "eligibility_profile": {"type": ["string", "null"]}, "valid_from": {"type": ["string", "null"]}, "valid_until": {"type": ["string", "null"]}, "scope_evidence": {"type": ["string", "null"]}, "pre_coupon_comparison_source": {"type": ["string", "null"]}, "evaluation_reasons": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}}
+    },
+    "sourcePermission": {
+      "type": "object", "additionalProperties": false, "required": ["allowed", "state", "reason"],
+      "properties": {"allowed": {"type": "boolean"}, "state": {"type": "string"}, "reason": {"type": "string"}}
+    }
+  }
+}

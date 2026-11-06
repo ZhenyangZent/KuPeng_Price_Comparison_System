@@ -1,0 +1,596 @@
+{
+  "schema_version": "CDH-H04-SYNTHETIC-SITE-1",
+  "authority": "AUTHORIZED_SYNTHETIC_OFFLINE_R06_H_ONLY",
+  "products": [
+    {
+      "schema_version": "CDH-COUPON-PRICE-V4",
+      "title": "TEST_ONLY｜確認券折商品",
+      "series_identity": {
+        "platform": "COUPANG_TW",
+        "product_id": "SYN-P-CONFIRMED",
+        "sku_id": "SYN-SKU-CONFIRMED",
+        "seller_id": "SYN-SELLER-CONFIRMED",
+        "condition": "NEW",
+        "package_signature": "1x100ml"
+      },
+      "data_classification": "SYNTHETIC_FIXTURE",
+      "source_id": "SYN-SOURCE-CONFIRMED",
+      "observed_at": "2026-11-05T08:00:00Z",
+      "base_price_twd": 99,
+      "coupon": {
+        "coupon_id": "SYN-COUPON-CONFIRMED",
+        "status": "CONFIRMED_APPLICABLE",
+        "discount_twd": 50,
+        "already_included_in_base": false,
+        "discount_scope": "ITEM",
+        "eligibility_profile": "SYN-ELIGIBLE",
+        "valid_from": "2026-11-01T00:00:00Z",
+        "valid_until": "2026-11-30T23:59:59Z",
+        "scope_evidence": "SYN-TEST-EVIDENCE",
+        "bound_identity": {
+          "platform": "COUPANG_TW",
+          "product_id": "SYN-P-CONFIRMED",
+          "sku_id": "SYN-SKU-CONFIRMED",
+          "seller_id": "SYN-SELLER-CONFIRMED",
+          "condition": "NEW",
+          "package_signature": "1x100ml"
+        }
+      },
+      "confirmed_coupon_price_twd": 49,
+      "possible_coupon_price_twd": null,
+      "display_price_twd": 49,
+      "display_basis": "CONFIRMED_COUPON",
+      "shipping_status": "UNKNOWN",
+      "required_total_twd": null,
+      "history": {
+        "before_coupon": [
+          {
+            "observed_at": "2026-11-03T08:00:00Z",
+            "price_twd": 99,
+            "series_identity": {
+              "platform": "COUPANG_TW",
+              "product_id": "SYN-P-CONFIRMED",
+              "sku_id": "SYN-SKU-CONFIRMED",
+              "seller_id": "SYN-SELLER-CONFIRMED",
+              "condition": "NEW",
+              "package_signature": "1x100ml"
+            },
+            "source_id": "SYN-SOURCE-CONFIRMED-BASE",
+            "scope_evidence": "SYN-TEST-EVIDENCE"
+          }
+        ],
+        "confirmed_after_coupon": [
+          {
+            "observed_at": "2026-11-05T08:00:00Z",
+            "price_twd": 49,
+            "series_identity": {
+              "platform": "COUPANG_TW",
+              "product_id": "SYN-P-CONFIRMED",
+              "sku_id": "SYN-SKU-CONFIRMED",
+              "seller_id": "SYN-SELLER-CONFIRMED",
+              "condition": "NEW",
+              "package_signature": "1x100ml"
+            },
+            "source_id": "SYN-SOURCE-CONFIRMED-COUPON",
+            "scope_evidence": "SYN-TEST-EVIDENCE",
+            "coupon_status": "CONFIRMED_APPLICABLE",
+            "coupon_id": "SYN-COUPON-CONFIRMED",
+            "eligibility_profile": "SYN-ELIGIBLE"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": "CDH-COUPON-PRICE-V4",
+      "title": "TEST_ONLY｜尚未領券商品",
+      "series_identity": {
+        "platform": "COUPANG_TW",
+        "product_id": "SYN-P-CLAIM",
+        "sku_id": "SYN-SKU-CLAIM",
+        "seller_id": "SYN-SELLER-CLAIM",
+        "condition": "NEW",
+        "package_signature": "1x100ml"
+      },
+      "data_classification": "SYNTHETIC_FIXTURE",
+      "source_id": "SYN-SOURCE-CLAIM",
+      "observed_at": "2026-11-05T08:00:00Z",
+      "base_price_twd": 100,
+      "coupon": {
+        "coupon_id": "SYN-COUPON-CLAIM",
+        "status": "CLAIM_REQUIRED",
+        "discount_twd": 20,
+        "already_included_in_base": false,
+        "discount_scope": "ITEM",
+        "eligibility_profile": null,
+        "valid_from": "2026-11-01T00:00:00Z",
+        "valid_until": "2026-11-30T23:59:59Z",
+        "scope_evidence": null,
+        "bound_identity": {
+          "platform": "COUPANG_TW",
+          "product_id": "SYN-P-CLAIM",
+          "sku_id": "SYN-SKU-CLAIM",
+          "seller_id": "SYN-SELLER-CLAIM",
+          "condition": "NEW",
+          "package_signature": "1x100ml"
+        }
+      },
+      "confirmed_coupon_price_twd": null,
+      "possible_coupon_price_twd": 80,
+      "display_price_twd": 100,
+      "display_basis": "BASE_PRICE",
+      "shipping_status": "UNKNOWN",
+      "required_total_twd": null,
+      "history": {
+        "before_coupon": [
+          {
+            "observed_at": "2026-11-03T08:00:00Z",
+            "price_twd": 100,
+            "series_identity": {
+              "platform": "COUPANG_TW",
+              "product_id": "SYN-P-CLAIM",
+              "sku_id": "SYN-SKU-CLAIM",
+              "seller_id": "SYN-SELLER-CLAIM",
+              "condition": "NEW",
+              "package_signature": "1x100ml"
+            },
+            "source_id": "SYN-SOURCE-CLAIM-BASE",
+            "scope_evidence": "SYN-TEST-EVIDENCE"
+          }
+        ],
+        "confirmed_after_coupon": []
+      }
+    },
+    {
+      "schema_version": "CDH-COUPON-PRICE-V4",
+      "title": "TEST_ONLY｜過期券商品",
+      "series_identity": {
+        "platform": "COUPANG_TW",
+        "product_id": "SYN-P-EXPIRED",
+        "sku_id": "SYN-SKU-EXPIRED",
+        "seller_id": "SYN-SELLER-EXPIRED",
+        "condition": "NEW",
+        "package_signature": "1x100ml"
+      },
+      "data_classification": "SYNTHETIC_FIXTURE",
+      "source_id": "SYN-SOURCE-EXPIRED",
+      "observed_at": "2026-11-05T08:00:00Z",
+      "base_price_twd": 120,
+      "coupon": {
+        "coupon_id": "SYN-COUPON-EXPIRED",
+        "status": "EXPIRED",
+        "discount_twd": 30,
+        "already_included_in_base": false,
+        "discount_scope": "ITEM",
+        "eligibility_profile": null,
+        "valid_from": "2026-11-01T00:00:00Z",
+        "valid_until": "2026-11-04T00:00:00Z",
+        "scope_evidence": null,
+        "bound_identity": {
+          "platform": "COUPANG_TW",
+          "product_id": "SYN-P-EXPIRED",
+          "sku_id": "SYN-SKU-EXPIRED",
+          "seller_id": "SYN-SELLER-EXPIRED",
+          "condition": "NEW",
+          "package_signature": "1x100ml"
+        }
+      },
+      "confirmed_coupon_price_twd": null,
+      "possible_coupon_price_twd": 90,
+      "display_price_twd": 120,
+      "display_basis": "BASE_PRICE",
+      "shipping_status": "UNKNOWN",
+      "required_total_twd": null,
+      "history": {
+        "before_coupon": [
+          {
+            "observed_at": "2026-11-03T08:00:00Z",
+            "price_twd": 120,
+            "series_identity": {
+              "platform": "COUPANG_TW",
+              "product_id": "SYN-P-EXPIRED",
+              "sku_id": "SYN-SKU-EXPIRED",
+              "seller_id": "SYN-SELLER-EXPIRED",
+              "condition": "NEW",
+              "package_signature": "1x100ml"
+            },
+            "source_id": "SYN-SOURCE-EXPIRED-BASE",
+            "scope_evidence": "SYN-TEST-EVIDENCE"
+          }
+        ],
+        "confirmed_after_coupon": []
+      }
+    },
+    {
+      "schema_version": "CDH-COUPON-PRICE-V4",
+      "title": "TEST_ONLY｜不同賣家券商品",
+      "series_identity": {
+        "platform": "COUPANG_TW",
+        "product_id": "SYN-P-SELLER",
+        "sku_id": "SYN-SKU-SELLER",
+        "seller_id": "SYN-SELLER-SELLER",
+        "condition": "NEW",
+        "package_signature": "1x100ml"
+      },
+      "data_classification": "SYNTHETIC_FIXTURE",
+      "source_id": "SYN-SOURCE-SELLER",
+      "observed_at": "2026-11-05T08:00:00Z",
+      "base_price_twd": 110,
+      "coupon": {
+        "coupon_id": "SYN-COUPON-SELLER",
+        "status": "CONFIRMED_APPLICABLE",
+        "discount_twd": 40,
+        "already_included_in_base": false,
+        "discount_scope": "ITEM",
+        "eligibility_profile": "SYN-ELIGIBLE",
+        "valid_from": "2026-11-01T00:00:00Z",
+        "valid_until": "2026-11-30T23:59:59Z",
+        "scope_evidence": "SYN-TEST-EVIDENCE",
+        "bound_identity": {
+          "platform": "COUPANG_TW",
+          "product_id": "SYN-P-SELLER",
+          "sku_id": "SYN-SKU-SELLER",
+          "seller_id": "SYN-OTHER-SELLER",
+          "condition": "NEW",
+          "package_signature": "1x100ml"
+        }
+      },
+      "confirmed_coupon_price_twd": null,
+      "possible_coupon_price_twd": 70,
+      "display_price_twd": 110,
+      "display_basis": "BASE_PRICE",
+      "shipping_status": "UNKNOWN",
+      "required_total_twd": null,
+      "history": {
+        "before_coupon": [
+          {
+            "observed_at": "2026-11-03T08:00:00Z",
+            "price_twd": 110,
+            "series_identity": {
+              "platform": "COUPANG_TW",
+              "product_id": "SYN-P-SELLER",
+              "sku_id": "SYN-SKU-SELLER",
+              "seller_id": "SYN-SELLER-SELLER",
+              "condition": "NEW",
+              "package_signature": "1x100ml"
+            },
+            "source_id": "SYN-SOURCE-SELLER-BASE",
+            "scope_evidence": "SYN-TEST-EVIDENCE"
+          }
+        ],
+        "confirmed_after_coupon": []
+      }
+    },
+    {
+      "schema_version": "CDH-COUPON-PRICE-V4",
+      "title": "TEST_ONLY｜空歷史商品",
+      "series_identity": {
+        "platform": "COUPANG_TW",
+        "product_id": "SYN-P-EMPTY",
+        "sku_id": "SYN-SKU-EMPTY",
+        "seller_id": "SYN-SELLER-EMPTY",
+        "condition": "NEW",
+        "package_signature": "1x100ml"
+      },
+      "data_classification": "SYNTHETIC_FIXTURE",
+      "source_id": "SYN-SOURCE-EMPTY",
+      "observed_at": "2026-11-05T08:00:00Z",
+      "base_price_twd": 88,
+      "coupon": {
+        "coupon_id": "SYN-COUPON-EMPTY",
+        "status": "NONE",
+        "discount_twd": 0,
+        "already_included_in_base": false,
+        "discount_scope": "ITEM",
+        "eligibility_profile": null,
+        "valid_from": "2026-11-01T00:00:00Z",
+        "valid_until": "2026-11-30T23:59:59Z",
+        "scope_evidence": null,
+        "bound_identity": {
+          "platform": "COUPANG_TW",
+          "product_id": "SYN-P-EMPTY",
+          "sku_id": "SYN-SKU-EMPTY",
+          "seller_id": "SYN-SELLER-EMPTY",
+          "condition": "NEW",
+          "package_signature": "1x100ml"
+        }
+      },
+      "confirmed_coupon_price_twd": null,
+      "possible_coupon_price_twd": null,
+      "display_price_twd": 88,
+      "display_basis": "BASE_PRICE",
+      "shipping_status": "UNKNOWN",
+      "required_total_twd": null,
+      "history": {
+        "before_coupon": [],
+        "confirmed_after_coupon": []
+      }
+    },
+    {
+      "schema_version": "CDH-COUPON-PRICE-V4",
+      "title": "TEST_ONLY｜零元券後商品",
+      "series_identity": {
+        "platform": "COUPANG_TW",
+        "product_id": "SYN-P-ZERO",
+        "sku_id": "SYN-SKU-ZERO",
+        "seller_id": "SYN-SELLER-ZERO",
+        "condition": "NEW",
+        "package_signature": "1x100ml"
+      },
+      "data_classification": "SYNTHETIC_FIXTURE",
+      "source_id": "SYN-SOURCE-ZERO",
+      "observed_at": "2026-11-05T08:00:00Z",
+      "base_price_twd": 50,
+      "coupon": {
+        "coupon_id": "SYN-COUPON-ZERO",
+        "status": "CONFIRMED_APPLICABLE",
+        "discount_twd": 50,
+        "already_included_in_base": false,
+        "discount_scope": "ITEM",
+        "eligibility_profile": "SYN-ELIGIBLE",
+        "valid_from": "2026-11-01T00:00:00Z",
+        "valid_until": "2026-11-30T23:59:59Z",
+        "scope_evidence": "SYN-TEST-EVIDENCE",
+        "bound_identity": {
+          "platform": "COUPANG_TW",
+          "product_id": "SYN-P-ZERO",
+          "sku_id": "SYN-SKU-ZERO",
+          "seller_id": "SYN-SELLER-ZERO",
+          "condition": "NEW",
+          "package_signature": "1x100ml"
+        }
+      },
+      "confirmed_coupon_price_twd": 0,
+      "possible_coupon_price_twd": null,
+      "display_price_twd": 0,
+      "display_basis": "CONFIRMED_COUPON",
+      "shipping_status": "UNKNOWN",
+      "required_total_twd": null,
+      "history": {
+        "before_coupon": [
+          {
+            "observed_at": "2026-11-03T08:00:00Z",
+            "price_twd": 50,
+            "series_identity": {
+              "platform": "COUPANG_TW",
+              "product_id": "SYN-P-ZERO",
+              "sku_id": "SYN-SKU-ZERO",
+              "seller_id": "SYN-SELLER-ZERO",
+              "condition": "NEW",
+              "package_signature": "1x100ml"
+            },
+            "source_id": "SYN-SOURCE-ZERO-BASE",
+            "scope_evidence": "SYN-TEST-EVIDENCE"
+          }
+        ],
+        "confirmed_after_coupon": [
+          {
+            "observed_at": "2026-11-05T08:00:00Z",
+            "price_twd": 0,
+            "series_identity": {
+              "platform": "COUPANG_TW",
+              "product_id": "SYN-P-ZERO",
+              "sku_id": "SYN-SKU-ZERO",
+              "seller_id": "SYN-SELLER-ZERO",
+              "condition": "NEW",
+              "package_signature": "1x100ml"
+            },
+            "source_id": "SYN-SOURCE-ZERO-COUPON",
+            "scope_evidence": "SYN-TEST-EVIDENCE",
+            "coupon_status": "CONFIRMED_APPLICABLE",
+            "coupon_id": "SYN-COUPON-ZERO",
+            "eligibility_profile": "SYN-ELIGIBLE"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": "CDH-COUPON-PRICE-V4",
+      "title": "TEST_ONLY｜價格未知商品",
+      "series_identity": {
+        "platform": "COUPANG_TW",
+        "product_id": "SYN-P-UNKNOWN",
+        "sku_id": "SYN-SKU-UNKNOWN",
+        "seller_id": "SYN-SELLER-UNKNOWN",
+        "condition": "NEW",
+        "package_signature": "1x100ml"
+      },
+      "data_classification": "SYNTHETIC_FIXTURE",
+      "source_id": "SYN-SOURCE-UNKNOWN",
+      "observed_at": "2026-11-05T08:00:00Z",
+      "base_price_twd": null,
+      "coupon": {
+        "coupon_id": "SYN-COUPON-UNKNOWN",
+        "status": "UNKNOWN",
+        "discount_twd": 0,
+        "already_included_in_base": false,
+        "discount_scope": "ITEM",
+        "eligibility_profile": null,
+        "valid_from": "2026-11-01T00:00:00Z",
+        "valid_until": "2026-11-30T23:59:59Z",
+        "scope_evidence": null,
+        "bound_identity": {
+          "platform": "COUPANG_TW",
+          "product_id": "SYN-P-UNKNOWN",
+          "sku_id": "SYN-SKU-UNKNOWN",
+          "seller_id": "SYN-SELLER-UNKNOWN",
+          "condition": "NEW",
+          "package_signature": "1x100ml"
+        }
+      },
+      "confirmed_coupon_price_twd": null,
+      "possible_coupon_price_twd": null,
+      "display_price_twd": null,
+      "display_basis": "UNAVAILABLE",
+      "shipping_status": "UNKNOWN",
+      "required_total_twd": null,
+      "history": {
+        "before_coupon": [],
+        "confirmed_after_coupon": []
+      }
+    },
+    {
+      "schema_version": "CDH-COUPON-PRICE-V4",
+      "title": "TEST_ONLY｜券已含於基價",
+      "series_identity": {
+        "platform": "COUPANG_TW",
+        "product_id": "SYN-P-INCLUDED",
+        "sku_id": "SYN-SKU-INCLUDED",
+        "seller_id": "SYN-SELLER-INCLUDED",
+        "condition": "NEW",
+        "package_signature": "1x100ml"
+      },
+      "data_classification": "SYNTHETIC_FIXTURE",
+      "source_id": "SYN-SOURCE-INCLUDED",
+      "observed_at": "2026-11-05T08:00:00Z",
+      "base_price_twd": 49,
+      "coupon": {
+        "coupon_id": "SYN-COUPON-INCLUDED",
+        "status": "CONFIRMED_APPLICABLE",
+        "discount_twd": 50,
+        "already_included_in_base": true,
+        "discount_scope": "ITEM",
+        "eligibility_profile": "SYN-ELIGIBLE",
+        "valid_from": "2026-11-01T00:00:00Z",
+        "valid_until": "2026-11-30T23:59:59Z",
+        "scope_evidence": "SYN-TEST-EVIDENCE",
+        "bound_identity": {
+          "platform": "COUPANG_TW",
+          "product_id": "SYN-P-INCLUDED",
+          "sku_id": "SYN-SKU-INCLUDED",
+          "seller_id": "SYN-SELLER-INCLUDED",
+          "condition": "NEW",
+          "package_signature": "1x100ml"
+        }
+      },
+      "confirmed_coupon_price_twd": 49,
+      "possible_coupon_price_twd": null,
+      "display_price_twd": 49,
+      "display_basis": "CONFIRMED_COUPON",
+      "shipping_status": "UNKNOWN",
+      "required_total_twd": null,
+      "history": {
+        "before_coupon": [
+          {
+            "observed_at": "2026-11-03T08:00:00Z",
+            "price_twd": 49,
+            "series_identity": {
+              "platform": "COUPANG_TW",
+              "product_id": "SYN-P-INCLUDED",
+              "sku_id": "SYN-SKU-INCLUDED",
+              "seller_id": "SYN-SELLER-INCLUDED",
+              "condition": "NEW",
+              "package_signature": "1x100ml"
+            },
+            "source_id": "SYN-SOURCE-INCLUDED-BASE",
+            "scope_evidence": "SYN-TEST-EVIDENCE"
+          }
+        ],
+        "confirmed_after_coupon": [
+          {
+            "observed_at": "2026-11-05T08:00:00Z",
+            "price_twd": 49,
+            "series_identity": {
+              "platform": "COUPANG_TW",
+              "product_id": "SYN-P-INCLUDED",
+              "sku_id": "SYN-SKU-INCLUDED",
+              "seller_id": "SYN-SELLER-INCLUDED",
+              "condition": "NEW",
+              "package_signature": "1x100ml"
+            },
+            "source_id": "SYN-SOURCE-INCLUDED-COUPON",
+            "scope_evidence": "SYN-TEST-EVIDENCE",
+            "coupon_status": "CONFIRMED_APPLICABLE",
+            "coupon_id": "SYN-COUPON-INCLUDED",
+            "eligibility_profile": "SYN-ELIGIBLE"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": "CDH-COUPON-PRICE-V4",
+      "title": "TEST_ONLY｜最低兩件整筆券",
+      "series_identity": {
+        "platform": "COUPANG_TW",
+        "product_id": "SYN-P-ORDER",
+        "sku_id": "SYN-SKU-ORDER",
+        "seller_id": "SYN-SELLER-ORDER",
+        "condition": "NEW",
+        "package_signature": "1x100ml"
+      },
+      "data_classification": "SYNTHETIC_FIXTURE",
+      "source_id": "SYN-SOURCE-ORDER",
+      "observed_at": "2026-11-05T08:00:00Z",
+      "base_price_twd": 100,
+      "coupon": {
+        "coupon_id": "SYN-COUPON-ORDER",
+        "status": "CONFIRMED_APPLICABLE",
+        "discount_twd": 50,
+        "already_included_in_base": false,
+        "discount_scope": "ORDER",
+        "eligibility_profile": "SYN-ELIGIBLE",
+        "valid_from": "2026-11-01T00:00:00Z",
+        "valid_until": "2026-11-30T23:59:59Z",
+        "scope_evidence": "SYN-TEST-EVIDENCE",
+        "bound_identity": {
+          "platform": "COUPANG_TW",
+          "product_id": "SYN-P-ORDER",
+          "sku_id": "SYN-SKU-ORDER",
+          "seller_id": "SYN-SELLER-ORDER",
+          "condition": "NEW",
+          "package_signature": "1x100ml"
+        }
+      },
+      "confirmed_coupon_price_twd": 75,
+      "possible_coupon_price_twd": null,
+      "display_price_twd": 75,
+      "display_basis": "CONFIRMED_COUPON",
+      "shipping_status": "UNKNOWN",
+      "required_total_twd": null,
+      "history": {
+        "before_coupon": [
+          {
+            "observed_at": "2026-11-03T08:00:00Z",
+            "price_twd": 100,
+            "series_identity": {
+              "platform": "COUPANG_TW",
+              "product_id": "SYN-P-ORDER",
+              "sku_id": "SYN-SKU-ORDER",
+              "seller_id": "SYN-SELLER-ORDER",
+              "condition": "NEW",
+              "package_signature": "1x100ml"
+            },
+            "source_id": "SYN-SOURCE-ORDER-BASE",
+            "scope_evidence": "SYN-TEST-EVIDENCE"
+          }
+        ],
+        "confirmed_after_coupon": [
+          {
+            "observed_at": "2026-11-05T08:00:00Z",
+            "price_twd": 75,
+            "series_identity": {
+              "platform": "COUPANG_TW",
+              "product_id": "SYN-P-ORDER",
+              "sku_id": "SYN-SKU-ORDER",
+              "seller_id": "SYN-SELLER-ORDER",
+              "condition": "NEW",
+              "package_signature": "1x100ml"
+            },
+            "source_id": "SYN-SOURCE-ORDER-COUPON",
+            "scope_evidence": "SYN-TEST-EVIDENCE",
+            "coupon_status": "CONFIRMED_APPLICABLE",
+            "coupon_id": "SYN-COUPON-ORDER",
+            "eligibility_profile": "SYN-ELIGIBLE"
+          }
+        ]
+      },
+      "minimum_quantity": 2,
+      "required_merchandise_total_twd": 150
+    }
+  ],
+  "invalid_timestamp_case": {
+    "id": "INVALID_TIME",
+    "title": "TEST_ONLY｜非法時間戳",
+    "observed_at": "2026-11-03T010:00:00Z",
+    "error_code": "INVALID_TIMESTAMP"
+  }
+}

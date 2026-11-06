@@ -1,0 +1,105 @@
+{
+  "schema_version": "CDH-AFFILIATE-PROVIDER-CONTRACT-V1",
+  "provider_id": "coupang_tw_partners",
+  "market": "TW",
+  "as_of": "2026-11-05",
+  "provider_state": "PENDING_OFFICIAL_DOCS",
+  "source_discovery_status": "SOURCE_BLOCKED",
+  "capabilities": {
+    "partners_membership": "VERIFIED",
+    "affiliate_attribution": "VERIFIED",
+    "payout_tax_workflow": "VERIFIED",
+    "url_conversion": "UNKNOWN",
+    "exact_variant_binding": "UNKNOWN",
+    "product_search": "UNKNOWN",
+    "product_feed": "UNKNOWN",
+    "price_data": "UNKNOWN",
+    "inventory_data": "UNKNOWN",
+    "promotion_data": "UNKNOWN",
+    "image_redisplay": "UNKNOWN",
+    "caching": "UNKNOWN",
+    "historical_price_derivation": "UNKNOWN",
+    "commission_eligibility": "UNKNOWN",
+    "tw_rate_limit": "UNKNOWN",
+    "tw_disclosure_rule": "UNKNOWN"
+  },
+  "conversion": {
+    "enabled": false,
+    "endpoint": null,
+    "input_host_allowlist": [],
+    "output_host_allowlist": [],
+    "authentication_contract": null,
+    "rate_limit": null,
+    "cache_ttl_seconds": null
+  },
+  "request": {
+    "source_url": null,
+    "source_product_identity": {
+      "product_id": null,
+      "variant_id": null,
+      "seller_item_id": null,
+      "sku": null
+    },
+    "user_initiated_click_required": true
+  },
+  "response": {
+    "affiliate_url": null,
+    "verified_product_match": false,
+    "commission_eligible": null,
+    "disclosure_text": null,
+    "generated_at": null,
+    "expires_at": null,
+    "error_code": "PENDING_OFFICIAL_DOCS"
+  },
+  "gates": {
+    "cta_enabled": false,
+    "tw_capability_verified": false,
+    "provider_account_eligible": false,
+    "host_allowlist_verified": false,
+    "exact_match_verified": false,
+    "ttl_and_revocation_verified": false,
+    "disclosure_verified_for_tw": false,
+    "user_intent_verified": false
+  },
+  "transaction_boundaries": {
+    "auto_open": false,
+    "coupon_claim": false,
+    "add_to_cart": false,
+    "checkout": false,
+    "order": false,
+    "payment": false
+  },
+  "evidence": [
+    {
+      "evidence_id": "TW_PRIVACY_V11_17_MEMBERSHIP_ATTRIBUTION_PAYOUT",
+      "market": "TW",
+      "authority_class": "COUPANG_OFFICIAL",
+      "url": "https://privacy.coupang.com/tc/privacynotice/ctpn/",
+      "document_version": "11.17",
+      "effective_date": "2026-11-03",
+      "supports": [
+        "partners_membership",
+        "affiliate_attribution",
+        "payout_tax_workflow"
+      ]
+    },
+    {
+      "evidence_id": "KR_PARTNERS_GUIDE_2024_12_REFERENCE_ONLY",
+      "market": "KR",
+      "authority_class": "COUPANG_OFFICIAL",
+      "url": "https://partners.coupangcdn.com/partners-guide/partners-guide-20241216163254.pdf",
+      "document_version": "2024-12",
+      "effective_date": null,
+      "supports": [],
+      "taiwan_applicability": "UNKNOWN"
+    }
+  ],
+  "prohibitions": [
+    "NO_FAKE_ENDPOINT",
+    "NO_DIRECT_PRODUCT_URL_FALLBACK_AS_AFFILIATE",
+    "NO_KR_RULE_TRANSPLANT_TO_TW",
+    "NO_SELLER_API_AS_AFFILIATE_PROVIDER",
+    "NO_PROVIDER_DATA_PRICE_HISTORY_WITHOUT_RIGHTS",
+    "NO_LIVE_REQUEST_BEFORE_AUTHORITY"
+  ]
+}

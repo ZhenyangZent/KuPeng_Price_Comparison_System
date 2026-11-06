@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cdh_b12_import_record.schema.json",
+  "title": "CDH B12 isolated import record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_id", "series_key", "title", "identity", "observed_at", "source", "base_price_twd", "coupon", "minimum_purchase_quantity", "shipping"],
+  "properties": {
+    "schema_version": {"const": "CDH-B12-IMPORT-RECORD-1"},
+    "record_id": {"type": "string", "minLength": 1, "maxLength": 256},
+    "series_key": {"type": "string", "minLength": 1, "maxLength": 256},
+    "title": {"type": "string", "minLength": 1, "maxLength": 500},
+    "identity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["platform", "product_id", "sku_id", "seller_id", "condition", "package_signature"],
+      "properties": {
+        "platform": {"const": "COUPANG_TW"},
+        "product_id": {"type": "string", "minLength": 1, "maxLength": 256},
+        "sku_id": {"type": "string", "minLength": 1, "maxLength": 256},
+        "seller_id": {"type": "string", "minLength": 1, "maxLength": 256},
+        "condition": {"type": "string", "minLength": 1, "maxLength": 256},
+        "package_signature": {"type": "string", "minLength": 1, "maxLength": 256}
+      }
+    },
+    "observed_at": {"type": "string", "pattern": "Z$"},
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_candidate_id", "evidence_id", "evidence_scope", "data_classification"],
+      "properties": {
+        "source_candidate_id": {"type": "string", "minLength": 1, "maxLength": 256},
+        "evidence_id": {"type": "string", "minLength": 1, "maxLength": 256},
+        "evidence_scope": {"const": "USER_PROVIDED_FILE_IMPORT"},
+        "data_classification": {"enum": ["SYNTHETIC_FIXTURE", "USER_PROVIDED_OBSERVATION"]}
+      }
+    },
+    "base_price_twd": {"type": "integer", "minimum": 0},
+    "coupon": {
+      "type": "object", "additionalProperties": false,
+      "required": ["coupon_id", "status", "discount_twd", "discount_scope", "already_included_in_base", "eligibility_profile", "valid_from", "valid_until", "target_product_id", "target_sku_id", "target_seller_id", "pre_coupon_comparison_price_twd", "pre_coupon_comparison_evidence_id"],
+      "properties": {
+        "coupon_id": {"type": ["string", "null"]},
+        "status": {"enum": ["CONFIRMED_APPLICABLE", "CLAIM_REQUIRED", "UNVERIFIED", "INELIGIBLE", "EXPIRED", "UNKNOWN", "NONE"]},
+        "discount_twd": {"type": ["integer", "null"], "minimum": 0},
+        "discount_scope": {"enum": ["UNIT", "ORDER_TOTAL", "NONE", "UNKNOWN"]},
+        "already_included_in_base": {"type": "boolean"},
+        "eligibility_profile": {"type": ["string", "null"]},
+        "valid_from": {"type": ["string", "null"]},
+        "valid_until": {"type": ["string", "null"]},
+        "target_product_id": {"type": ["string", "null"]},
+        "target_sku_id": {"type": ["string", "null"]},
+        "target_seller_id": {"type": ["string", "null"]},
+        "pre_coupon_comparison_price_twd": {"type": ["integer", "null"], "minimum": 0},
+        "pre_coupon_comparison_evidence_id": {"type": ["string", "null"]}
+      }
+    },
+    "minimum_purchase_quantity": {"type": "integer", "minimum": 1},
+    "shipping": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "shipping_fee_twd", "mandatory_fee_twd"],
+      "properties": {
+        "status": {"enum": ["KNOWN", "UNKNOWN"]},
+        "shipping_fee_twd": {"type": ["integer", "null"], "minimum": 0},
+        "mandatory_fee_twd": {"type": ["integer", "null"], "minimum": 0}
+      }
+    }
+  }
+}

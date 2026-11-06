@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cdh:price-quality-adapter-v3",
+  "title": "CDH-PRICE-QUALITY-ADAPTER-V3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "wire_contract", "source_readmodel_contract", "series_key", "identity", "coverage", "source_permission", "source_freshness", "period_low_twd", "period_low_label", "new_low_valid", "new_low_reason", "raw_observation_count", "valid_observation_count", "daily_sample_count", "history_page_limit", "history_truncated", "data_version", "incompatibility_reasons"],
+  "properties": {
+    "schema_version": {"const": "CDH-PRICE-QUALITY-ADAPTER-V3"},
+    "wire_contract": {"const": "CDH-WEB-CONTRACT-V2"},
+    "source_readmodel_contract": {"const": "CDH-PRICE-QUALITY-READMODEL-1"},
+    "series_key": {"type": "string", "minLength": 1},
+    "identity": {"type": "object"},
+    "coverage": {"type": "object"},
+    "source_permission": {"type": "object"},
+    "source_freshness": {"type": "object"},
+    "period_low_twd": {"type": ["integer", "null"], "minimum": 0},
+    "period_low_label": {"const": "觀測期間最低價"},
+    "new_low_valid": {"type": "boolean"},
+    "new_low_reason": {"type": "string"},
+    "raw_observation_count": {"type": "integer", "minimum": 0},
+    "valid_observation_count": {"type": "integer", "minimum": 0},
+    "daily_sample_count": {"type": "integer", "minimum": 0},
+    "history_page_limit": {"const": 500},
+    "history_truncated": {"type": "boolean"},
+    "data_version": {"type": "string"},
+    "incompatibility_reasons": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  }
+}

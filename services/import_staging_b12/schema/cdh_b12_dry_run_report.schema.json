@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cdh_b12_dry_run_report.schema.json",
+  "title": "B12 immutable dry-run report envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "mode", "input_sha256", "as_of", "record_count", "counts", "outcomes", "timelines", "database_write_count", "collection_authorized"],
+  "properties": {
+    "schema_version": {"const": "CDH-B12-DRY-RUN-REPORT-1"},
+    "mode": {"const": "IMMUTABLE_DRY_RUN_PREVIEW"},
+    "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "as_of": {"type": "string", "pattern": "Z$"},
+    "record_count": {"type": "integer", "minimum": 0, "maximum": 10000},
+    "counts": {"type": "object"},
+    "outcomes": {"type": "array", "maxItems": 10000},
+    "timelines": {"type": "object"},
+    "database_write_count": {"const": 0},
+    "collection_authorized": {"const": false}
+  }
+}
