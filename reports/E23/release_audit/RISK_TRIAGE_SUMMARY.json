@@ -1,0 +1,19 @@
+{
+  "schema": "CDH-E23-RISK-TRIAGE-SUMMARY-1",
+  "baseline_historical_releases": 140,
+  "prior_published_assets": 6,
+  "blocked_releases_triaged": 134,
+  "triage_batches": 7,
+  "decision_counts": {
+    "DEEP_CONTENT_AND_PROVENANCE_REVIEW": 50,
+    "DEEP_TEXT_AND_MANIFEST_REVIEW": 31,
+    "DERIVATIVE_REDACTION_REVIEW": 9,
+    "ORIGINAL_EXCLUDE_DERIVATIVE_ONLY": 44
+  },
+  "new_original_publication_approvals": 0,
+  "zip_member_payloads_opened_by_triage": 0,
+  "classification_is_final_safety_approval": false,
+  "new_release_snapshot": "incremental_snapshot_000.json",
+  "new_release_snapshot_count": 4,
+  "new_release_snapshot_created_before_ledger_reconciliation": true
+}

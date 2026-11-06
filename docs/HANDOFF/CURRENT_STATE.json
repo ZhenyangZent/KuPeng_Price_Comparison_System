@@ -21,11 +21,13 @@
   },
   "h13": {
     "task_id": "CDH-H13-LOCAL-TRIAL-FIRST-USE-001",
-    "central_decision": "VALID_FAILURE_REPORT_TEST_HARNESS_REWORK_REQUIRED",
+    "filename": "CDH_H_R13_002_REVIEW.zip",
+    "sha256": "2ba4ef61975e9350cb10cc6aa5551d16b2615a92c8886ea86b8207e1750f6682",
+    "central_decision": "PASS_SCOPED_COMPOSITE_EVIDENCE",
     "central_received_ack": true,
-    "product_pass": false,
-    "local_candidate_status": "FAIL_H_TEST_STALE_RESULT_RACE",
-    "local_candidate_product_defect_determination": "NOT_ESTABLISHED"
+    "product_pass": true,
+    "evidence_scope": "REV1 failure preserved plus targeted REV2 rerun; not a single full E2E rerun",
+    "rev1_failure_preserved": true
   },
   "e23_revision_2": {
     "filename": "CDH_E_R13_002_REVIEW.zip",
@@ -35,5 +37,14 @@
   },
   "affiliate_enabled": false,
   "real_coupang_collection_authorized": false,
-  "production_database_write_authorized": false
+  "production_database_write_authorized": false,
+  "e23_revision_3": {
+    "filename": "CDH_E_R13_003_REVIEW.zip",
+    "sha256": "392a6dface7057b3ebe6203fba78c9f8d5a7b53c09a7693327d293721296134f",
+    "central_decision": "PARTIAL_PASS_SCOPED",
+    "central_received_ack": true
+  },
+  "historical_release_audit_baseline_count": 140,
+  "historical_release_incremental_snapshot_count": 1,
+  "historical_release_risk_triage_count": 134
 }

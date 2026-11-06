@@ -1,6 +1,6 @@
 # Coupang Deal Hunter｜酷澎比價系統
 
-目前最新中央限定驗收基準是 A17 Windows 本機整合試用版 `CDH_A_R13_001_REVIEW.zip`，SHA-256 `5de6b85e72767e8135b7ff0e6e3acb534965d5f636f61eea918cb082b02a8237`，裁決 `PASS_SCOPED`。H13 REV1 已由中央確認為有效失敗報告，搜尋測試工具待修訂，不能宣稱首次試用產品流程全線通過。正式酷澎商品擷取、推薦／分潤及公開部署仍未授權。
+目前最新中央限定驗收基準是 A17 Windows 本機整合試用版 `CDH_A_R13_001_REVIEW.zip`，SHA-256 `5de6b85e72767e8135b7ff0e6e3acb534965d5f636f61eea918cb082b02a8237`，裁決 `PASS_SCOPED`。H13 REV2 的中央裁決為 `PASS_SCOPED_COMPOSITE_EVIDENCE`；REV1 原始 FAIL 與 REV2 定點補驗前失敗均保留，不宣稱單次完整 E2E PASS。正式酷澎商品擷取、推薦／分潤及公開部署仍未授權。
 
 Windows 10／11 與 Python 3.11 以上的試用方式見 [A17 首次使用說明](docs/user-guides/WINDOWS_TRIAL_FIRST_USE_A17.md)。在完整 A17 Runtime 的專案根目錄使用 `Start-CDH-Trial.cmd`、`Status-CDH-Trial.cmd`、`Stop-CDH-Trial.cmd`；網址為 `http://127.0.0.1:4174/?mode=synthetic&contract=v4`。私人歷史位於 `data/A17_private_history/`，不得提交 GitHub。GitHub 鏡像如未包含經安全檢查的完整 Runtime，不能僅靠鏡像宣稱可獨立啟動。
 
@@ -40,3 +40,4 @@ python -m cdh_core.demo --fixtures tests\fixtures\demo_cases.json --db review\R0
 - `demo.py`：合成 fixture CLI 與 mock delivery。
 
 `v0.5.0` 的 quote、policy context、history baseline、decision、current state 與 event 均綁定完整 scenario scope。最早依賴期限會一路縮短到 event；任意字串不能將費用或稅費歸零；只有版本化 allow-list 內的完整購買價格基準能進入通知政策；入隊要求政策引擎對完整證據做程序內核准。產品標記：`OFFLINE_ONLY`。`DELIVERED` 只代表 mock sink 已完成，不代表外部 exactly-once。
+

@@ -1,0 +1,77 @@
+{
+  "batch": 0,
+  "batch_size": 20,
+  "historical_total": 4,
+  "items": [
+    {
+      "actual_sha256": "2c685f53304a60ed7a62cd961cf000059ea1417e1b43b278fd808645b0499470",
+      "bytes": 185549,
+      "content_checked_count": 25,
+      "crc": "PASS",
+      "expected_sha256": "2c685f53304a60ed7a62cd961cf000059ea1417e1b43b278fd808645b0499470",
+      "filename": "CDH_E_R13_001_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 25,
+      "nested_zip_count": 0,
+      "reasons": [
+        "STRICT_MANIFEST_OR_PATH_FAIL_HandoffError"
+      ],
+      "sensitive_member_count": 0,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "f1d9b8a8d2b46c528908454161d65ef6361aef3575b28079329dc03ee12b0c39",
+      "bytes": 186403,
+      "content_checked_count": 26,
+      "crc": "PASS",
+      "expected_sha256": "f1d9b8a8d2b46c528908454161d65ef6361aef3575b28079329dc03ee12b0c39",
+      "filename": "CDH_E_R13_002_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "PASS",
+      "member_count": 26,
+      "nested_zip_count": 0,
+      "reasons": [],
+      "sensitive_member_count": 0,
+      "status": "ELIGIBLE_FOR_PUBLICATION_REVIEW"
+    },
+    {
+      "actual_sha256": "392a6dface7057b3ebe6203fba78c9f8d5a7b53c09a7693327d293721296134f",
+      "bytes": 80428,
+      "content_checked_count": 25,
+      "crc": "PASS",
+      "expected_sha256": "392a6dface7057b3ebe6203fba78c9f8d5a7b53c09a7693327d293721296134f",
+      "filename": "CDH_E_R13_003_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "PASS",
+      "member_count": 25,
+      "nested_zip_count": 0,
+      "reasons": [
+        "UNREGISTERED_OR_MISMATCHED_LEDGER_IDENTITY"
+      ],
+      "sensitive_member_count": 0,
+      "status": "BLOCKED_FOR_UPLOAD"
+    },
+    {
+      "actual_sha256": "2ba4ef61975e9350cb10cc6aa5551d16b2615a92c8886ea86b8207e1750f6682",
+      "bytes": 2899312,
+      "content_checked_count": 0,
+      "crc": "NOT_RUN",
+      "expected_sha256": "2ba4ef61975e9350cb10cc6aa5551d16b2615a92c8886ea86b8207e1750f6682",
+      "filename": "CDH_H_R13_002_REVIEW.zip",
+      "github_download_url": "NOT_PUBLISHED",
+      "manifest": "NOT_RUN",
+      "member_count": 29,
+      "nested_zip_count": 0,
+      "reasons": [
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH",
+        "UNREGISTERED_OR_MISMATCHED_LEDGER_IDENTITY"
+      ],
+      "sensitive_member_count": 2,
+      "status": "BLOCKED_FOR_UPLOAD"
+    }
+  ],
+  "schema": "CDH-E23-RELEASE-AUDIT-1",
+  "snapshot": 0
+}

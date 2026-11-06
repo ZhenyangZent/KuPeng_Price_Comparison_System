@@ -1,0 +1,291 @@
+{
+  "blocked_count": 20,
+  "payload_open_count": 0,
+  "publication_approved_count": 0,
+  "rows": [
+    {
+      "decision": "DEEP_CONTENT_AND_PROVENANCE_REVIEW",
+      "filename": "CDH_A_R12_002_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 2,
+      "nested_member_count": 2,
+      "next_gate": "Inspect only screened synthetic media or nested members in isolation, then verify provenance, manifest and CRC",
+      "payload_open_count": 0,
+      "reason": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "be0becbaa384e1a633c5893b266dbbb03c449ca405ef1f0c07bb8dd53456634b"
+    },
+    {
+      "decision": "DEEP_CONTENT_AND_PROVENANCE_REVIEW",
+      "filename": "CDH_A_R12_003_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 1,
+      "nested_member_count": 2,
+      "next_gate": "Inspect only screened synthetic media or nested members in isolation, then verify provenance, manifest and CRC",
+      "payload_open_count": 0,
+      "reason": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED"
+      ],
+      "sha256": "3c6d329cebdda9f8d269f3740952f897b6c95e932d0e04fef4a625defe0fc37e"
+    },
+    {
+      "decision": "DEEP_CONTENT_AND_PROVENANCE_REVIEW",
+      "filename": "CDH_A_R12_004_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 2,
+      "next_gate": "Inspect only screened synthetic media or nested members in isolation, then verify provenance, manifest and CRC",
+      "payload_open_count": 0,
+      "reason": [
+        "NESTED_ZIP"
+      ],
+      "sha256": "8eba2b5059c92fcd71897ee345527c78741ebe6c3230c45eab87dd4921b339e4"
+    },
+    {
+      "decision": "ORIGINAL_EXCLUDE_DERIVATIVE_ONLY",
+      "filename": "CDH_A_R13_001_REVIEW.zip",
+      "hard_private_member_count": 4,
+      "media_member_count": 0,
+      "nested_member_count": 6,
+      "next_gate": "Remove restricted members without opening them; review remaining members and create hash-bound derivative",
+      "payload_open_count": 0,
+      "reason": [
+        "NESTED_ZIP",
+        "SENSITIVE_MEMBER_PATH",
+        "THIRD_PARTY_SOURCE_REVIEW_REQUIRED"
+      ],
+      "sha256": "5de6b85e72767e8135b7ff0e6e3acb534965d5f636f61eea918cb082b02a8237"
+    },
+    {
+      "decision": "DEEP_CONTENT_AND_PROVENANCE_REVIEW",
+      "filename": "CDH_B01_001_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 1,
+      "next_gate": "Inspect only screened synthetic media or nested members in isolation, then verify provenance, manifest and CRC",
+      "payload_open_count": 0,
+      "reason": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "90a6319dde50ed8539138ac23d594191faa09a1901ba1d74180c6432a810b2a8"
+    },
+    {
+      "decision": "DEEP_CONTENT_AND_PROVENANCE_REVIEW",
+      "filename": "CDH_B01_PHASE_B_001_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 3,
+      "next_gate": "Inspect only screened synthetic media or nested members in isolation, then verify provenance, manifest and CRC",
+      "payload_open_count": 0,
+      "reason": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "0718a2ce6603b56e25006f6a35a5a308ba98938092de7d4b44c0b17ccfdc03b6"
+    },
+    {
+      "decision": "DEEP_CONTENT_AND_PROVENANCE_REVIEW",
+      "filename": "CDH_B01_R01_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 2,
+      "next_gate": "Inspect only screened synthetic media or nested members in isolation, then verify provenance, manifest and CRC",
+      "payload_open_count": 0,
+      "reason": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "d3f774bdd64e3558a3b9b82f513b98257979a84c4ed487823ebff6b6308f6dcd"
+    },
+    {
+      "decision": "DEEP_CONTENT_AND_PROVENANCE_REVIEW",
+      "filename": "CDH_B01_R02_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 2,
+      "next_gate": "Inspect only screened synthetic media or nested members in isolation, then verify provenance, manifest and CRC",
+      "payload_open_count": 0,
+      "reason": [
+        "NESTED_ZIP",
+        "NON_TEXT_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "a51c62f56954d328cc3015fff7109559f69a9c2f0e5aac20e58d6fec6c06059f"
+    },
+    {
+      "decision": "DERIVATIVE_REDACTION_REVIEW",
+      "filename": "CDH_B05_001_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 0,
+      "next_gate": "Identify and redact matching content in an isolated review; never publish original",
+      "payload_open_count": 0,
+      "reason": [
+        "EMAIL_PATTERN",
+        "PERSONAL_PATH_PATTERN",
+        "PHONE_PATTERN"
+      ],
+      "sha256": "31ab7903f56dfc4fc339d6b04aea74eebb1fea257a4e69554202cafc4c8c953e"
+    },
+    {
+      "decision": "DERIVATIVE_REDACTION_REVIEW",
+      "filename": "CDH_B06_001_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 0,
+      "next_gate": "Identify and redact matching content in an isolated review; never publish original",
+      "payload_open_count": 0,
+      "reason": [
+        "EMAIL_PATTERN",
+        "PERSONAL_PATH_PATTERN",
+        "PHONE_PATTERN"
+      ],
+      "sha256": "d99284c7e6d422b16255b51d29aacb5034a1d43b254c4aca6fa389cef6caf3ae"
+    },
+    {
+      "decision": "DEEP_TEXT_AND_MANIFEST_REVIEW",
+      "filename": "CDH_B07_001_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 0,
+      "next_gate": "Run bounded content, CRC and manifest checks before publication decision",
+      "payload_open_count": 0,
+      "reason": [
+        "LARGE_MEMBER_REVIEW_REQUIRED"
+      ],
+      "sha256": "f0a597f225233cd635e53c8646ce58ab20422250a8cb357650434eb59d342ee4"
+    },
+    {
+      "decision": "DEEP_TEXT_AND_MANIFEST_REVIEW",
+      "filename": "CDH_B08_001_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 0,
+      "next_gate": "Run bounded content, CRC and manifest checks before publication decision",
+      "payload_open_count": 0,
+      "reason": [
+        "LARGE_MEMBER_REVIEW_REQUIRED",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "a6d5ffb65860fcb33504baefd3c5288c1c75aac0494af248bb3e4c5624cd69bd"
+    },
+    {
+      "decision": "DEEP_TEXT_AND_MANIFEST_REVIEW",
+      "filename": "CDH_B09_001_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 0,
+      "next_gate": "Run bounded content, CRC and manifest checks before publication decision",
+      "payload_open_count": 0,
+      "reason": [
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "10f7ae283108b460ce533b52b75ba1698218632b38d5b58fbda8e643b9234bab"
+    },
+    {
+      "decision": "DEEP_TEXT_AND_MANIFEST_REVIEW",
+      "filename": "CDH_B09_002_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 0,
+      "next_gate": "Run bounded content, CRC and manifest checks before publication decision",
+      "payload_open_count": 0,
+      "reason": [
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "35539f8d3434540c660ff51613e636c443ffc06b237806bc53f32db1e78e62e3"
+    },
+    {
+      "decision": "DEEP_TEXT_AND_MANIFEST_REVIEW",
+      "filename": "CDH_B_R06_001_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 0,
+      "next_gate": "Run bounded content, CRC and manifest checks before publication decision",
+      "payload_open_count": 0,
+      "reason": [
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "dfef51befb8785e069e4be5514b4eec106952deb5f52ee4cd98974c50273e549"
+    },
+    {
+      "decision": "ORIGINAL_EXCLUDE_DERIVATIVE_ONLY",
+      "filename": "CDH_B_R07_001_REVIEW.zip",
+      "hard_private_member_count": 4,
+      "media_member_count": 0,
+      "nested_member_count": 0,
+      "next_gate": "Remove restricted members without opening them; review remaining members and create hash-bound derivative",
+      "payload_open_count": 0,
+      "reason": [
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "6c51730debbd1388685b479ef9b945a5f7616b2a435af8bda2d86dbca6f4fd8a"
+    },
+    {
+      "decision": "DEEP_CONTENT_AND_PROVENANCE_REVIEW",
+      "filename": "CDH_B_R08_001_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 2,
+      "next_gate": "Inspect only screened synthetic media or nested members in isolation, then verify provenance, manifest and CRC",
+      "payload_open_count": 0,
+      "reason": [
+        "NESTED_ZIP",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "8e04bcec4e7dd82778858043064dd9676597edade17c496ab16a9042e68bc364"
+    },
+    {
+      "decision": "DEEP_CONTENT_AND_PROVENANCE_REVIEW",
+      "filename": "CDH_B_R09_001_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 3,
+      "next_gate": "Inspect only screened synthetic media or nested members in isolation, then verify provenance, manifest and CRC",
+      "payload_open_count": 0,
+      "reason": [
+        "NESTED_ZIP",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "aa0c1b5e938ac87d7c9a81206e7a2df1e14ea656e3dcba74f59501a76f6a4638"
+    },
+    {
+      "decision": "DEEP_CONTENT_AND_PROVENANCE_REVIEW",
+      "filename": "CDH_B_R10_001_REVIEW.zip",
+      "hard_private_member_count": 0,
+      "media_member_count": 0,
+      "nested_member_count": 4,
+      "next_gate": "Inspect only screened synthetic media or nested members in isolation, then verify provenance, manifest and CRC",
+      "payload_open_count": 0,
+      "reason": [
+        "NESTED_ZIP",
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "db112964be7a5ada7b393902ee7a6de9d5a328b15b97880981046eef7cc9a6e9"
+    },
+    {
+      "decision": "ORIGINAL_EXCLUDE_DERIVATIVE_ONLY",
+      "filename": "CDH_B_R11_001_REVIEW.zip",
+      "hard_private_member_count": 2,
+      "media_member_count": 0,
+      "nested_member_count": 0,
+      "next_gate": "Remove restricted members without opening them; review remaining members and create hash-bound derivative",
+      "payload_open_count": 0,
+      "reason": [
+        "SENSITIVE_MEMBER_PATH"
+      ],
+      "sha256": "5a987c8a07a32f9b71d4fd995c9a8976b4c2fe8602a1d53c9e4c010d5c4d02be"
+    }
+  ],
+  "schema": "CDH-E23-RISK-TRIAGE-1",
+  "source_checkpoint": "batch_01.json",
+  "source_sha256": "beebcbc4205ec785c107d412df3fec0324a5bbdda7556c4ff14a307f0591981a"
+}
