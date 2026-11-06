@@ -1,0 +1,23 @@
+{
+  "schema": "CDH-E23-H13-E23-ACK-RESULT-1",
+  "task_id": "CDH-E23-GITHUB-REPOSITORY-CONSOLIDATION-20261106",
+  "archive_id": "20261107_H13_E23_ACK",
+  "central_ack_is_product_acceptance": false,
+  "archived_count": 2,
+  "already_archived_count": 0,
+  "failure_count": 0,
+  "queue_pending_after": 0,
+  "receipt_ledger_rows_before": 114,
+  "receipt_ledger_rows_after": 116,
+  "immutable_release_mutation_count": 0,
+  "h13": {
+    "filename": "CDH_H_R13_001_REVIEW.zip",
+    "sha256": "94f39aa504a05da588b1e4ea8ddd0684c805e1d84e3badde43fbfbff7115ccd4",
+    "central_status": "VALID_FAILURE_REPORT_TEST_HARNESS_REWORK_REQUIRED"
+  },
+  "e23_rev2": {
+    "filename": "CDH_E_R13_002_REVIEW.zip",
+    "sha256": "f1d9b8a8d2b46c528908454161d65ef6361aef3575b28079329dc03ee12b0c39",
+    "central_status": "PARTIAL_RESULT_ACCEPTED"
+  }
+}

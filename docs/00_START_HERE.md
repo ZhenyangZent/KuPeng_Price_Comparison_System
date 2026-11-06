@@ -7,4 +7,4 @@
 5. 新任務只修改授權工作線。先做隔離合成測試，再交 REVIEW／STATUS_ONLY；中央精確 ACK 後才歸檔待上傳副本。
 6. GitHub 更新依 `docs/HANDOFF/GITHUB_SYNC_POLICY.md`；未驗收候選不可冒充預設分支採用版本。
 
-目前 A17 `PASS_SCOPED`；H13 正式中央裁決仍未到齊。本機 H13 候選呈現測試工具 stale-result race，瀏覽器測試退出碼 1，不能宣稱 H13 已通過。
+目前 A17 `PASS_SCOPED`；H13 REV1 已由中央收到並確認是有效的失敗證據，搜尋測試工具須修訂，不能宣稱 H13 已通過。GitHub 歷史封存 prerelease 只包含經個別審查的六份舊 ZIP，與正式產品發布無關；其餘 134 份的阻塞原因見 `reports/E23/release_audit/SUMMARY.json`。

@@ -1,12 +1,14 @@
 # Coupang Deal Hunter｜酷澎比價系統
 
-目前最新中央限定驗收基準是 A17 Windows 本機整合試用版 `CDH_A_R13_001_REVIEW.zip`，SHA-256 `5de6b85e72767e8135b7ff0e6e3acb534965d5f636f61eea918cb082b02a8237`，裁決 `PASS_SCOPED`。H13 Windows 首次試用的中央最終裁決仍為 `UNKNOWN`；本機候選有測試工具失敗，不能宣稱產品全線通過。正式酷澎商品擷取、推薦／分潤及公開部署仍未授權。
+目前最新中央限定驗收基準是 A17 Windows 本機整合試用版 `CDH_A_R13_001_REVIEW.zip`，SHA-256 `5de6b85e72767e8135b7ff0e6e3acb534965d5f636f61eea918cb082b02a8237`，裁決 `PASS_SCOPED`。H13 REV1 已由中央確認為有效失敗報告，搜尋測試工具待修訂，不能宣稱首次試用產品流程全線通過。正式酷澎商品擷取、推薦／分潤及公開部署仍未授權。
 
 Windows 10／11 與 Python 3.11 以上的試用方式見 [A17 首次使用說明](docs/user-guides/WINDOWS_TRIAL_FIRST_USE_A17.md)。在完整 A17 Runtime 的專案根目錄使用 `Start-CDH-Trial.cmd`、`Status-CDH-Trial.cmd`、`Stop-CDH-Trial.cmd`；網址為 `http://127.0.0.1:4174/?mode=synthetic&contract=v4`。私人歷史位於 `data/A17_private_history/`，不得提交 GitHub。GitHub 鏡像如未包含經安全檢查的完整 Runtime，不能僅靠鏡像宣稱可獨立啟動。
 
 新接手者請依序閱讀 [最短接手入口](docs/00_START_HERE.md)、[主交接](docs/HANDOFF/MASTER_HANDOFF.md)、[目前狀態](docs/HANDOFF/CURRENT_STATE.json) 與 [GitHub 同步規則](docs/HANDOFF/GITHUB_SYNC_POLICY.md)。
 
-## 舊版 C01 純核心說明
+## 舊版 C01 純核心與 A16 MVP 說明（歷史）
+
+下列 `Start-CDH-MVP.cmd` 與 C01 純核心段落是歷史版本資料；目前試用基準為 A17 的 `Start-CDH-Trial.cmd`。GitHub `main` 尚未包含完整 A17 Runtime，請先核對正式整合包，不能只靠文件 checkout 啟動網站。
 
 ## Windows 本機價格歷史網站
 

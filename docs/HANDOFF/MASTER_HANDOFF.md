@@ -588,6 +588,16 @@ E06 authority：`CDH-E06-RECEIPT-ACK-ARCHIVE-AND-HANDOFF-001`／`AUTHORIZED_SYNT
 - A17 本機試用版尚未執行；H13 維持 `WAITING_FOR_A17`。H12 結案不構成公開部署、正式分潤、自動擷取或系統安裝授權。
 - E 未修改或執行 A17／H13，未建立純歸檔 STATUS_ONLY。
 
+## 47. A17 Windows 本機試用版精確收件與 H13 前置（2026-11-06 Asia/Taipei）
+
+- 中央對 A17 `CDH_A_R13_001_REVIEW.zip` SHA-256 `5de6b85e72767e8135b7ff0e6e3acb534965d5f636f61eea918cb082b02a8237` 提供 exact RECEIVED ACK，裁決為 `PASS_SCOPED`。
+- ZIP CRC、91 筆 Manifest、路徑與 exact SHA gate PASS；包含六份 immutable baseline ZIP 與四份 B11 synthetic coupon SQLite fixtures，nested/sensitive advisories 保留。E 未開啟 nested ZIP 或載入 fixture。
+- queue copy 已歸檔至 `review/90_UPLOADED_ARCHIVE/20261106_A17_ACK/`；`ARCHIVED=1`、`FAILED=0`、`ALREADY_ARCHIVED=0`、`RECOVERED=0`。immutable release 保持存在，release/archive/ACK SHA 一致，ledger 由 113 增至 114 rows。
+- 中央已驗證 91/91 delivery Manifest、58/58 Runtime Manifest、7/7 A17 Python tests、52/52 上游封裝程式／正式版本一致，以及隔離 Python service 啟動、API、停止 PASS。
+- Windows CMD／Chrome 與真正首次試用仍為 `NOT_RUN_H13_REQUIRED`。H13 必須證明乾淨隔離工作區只需 A17 整合包與文件所述 Python 環境，不需自行尋找八份歷史 ZIP。
+- A17 receipt／portable PASS 不構成 Windows 首次試用 PASS、獨立安裝程式、公開部署、正式分潤或自動擷取授權。
+- E 未修改或執行 A17／H13，未建立純歸檔 STATUS_ONLY。
+
 ## 48. E23 GitHub 安全同步盤點（2026-11-07 Asia/Taipei）
 
 - E23 任務 `CDH-E23-GITHUB-REPOSITORY-CONSOLIDATION-20261106` 授權建立公開 GitHub 交接入口與逐檔安全篩選。指定儲存庫為 `ZhenyangZent/KuPeng_Price_Comparison_System`；遠端初始盤點為 `PUBLIC`、`main` 尚無 commit、帳號 `ADMIN`。遠端身分仍須在 push 前重新核對。
@@ -603,12 +613,16 @@ E06 authority：`CDH-E06-RECEIPT-ACK-ARCHIVE-AND-HANDOFF-001`／`AUTHORIZED_SYNT
 - 140 份歷史原始 release ZIP 與未逐份驗證的報告／證據仍為 `BLOCKED_FOR_UPLOAD`，留在本機。GitHub Releases 與 LFS 使用量為 0；`RELEASE_LEDGER.csv` 不捏造下載 URL。此為部分同步，不是全部專案封存發布完成。
 - E 只在 `review/E23_GITHUB_CANDIDATE/repo` 中建立 Git；唯一專案根目錄及 A/B/C/D/F/G/H 工作目錄未變成 Git checkout，未刪除、覆寫或移動歷史交件。詳細遠端 SHA、掃描、測試與排除數見 `reports/E23`。
 
-## 47. A17 Windows 本機試用版精確收件與 H13 前置（2026-11-06 Asia/Taipei）
+## 50. E23 本機交件與封裝失敗保留（2026-11-07 Asia/Taipei）
 
-- 中央對 A17 `CDH_A_R13_001_REVIEW.zip` SHA-256 `5de6b85e72767e8135b7ff0e6e3acb534965d5f636f61eea918cb082b02a8237` 提供 exact RECEIVED ACK，裁決為 `PASS_SCOPED`。
-- ZIP CRC、91 筆 Manifest、路徑與 exact SHA gate PASS；包含六份 immutable baseline ZIP 與四份 B11 synthetic coupon SQLite fixtures，nested/sensitive advisories 保留。E 未開啟 nested ZIP 或載入 fixture。
-- queue copy 已歸檔至 `review/90_UPLOADED_ARCHIVE/20261106_A17_ACK/`；`ARCHIVED=1`、`FAILED=0`、`ALREADY_ARCHIVED=0`、`RECOVERED=0`。immutable release 保持存在，release/archive/ACK SHA 一致，ledger 由 113 增至 114 rows。
-- 中央已驗證 91/91 delivery Manifest、58/58 Runtime Manifest、7/7 A17 Python tests、52/52 上游封裝程式／正式版本一致，以及隔離 Python service 啟動、API、停止 PASS。
-- Windows CMD／Chrome 與真正首次試用仍為 `NOT_RUN_H13_REQUIRED`。H13 必須證明乾淨隔離工作區只需 A17 整合包與文件所述 Python 環境，不需自行尋找八份歷史 ZIP。
-- A17 receipt／portable PASS 不構成 Windows 首次試用 PASS、獨立安裝程式、公開部署、正式分潤或自動擷取授權。
-- E 未修改或執行 A17／H13，未建立純歸檔 STATUS_ONLY。
+- E23 初版 `CDH_E_R13_001_REVIEW.zip` SHA `2c685f53304a60ed7a62cd961cf000059ea1417e1b43b278fd808645b0499470` 因內部檔名 `SECRET_SCAN_SUMMARY.json` 觸發現行安全規則，**不得上傳**。原始失敗 release 保留；其未 ACK queue 副本保留在 `review/E23/failed_queue_candidates/`，沒有歸檔或刪除。
+- 正式待複查版 `CDH_E_R13_002_REVIEW.zip` SHA `f1d9b8a8d2b46c528908454161d65ef6361aef3575b28079329dc03ee12b0c39`，封裝內使用安全名稱 `SCREENING_SUMMARY.json`；25 筆 Manifest、CRC、路徑、巢狀 ZIP 與敏感名稱 gate 全部通過。正式原件在 `review/releases`，同位元組待上傳副本在 `review/00_TO_UPLOAD`，尚無中央 ACK。
+- H13 `CDH_H_R13_001_REVIEW.zip` 仍留在待上傳區，E 未移動或重寫。E23 兩版均不得被當成產品功能／部署驗收，GitHub Draft PR 仍未合併。
+
+## 51. H13／E23 中央 ACK 與第一批安全歷史封存（2026-11-07 Asia/Taipei）
+
+- 中央精確 RECEIVED ACK：H13 REV1 `CDH_H_R13_001_REVIEW.zip` SHA `94f39aa504a05da588b1e4ea8ddd0684c805e1d84e3badde43fbfbff7115ccd4`；E23 REV2 `CDH_E_R13_002_REVIEW.zip` SHA `f1d9b8a8d2b46c528908454161d65ef6361aef3575b28079329dc03ee12b0c39`。兩份 release／queue 位元組一致、CRC／Manifest 通過後，queue 副本精確歸檔至 `review/90_UPLOADED_ARCHIVE/20261107_H13_E23_ACK/`；原始 release 保持不變。收件台帳 114→116 筆，待上傳區當時清空。
+- H13 REV1 是有效的失敗報告：`searchAndOpen()` 搜尋後只等待舊結果數量，可能點到上一個商品；瀏覽器退出碼 1 保留。H 正進行測試工具定點修訂，A17 產品缺陷未確立，H13 產品狀態不可標 PASS。
+- E23 依 `RELEASE_LEDGER.csv` 鎖定 140 份歷史 release，按檔名排序分 7 批唯讀審查，140/140 SHA 符合；6 份純文字、無巢狀／敏感成員且 CRC／Manifest 通過，134 份因巢狀 ZIP、私人／非文字成員或內容／來源疑慮維持 `BLOCKED_FOR_UPLOAD`。逐批結果在 `reports/E23/release_audit/batch_00.json` 至 `batch_06.json`。
+- 六份中央已收件的安全原件已按原檔名及位元組公開為 GitHub **歷史封存 prerelease**：`https://github.com/ZhenyangZent/KuPeng_Price_Comparison_System/releases/tag/archive-safe-history-20261107`。GitHub 遠端資產 digest／大小 6/6 與本機完全吻合；實際 URL 已寫入 `RELEASE_LEDGER.csv`。此封存不是產品發布或商業功能授權。
+- GitHub `main`、A17 說明及舊版 A16 MVP 文件需保持一致：`main` 是安全文件入口，未包含完整 A17 Runtime；Draft PR #1 尚未完成來源位元組對帳，維持未合併。詳細 GitHub 遠端去識別讀回及發布限制見 `reports/E23/release_audit/`。
