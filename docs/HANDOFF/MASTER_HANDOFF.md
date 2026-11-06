@@ -595,6 +595,14 @@ E06 authority：`CDH-E06-RECEIPT-ACK-ARCHIVE-AND-HANDOFF-001`／`AUTHORIZED_SYNT
 - A17 正式中央裁決維持 `PASS_SCOPED`，SHA `5de6b85e72767e8135b7ff0e6e3acb534965d5f636f61eea918cb082b02a8237`，E34 已完成 exact ACK 歸檔。本機出現 H13 候選失敗報告 `FAIL_H_TEST_STALE_RESULT_RACE`；尚無中央最終裁決，H13 不得列為 PASS，亦不得推論 A17 產品程式有缺陷。
 - 原始 release、歷史失敗證據、私人 SQLite、正式 `.env`、憑證與未審查巢狀 ZIP 均留在本機，不因 GitHub 同步移動或刪除。初始 GitHub 鏡像不等於公開部署或具真實酷澎／分潤操作權限。
 
+## 49. E23 GitHub 初始同步結果與剩餘封存 gate（2026-11-07 Asia/Taipei）
+
+- 指定 Public 儲存庫 `https://github.com/ZhenyangZent/KuPeng_Price_Comparison_System` 已從空白遠端建立 `main` 安全文件基線；隔離 `chore/cdh-github-consolidation-20261106` 分支保存 1,135 份額外純文字程式／測試／文件，Draft PR #1 開放審查，未合併。
+- main 僅含已安全篩選的治理交接與索引；PR 分支是來自共用工作目錄的整理候選，並未逐份證明與每個中央正式 release 完全相同。A17 中央 `PASS_SCOPED` 與 H13 中央 `UNKNOWN` 狀態不變。
+- 公開 main 檔案索引僅列 main 已存在的其他 16 個檔案；PR 分支索引列其他 1,151 個檔案，逐檔 SHA-256／大小核對通過。本機完整 105,526 路徑快照另保存在 `PROJECT_FILE_INDEX.csv`，不把私有路徑細節全部推上公開 GitHub。
+- 140 份歷史原始 release ZIP 與未逐份驗證的報告／證據仍為 `BLOCKED_FOR_UPLOAD`，留在本機。GitHub Releases 與 LFS 使用量為 0；`RELEASE_LEDGER.csv` 不捏造下載 URL。此為部分同步，不是全部專案封存發布完成。
+- E 只在 `review/E23_GITHUB_CANDIDATE/repo` 中建立 Git；唯一專案根目錄及 A/B/C/D/F/G/H 工作目錄未變成 Git checkout，未刪除、覆寫或移動歷史交件。詳細遠端 SHA、掃描、測試與排除數見 `reports/E23`。
+
 ## 47. A17 Windows 本機試用版精確收件與 H13 前置（2026-11-06 Asia/Taipei）
 
 - 中央對 A17 `CDH_A_R13_001_REVIEW.zip` SHA-256 `5de6b85e72767e8135b7ff0e6e3acb534965d5f636f61eea918cb082b02a8237` 提供 exact RECEIVED ACK，裁決為 `PASS_SCOPED`。

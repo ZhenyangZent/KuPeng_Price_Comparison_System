@@ -3,7 +3,12 @@
   "as_of_local_date": "2026-11-07",
   "project_root": "LOCAL_USER_HOME/Music/University/program/酷澎比價系統",
   "github_repository": "ZhenyangZent/KuPeng_Price_Comparison_System",
-  "github_publication_status": "INITIAL_SYNC_IN_PROGRESS",
+  "github_publication_status": "PARTIAL_SYNC_PUBLIC_DOCS_AND_DRAFT_SOURCE_BRANCH",
+  "github_default_branch": "main",
+  "github_source_candidate_branch": "chore/cdh-github-consolidation-20261106",
+  "github_draft_pr": "https://github.com/ZhenyangZent/KuPeng_Price_Comparison_System/pull/1",
+  "historical_release_assets_uploaded": 0,
+  "historical_release_assets_pending_safety_review": 140,
   "a17": {
     "task_id": "CDH-A17-WINDOWS-LOCAL-TRIAL-001",
     "filename": "CDH_A_R13_001_REVIEW.zip",
