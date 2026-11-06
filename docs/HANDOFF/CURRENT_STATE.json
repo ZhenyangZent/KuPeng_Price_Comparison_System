@@ -1,0 +1,23 @@
+{
+  "schema": "CDH-CURRENT-STATE-E23-1",
+  "as_of_local_date": "2026-11-07",
+  "project_root": "LOCAL_USER_HOME/Music/University/program/酷澎比價系統",
+  "github_repository": "ZhenyangZent/KuPeng_Price_Comparison_System",
+  "github_publication_status": "INITIAL_SYNC_IN_PROGRESS",
+  "a17": {
+    "task_id": "CDH-A17-WINDOWS-LOCAL-TRIAL-001",
+    "filename": "CDH_A_R13_001_REVIEW.zip",
+    "sha256": "5de6b85e72767e8135b7ff0e6e3acb534965d5f636f61eea918cb082b02a8237",
+    "central_decision": "PASS_SCOPED",
+    "public_deployment": false
+  },
+  "h13": {
+    "task_id": "CDH-H13-LOCAL-TRIAL-FIRST-USE-001",
+    "central_decision": "UNKNOWN",
+    "local_candidate_status": "FAIL_H_TEST_STALE_RESULT_RACE",
+    "local_candidate_product_defect_determination": "NOT_ESTABLISHED"
+  },
+  "affiliate_enabled": false,
+  "real_coupang_collection_authorized": false,
+  "production_database_write_authorized": false
+}
